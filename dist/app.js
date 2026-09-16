@@ -39,10 +39,17 @@ showAnalysis=function(a){
  originalShowAnalysis(a);
  $('analysis-json').hidden=false;
  if(a.review_status==='needs_review'){
-  for(const id of ['global-signal','taiwan-signal','risk-signal'])$(id).textContent='待覆核';
+  // Retain the model direction with a prominent draft marker; never imply approval.
   $('brief-title').textContent='模型已完成分析，有待覆核的敘述';
   $('brief-text').textContent=(a.review_flags||[]).join(' ');
   $('model-state').textContent='已完成 · 待覆核';
+ }
+ const directionNames={Bullish:'▲ 看多',Bearish:'▼ 看空',Neutral:'— 中性',Unknown:'資料不足',Low:'低風險',Medium:'中風險',High:'高風險'};
+ for(const [id,key] of [['global-signal','international_capital'],['taiwan-signal','taiwan_capital'],['risk-signal','systemic_risk']]){
+  const value=a.summary[key],el=$(id),draft=a.review_status==='needs_review';
+  el.textContent=directionNames[value]||'未評估';
+  el.closest('.summary').dataset.direction=draft?'review':value;
+  if(draft){const flag=document.createElement('small');flag.className='review-marker';flag.textContent='模型初判 · 待覆核';el.append(flag);}
  }
  const translate={Bullish:'偏多情境',Bearish:'偏空情境',Neutral:'中性情境',Unknown:'資料不足'};
  for(const [key,prefix] of [['short_term','short'],['medium_term','medium']]){
@@ -57,6 +64,7 @@ load=async function(){
  $('risk-signal').textContent='未評估';$('brief-title').textContent='先確認資料，再形成觀點';$('brief-text').textContent='等待與本次快照一致的模型分析。';
  $('evidence-list').innerHTML='';$('analysis-json').hidden=true;$('analysis-result').textContent='';$('model-state').textContent='尚未執行';
  for(const prefix of ['short','medium']){$(prefix+'-title').textContent='等待分析';$(prefix+'-text').textContent='缺少有效分析時不保留上一版結論。';}
+ document.querySelectorAll('.summary').forEach(el=>delete el.dataset.direction);
  await originalLoad();
 };
 load();
