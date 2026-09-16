@@ -48,9 +48,9 @@ showAnalysis=function(a){
  for(const [id,key] of [['global-signal','international_capital'],['taiwan-signal','taiwan_capital'],['risk-signal','systemic_risk']]){
   const value=a.summary[key],el=$(id),draft=a.review_status==='needs_review';
   el.textContent=directionNames[value]||'未評估';
-  const panel=el.closest('.summary');panel.querySelector('.direction-animal')?.remove();
+  const panel=el.closest('.summary');panel.querySelector('.direction-animal')?.remove();delete panel.dataset.creature;
   if((id==='global-signal'||id==='taiwan-signal')&&['Bullish','Bearish'].includes(value)){
-   const animal=document.createElement('img');animal.className='direction-animal';animal.src=value==='Bullish'?'assets/bull.png':'assets/bear.png';animal.alt=value==='Bullish'?'牛：看多':'熊：看空';animal.width=96;animal.height=96;panel.append(animal);
+   const animal=document.createElement('img');animal.className='direction-animal';animal.src=value==='Bullish'?'assets/bull.png':'assets/bear.png';animal.alt=value==='Bullish'?'巨牛從外側托起卡片，代表看多支撐':'巨熊從上方壓住卡片，代表看空壓力';animal.width=360;animal.height=360;panel.dataset.creature=value==='Bullish'?'bull':'bear';panel.append(animal);
   }
 
   el.closest('.summary').dataset.direction=draft?'review':value;
@@ -69,7 +69,7 @@ load=async function(){
  $('risk-signal').textContent='未評估';$('brief-title').textContent='先確認資料，再形成觀點';$('brief-text').textContent='等待與本次快照一致的模型分析。';
  $('evidence-list').innerHTML='';$('analysis-json').hidden=true;$('analysis-result').textContent='';$('model-state').textContent='尚未執行';
  for(const prefix of ['short','medium']){$(prefix+'-title').textContent='等待分析';$(prefix+'-text').textContent='缺少有效分析時不保留上一版結論。';}
- document.querySelectorAll('.summary').forEach(el=>{delete el.dataset.direction;el.querySelector('.direction-animal')?.remove();});
+ document.querySelectorAll('.summary').forEach(el=>{delete el.dataset.direction;delete el.dataset.creature;el.querySelector('.direction-animal')?.remove();});
  await originalLoad();
 };
 load();
