@@ -1,0 +1,23 @@
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+p=ROOT/'dist/index.html'
+s=p.read_text(encoding='utf8')
+s=s.replace('href="style.css"','href="studio.css"')
+s=s.replace('<span class="brandmark">P</span>','<span class="brandmark">P<span>·</span></span>')
+s=s.replace('<div class="side-label">研究工作台</div>','')
+s=s.replace('◈ <span>戰情總覽</span>','<span>總覽</span>').replace('◎ <span>全球資金</span>','<span>全球資金</span>').replace('▥ <span>台股資金</span>','<span>台股資金</span>').replace('⌘ <span>情境分析</span>','<span>情境分析</span>').replace('≡ <span>資料通道</span>','<span>資料來源</span>')
+s=s.replace('<div class="eyebrow">PIOTER DAILY BRIEF</div>','<div class="eyebrow"><span class="eyebrow-line"></span> CAPITAL INTELLIGENCE / DAILY BRIEF</div>')
+s=s.replace('<h1>資金戰情室<span class="gold">.</span></h1>','<h1>全球視野<span class="gold">，</span><br>看見資金的方向<span class="gold">。</span></h1>')
+s=s.replace('<strong id="report-date">資料準備中</strong>','<span class="report-label">MARKET SNAPSHOT</span><strong id="report-date">資料準備中</strong>')
+s=s.replace('<section id="overview" class="intro">','<section id="overview" class="intro"><div class="hero-art" aria-hidden="true"></div>')
+s=s.replace('<article class="summary"><span>01 / 國際資金</span>','<article class="summary global-summary"><span>GLOBAL CAPITAL <b>01</b></span><h3>國際資金</h3>')
+s=s.replace('<article class="summary"><span>02 / 台股資金</span>','<article class="summary taiwan-summary"><span>TAIWAN CAPITAL <b>02</b></span><h3>台股資金</h3>')
+s=s.replace('<article class="summary risk"><span>03 / 系統風險</span>','<article class="summary risk"><span>SYSTEMIC RISK <b>03</b></span><h3>系統風險</h3>')
+s=s.replace('<section id="global"><div class="section-heading">','<section id="global"><div class="section-heading image-heading global-heading">')
+s=s.replace('<section id="taiwan"><div class="section-heading">','<section id="taiwan"><div class="section-heading image-heading taiwan-heading">')
+s=s.replace('<section id="analysis"><div class="section-heading">','<section id="analysis"><div class="section-heading image-heading risk-heading">')
+s=s.replace('<span class="section-note">掌握資金成本與風險環境</span>','<span class="section-note">從利率、匯率與避險資產<br>辨識全球資金的風險偏好</span>')
+s=s.replace('<span class="section-note">確認資金是否流向台灣</span>','<span class="section-note">現貨 × 期貨 × 匯率<br>交叉確認資金是否流向台灣</span>')
+s=s.replace('<span class="section-note">數據是證據，模型提供研究觀點</span>','<span class="section-note">以數據為依據<br>把預測拆成可追蹤的條件</span>')
+s=s.replace('<div class="steps"><span>01 已驗證數據</span><i>→</i><span>02 三層判讀</span><i>→</i><span>03 條件式觀點</span></div>','<div class="steps"><span><b>01</b> 資料證據</span><i>／</i><span><b>02</b> 三層判讀</span><i>／</i><span><b>03</b> 條件觀點</span></div>')
+p.write_text(s,encoding='utf8')

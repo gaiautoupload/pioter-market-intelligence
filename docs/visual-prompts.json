@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "path": "C:/Users/user/Documents/Codex/pioter-assets-v2/global.png",
+      "prompt": "Use case: stylized-concept\nAsset type: premium financial intelligence website hero background, landscape 1536x1024.\nPrimary request: a photoreal cinematic editorial 3D satellite view of dark Earth, Asia illuminated by fine golden city networks with very subtle orbital trails.\nComposition/framing: Earth sphere placed in the right half, right-weighted composition; the entire left half is smooth nearly-black negative space for overlay text. Wide landscape, sophisticated restrained institutional atmosphere.\nColor palette: midnight navy and ink black, restrained luminous champagne gold.\nLighting/mood: low-key cinematic light, delicately luminous city lights, realistic atmospheric edge.\nConstraints: background art only. No text, no numbers, no charts, no logos, no watermarks, no fake UI. Avoid excessive glow, neon sci-fi, clutter and bright left-side details."
+    },
+    {
+      "path": "C:/Users/user/Documents/Codex/pioter-assets-v2/taiwan.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium financial intelligence website section background, landscape 1536x1024.\nPrimary request: sophisticated aerial dusk Taipei skyline with recognisable Taipei 101 at the far right, warm restrained golden city lights and midnight blue atmosphere.\nComposition/framing: wide aerial editorial photograph; buildings and Taipei 101 concentrated on the right, majority of left half deep smooth dark negative space for readable overlay content, naturally fading through dusk haze into near-black.\nColor palette: midnight navy and ink black with restrained champagne gold warm lights.\nLighting/mood: cinematic premium institutional atmosphere, realistic architecture and subtle atmospheric depth.\nConstraints: no text, no numbers, no charts, no logos, no watermarks, no fake UI. No neon sci-fi."
+    },
+    {
+      "path": "C:/Users/user/Documents/Codex/pioter-assets-v2/risk.png",
+      "prompt": "Use case: stylized-concept\nAsset type: premium financial intelligence website risk section background, landscape 1536x1024.\nPrimary request: abstract premium photoreal 3D optical glass and prismatic architectural fins, thin champagne light paths passing through smoky navy glass.\nComposition/framing: elegant architectural glass forms concentrated in the right half, very dark smooth left half negative space for readable data overlay. Wide landscape composition.\nStyle/medium: cinematic editorial 3D, refined physically plausible glass refraction and polished surfaces.\nColor palette: midnight navy and ink black, restrained luminous champagne gold.\nLighting/mood: low key, restrained elegant institutional atmosphere.\nConstraints: background art only. No text, no numbers, no charts, no logos, no watermarks, no fake UI. Avoid rainbow colors, excessive glare, clutter and neon sci-fi."
+    }
+  ]
+}
