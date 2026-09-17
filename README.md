@@ -44,9 +44,9 @@ python -X utf8 scripts/serve.py
 | `dist/data-sources.md` | 全部指標的每日資料通道與尚待接入項目 |
 | `docs/model-contract.md` | 輸入、輸出與驗證規則 |
 
-## 每日排程與 GitHub Pages（尚未啟用）
+## 每日排程與 GitHub Pages（已啟用）
 
-已提供可安裝的 Windows 工作排程腳本，預設不會修改系統。需要每日自動跑時執行：
+目前使用 Windows 工作排程 `Pioter-Capital-Daily`，每日台北時間 08:00、18:00 執行並發布至 GitHub Pages。需要在另一台電腦重新安裝時執行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/install-daily-task.ps1 -Install -Publish
@@ -59,7 +59,7 @@ git remote add github https://github.com/OWNER/REPOSITORY.git
 git push -u github main
 ```
 
-GitHub repository 的 Pages Source 選擇 **GitHub Actions**。排程完成後會推送新的 `dist/data/*.json`，workflow 只負責發布 `dist/`；GitHub 不會接觸地端 vLLM 或私人資料。
+GitHub repository 的 Pages Source 使用 **GitHub Actions**。排程完成後會推送新的 `dist/data/*.json`，workflow 只負責發布 `dist/`；GitHub 不會接觸地端 vLLM 或私人資料。正式網站：<https://gaiautoupload.github.io/pioter-market-intelligence/dist/>
 
 不加 `-Publish` 時只更新地端資料與網站。完整架構見 `docs/local-github-architecture.md`，驗收條件見 `docs/acceptance-v01.md`。
 
