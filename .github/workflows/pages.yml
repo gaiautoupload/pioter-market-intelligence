@@ -25,9 +25,16 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Prepare stable root and dist URLs
+        shell: bash
+        run: |
+          mkdir -p _site/dist
+          cp -R dist/. _site/
+          cp -R dist/. _site/dist/
+          touch _site/.nojekyll _site/dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: _site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

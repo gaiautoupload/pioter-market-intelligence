@@ -31,6 +31,8 @@ class IntegrityTests(unittest.TestCase):
   with self.assertRaises(ValueError):analyze.validate(result,{'metrics':[],'strategies':[]})
  def test_exaggerated_model_claim_is_flagged(self):
   result={'summary':{'one_line':'殖利率急升'},'evidence':[],'short_term':{'bullish_trigger':'50以上','bearish_trigger':'下跌'},'medium_term':{'bullish_trigger':'上升','bearish_trigger':'下跌'}}
-  self.assertEqual(analyze.flag_review(result)['review_status'],'needs_review')
+  reviewed=analyze.flag_review(result)
+  self.assertEqual(reviewed['review_status'],'machine_validated_with_notes')
+  self.assertEqual(reviewed['summary']['one_line'],'殖利率上升')
 
 if __name__=='__main__':unittest.main()

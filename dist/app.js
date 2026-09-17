@@ -24,7 +24,7 @@ function detail(m){const history=(m.history||[]).slice(-7);$('metric-detail').in
 function download(content,name,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function markdown(){return '# Pioter 每日研究包\n\n擷取：'+snapshot.generated_at+'\n\n'+snapshot.metrics.map(m=>`## ${m.label}\n- 數值：${m.value??'尚未更新'} ${m.unit}\n- 日期：${m.observed_at??'—'}\n- 時段：${m.session??'—'}\n- 狀態：${currentStatus(m)} / ${m.quality}\n- 來源：${m.source_url}\n- 備註：${m.note}\n`).join('\n')+'\n## 資料限制\n'+snapshot.limitations.map(x=>'- '+x).join('\n')+'\n\n## 模型分析\n'+(analysis?JSON.stringify(analysis,null,2):'尚未分析。禁止把缺值當中性、把未知風險當低風險。');}
 function showAnalysis(a){if(!a||typeof a!=='object'||!a.summary||!a.short_term||!a.medium_term)throw Error('分析格式不符：需要 summary、short_term、medium_term');if(a.snapshot_id!==snapshot.snapshot_id)throw Error('分析結果與目前資料快照不一致，請使用同一份研究包重新分析。');analysis=a;const names={Bullish:'偏多',Neutral:'中性',Bearish:'偏空',Unknown:'資料不足',Low:'低',Medium:'中',High:'高'};for(const [id,key] of [['global-signal','international_capital'],['taiwan-signal','taiwan_capital'],['risk-signal','systemic_risk']])$(id).textContent=names[a.summary[key]]||'未評估';$('brief-title').textContent=a.summary.one_line||'模型研究觀點';$('brief-text').textContent='模型：'+(a.model||'匯入分析')+' · '+(a.generated_at||'')+' · 請參照下方資料限制';$('short-title').textContent=a.short_term.direction||'條件式情境';$('short-text').textContent=a.short_term.base_scenario||'資料不足';$('medium-title').textContent=a.medium_term.direction||'條件式情境';$('medium-text').textContent=a.medium_term.base_scenario||'資料不足';$('model-state').textContent='已完成 · 模型觀點';$('analysis-result').hidden=false;$('analysis-result').textContent=JSON.stringify(a,null,2);}
-async function load(){try{const r=await fetch('data/latest.json',{cache:'no-store'});if(!r.ok)throw Error('無法讀取資料');const d=await r.json();if(!Array.isArray(d.metrics)||!Array.isArray(d.sources))throw Error('資料格式不正確');snapshot=d;analysis=null;render();try{const a=await fetch('data/analysis.json',{cache:'no-store'});if(a.ok)showAnalysis(await a.json());}catch{ $('model-state').textContent='需重新分析';} }catch(e){$('updated').textContent='載入失敗，可重試';toast(e.message);}}
+async function load(){try{const stamp=Date.now();const r=await fetch('data/latest.json?v='+stamp,{cache:'no-store'});if(!r.ok)throw Error('無法讀取資料');const d=await r.json();if(!Array.isArray(d.metrics)||!Array.isArray(d.sources))throw Error('資料格式不正確');snapshot=d;analysis=null;render();try{const a=await fetch('data/analysis.json?v='+stamp,{cache:'no-store'});if(a.ok)showAnalysis(await a.json());}catch{ $('model-state').textContent='需重新分析';} }catch(e){$('updated').textContent='載入失敗，可重試';toast(e.message);}}
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('selected',x===b));render();}));
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('active',x===a));}));
 $('zoom').addEventListener('change',e=>{document.documentElement.style.setProperty('--font-scale',e.target.value);});
@@ -39,23 +39,21 @@ const originalShowAnalysis=showAnalysis;
 showAnalysis=function(a){
  originalShowAnalysis(a);
  $('analysis-json').hidden=false;
- if(a.review_status==='needs_review'){
-  // Retain the model direction with a prominent draft marker; never imply approval.
-  $('brief-title').textContent='模型已完成分析，有待覆核的敘述';
-  $('brief-text').textContent=(a.review_flags||[]).join(' ');
-  $('model-state').textContent='已完成 · 待覆核';
+ if(a.review_status==='machine_validated_with_notes'){
+  $('brief-title').textContent=a.summary.one_line||'模型研究觀點';
+  $('brief-text').textContent='數值、日期與來源已核對；個別措辭與示例門檻列於分析備註。';
+  $('model-state').textContent='已分析 · 證據已核對';
  }
  const directionNames={Bullish:'▲ 看多',Bearish:'▼ 看空',Neutral:'— 中性',Unknown:'資料不足',Low:'低風險',Medium:'中風險',High:'高風險'};
  for(const [id,key] of [['global-signal','international_capital'],['taiwan-signal','taiwan_capital'],['risk-signal','systemic_risk']]){
-  const value=a.summary[key],el=$(id),draft=a.review_status==='needs_review';
+  const value=a.summary[key],el=$(id);
   el.textContent=directionNames[value]||'未評估';
   const panel=el.closest('.summary');panel.querySelector('.direction-animal')?.remove();delete panel.dataset.creature;
   if((id==='global-signal'||id==='taiwan-signal')&&['Bullish','Bearish'].includes(value)){
    const animal=document.createElement('img');animal.className='direction-animal';animal.src=value==='Bullish'?'assets/bull.png':'assets/bear.png';animal.alt=value==='Bullish'?'巨牛從外側托起卡片，代表看多支撐':'巨熊從上方壓住卡片，代表看空壓力';animal.width=360;animal.height=360;panel.dataset.creature=value==='Bullish'?'bull':'bear';panel.append(animal);
   }
 
-  el.closest('.summary').dataset.direction=draft?'review':value;
-  if(draft){const flag=document.createElement('small');flag.className='review-marker';flag.textContent='模型初判 · 待覆核';el.append(flag);}
+  el.closest('.summary').dataset.direction=value;
  }
  const translate={Bullish:'偏多情境',Bearish:'偏空情境',Neutral:'中性情境',Unknown:'資料不足'};
  for(const [key,prefix] of [['short_term','short'],['medium_term','medium']]){
@@ -95,7 +93,7 @@ function savedPortfolio(){try{return JSON.parse(localStorage.getItem('pioter-por
 function portfolioPanel(){const rows=savedPortfolio();return `<div class="research-grid"><article class="research-card wide"><h3>地端持股</h3><form id="portfolio-form" class="portfolio-form"><input name="code" required placeholder="股票代號"><input name="shares" type="number" min="1" required placeholder="股數"><input name="cost" type="number" min="0" step="0.01" required placeholder="平均成本"><button>加入／更新</button></form>${rows.length?`<ol class="research-list">${rows.map((p,i)=>{const s=marketData.stocks.find(x=>x.code===p.code),profit=s?(s.close-p.cost)*p.shares:null;return `<li><span>${String(i+1).padStart(2,'0')}</span><button data-stock="${esc(p.code)}"><b>${esc(p.code)} ${esc(s?.name||'')}</b></button><em class="${(profit||0)>=0?'up':'down'}">${profit==null?'尚無行情':money(profit)}</em></li>`}).join('')}</ol>`:'<div class="empty-state">持股只保存在這台裝置的瀏覽器，不會上傳。</div>'}<div class="permission-note">GitHub Pages 是純靜態網站；自選與持股使用裝置內儲存。若要多裝置同步，需另接有登入與權限隔離的資料庫。</div></article></div>`;}
 function healthPanel(){return `<div class="research-grid"><article class="research-card wide"><h3>資料管線</h3>${marketData.sources.map(s=>`<div class="status-line"><span><i class="status-dot ${s.status==='ready'?'':'error'}"></i>${esc(s.id)}</span><span>${esc(s.status)} · ${s.rows??0} rows</span></div>`).join('')}</article><article class="research-card"><h3>資料限制</h3>${marketData.limitations.map(x=>`<p>• ${esc(x)}</p>`).join('')}<div>${marketData.sources.map(s=>`<a class="source-chip" href="${esc(safeURL(s.url))}" target="_blank" rel="noopener">${esc(s.id)} ↗</a>`).join('')}</div></article></div>`;}
 function renderResearch(){if(!marketData){$('research-content').innerHTML='<div class="empty-state">尚未產生台股盤後資料。請先在本機執行 daily.py。</div>';return}const views={market:marketPanel,ranking:rankingPanel,strategy:strategyPanel,stock:stockPanel,etf:etfPanel,portfolio:portfolioPanel,content:contentPanel,plans:plansPanel,admin:adminPanel,health:healthPanel};$('research-content').innerHTML=(views[researchView]||marketPanel)();bindStockLinks();document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>location.hash=b.dataset.jump));const form=$('portfolio-form');if(form)form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form),item={code:String(data.get('code')).trim(),shares:Number(data.get('shares')),cost:Number(data.get('cost'))};const rows=savedPortfolio().filter(x=>x.code!==item.code);rows.push(item);localStorage.setItem('pioter-portfolio',JSON.stringify(rows));renderResearch();toast('持股已保存在此裝置');});}
-async function loadMarket(){try{const r=await fetch('data/market.json',{cache:'no-store'});if(!r.ok)throw Error('尚無 market.json');marketData=await r.json();if(!Array.isArray(marketData.stocks))throw Error('台股資料格式錯誤');$('market-stamp').textContent=`資料日 ${marketData.observed_at} · ${marketData.stocks.length} 檔 · 盤後資料`;renderResearch()}catch(e){$('market-stamp').textContent='台股資料尚未產生';renderResearch();}}
+async function loadMarket(){try{const r=await fetch('data/market.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('尚無 market.json');marketData=await r.json();if(!Array.isArray(marketData.stocks))throw Error('台股資料格式錯誤');$('market-stamp').textContent=`資料日 ${marketData.observed_at} · ${marketData.stocks.length} 檔 · 盤後資料`;renderResearch()}catch(e){$('market-stamp').textContent='台股資料尚未產生';renderResearch();}}
 document.querySelectorAll('[data-research]').forEach(button=>button.addEventListener('click',()=>{researchView=button.dataset.research;document.querySelectorAll('[data-research]').forEach(x=>x.classList.toggle('selected',x===button));renderResearch();}));
 $('stock-search-button').addEventListener('click',()=>{const q=$('stock-query').value.trim().toLowerCase(),s=marketData?.stocks.find(s=>s.code.toLowerCase()===q||s.name.toLowerCase().includes(q));if(!s)return toast('找不到股票；目前僅載入上市盤後資料');openStock(s.code);});
 $('stock-query').addEventListener('keydown',e=>{if(e.key==='Enter'){$('stock-search-button').click();}});

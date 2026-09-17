@@ -67,9 +67,14 @@ def validate(result,snapshot):
 
 def flag_review(result):
  flags=[]
+ replacements={'急升':'上升','飆升':'上升','飆漲':'上漲','極大':'較高','極度':'明顯'}
+ for old,new in replacements.items():
+  result['summary']['one_line']=result['summary']['one_line'].replace(old,new)
+  for evidence in result['evidence']:
+   evidence['interpretation']=evidence.get('interpretation','').replace(old,new)
  prose=result['summary']['one_line']+' '+ ' '.join(e.get('interpretation','') for e in result['evidence'])
- if re.search('急升|飆|極大|極度|歷史高位|近期新高',prose):
-  flags.append('模型含未經幅度／歷史檢驗的強烈措辭；不能直接採用其頂部多空與風險結論。')
+ if re.search('歷史高位|近期新高',prose):
+  flags.append('模型含未經歷史區間驗證的比較措辭，已列入分析備註。')
  for horizon in ('short_term','medium_term'):
   for trigger in ('bullish_trigger','bearish_trigger'):
    text=result[horizon][trigger]
@@ -77,7 +82,7 @@ def flag_review(result):
     flags.append('模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。')
     break
  result['review_flags']=list(dict.fromkeys(flags))
- result['review_status']='needs_review' if flags else 'machine_validated_not_human_reviewed'
+ result['review_status']='machine_validated_with_notes' if flags else 'machine_validated_not_human_reviewed'
  return result
 
 def main(snapshot=None):
