@@ -40,7 +40,15 @@ def validate(result,snapshot):
  if not isinstance(evidence,list) or len(evidence)<min(3,len(valid)):raise ValueError('Insufficient evidence')
  for e in evidence:
   m=valid.get(e.get('metric_id'))
-  if not m or e.get('observed_at')!=m['observed_at'] or e.get('value')!=m['value']:raise ValueError('Unverified evidence '+str(e.get('metric_id')))
+  if not m or e.get('observed_at')!=m['observed_at']:raise ValueError('Unverified evidence '+str(e.get('metric_id')))
+  try:
+   model_value=float(e.get('value'));source_value=float(m['value'])
+  except (TypeError,ValueError):
+   raise ValueError('Non-numeric evidence '+str(e.get('metric_id')))
+  tolerance=max(1e-9,abs(source_value)*0.0001)
+  if abs(model_value-source_value)>tolerance:raise ValueError('Unverified evidence value '+str(e.get('metric_id')))
+  # Publish the source value, never the model's rounded representation.
+  e['value']=m['value']
  for field in ['divergences','missing_data','stocks']:
   if not isinstance(result.get(field),list):raise ValueError('Missing list '+field)
  if not snapshot.get('strategies') and result['stocks']:raise ValueError('Stocks invented without strategy data')

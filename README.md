@@ -1,6 +1,6 @@
 # Pioter 資金戰情室
 
-參考原圖重建的響應式網頁，以及可每日執行的官方資料擷取、研究包輸出和 vLLM 分析管線。
+純地端資料擷取、SQLite 歷史、vLLM 分析與 GitHub Pages 靜態研究網站。除了原本的全球／台股資金戰情室，v0.1 已加入上市股票搜尋、排行中心、策略選股、個股 Workspace、自選／持股與 Data Health。
 
 ## 使用
 
@@ -13,7 +13,8 @@ python -X utf8 scripts/serve.py
 
 本機開啟 http://127.0.0.1:8765。第一次執行需要可連外網路。
 
-- `daily.py`：擷取、格式檢查、歷史保存、輸出 JSON／Markdown、查詢 vLLM 當下模型、產生並核對分析。
+- `daily.py`：擷取、格式檢查、SQLite 歷史、輸出 JSON／Markdown、查詢 vLLM 當下模型、產生並核對分析。
+- `equity.py`：從 TWSE 官方 OpenAPI 擷取上市盤後行情、估值與公司資料，建立排行及策略快照。
 - `collect.py`：只擷取和匯出，不呼叫模型。
 - `analyze.py`：使用目前的研究包重新分析，每次都查 `/v1/models`。
 - 網頁「重新載入」只讀最新快照；不會偷偷觸發網路爬蟲。
@@ -43,15 +44,24 @@ python -X utf8 scripts/serve.py
 | `dist/data-sources.md` | 全部指標的每日資料通道與尚待接入項目 |
 | `docs/model-contract.md` | 輸入、輸出與驗證規則 |
 
-## 每日排程（尚未啟用）
+## 每日排程與 GitHub Pages（尚未啟用）
 
 已提供可安裝的 Windows 工作排程腳本，預設不會修改系統。需要每日自動跑時執行：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/install-daily-task.ps1 -Install
+powershell -ExecutionPolicy Bypass -File scripts/install-daily-task.ps1 -Install -Publish
 ```
 
-台北時間 07:30、18:30 執行。電腦需開機、登入且有網路；未使用無人登入帳密。工作不會自動將新資料發布到 Sites，線上版是最後發布時的快照；要持續線上更新需再串接部署或獨立同步機制。
+台北時間 08:00、18:00 執行。電腦需開機、登入且有網路；未使用無人登入帳密。先建立 GitHub repository，然後設定名為 `github` 的 remote：
+
+```powershell
+git remote add github https://github.com/OWNER/REPOSITORY.git
+git push -u github main
+```
+
+GitHub repository 的 Pages Source 選擇 **GitHub Actions**。排程完成後會推送新的 `dist/data/*.json`，workflow 只負責發布 `dist/`；GitHub 不會接觸地端 vLLM 或私人資料。
+
+不加 `-Publish` 時只更新地端資料與網站。完整架構見 `docs/local-github-architecture.md`，驗收條件見 `docs/acceptance-v01.md`。
 
 ## 實際限制
 

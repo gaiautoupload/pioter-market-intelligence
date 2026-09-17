@@ -1,4 +1,5 @@
 /data/
+/data/*.sqlite3
 /probe/
 __pycache__/
 *.pyc
