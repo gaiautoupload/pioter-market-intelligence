@@ -1,0 +1,52 @@
+name: Refresh five-minute intraday reference
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 9-13 * * 1-5"
+      timezone: "Asia/Taipei"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Taiwan cash-session window
+        id: session
+        shell: bash
+        run: |
+          now="$(TZ=Asia/Taipei date +%H%M)"
+          if [ "$now" -ge 0900 ] && [ "$now" -le 1335 ]; then echo "open=true" >> "$GITHUB_OUTPUT"; else echo "open=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Fetch Yahoo reference quotes
+        if: steps.session.outputs.open == 'true'
+        run: python -X utf8 scripts/intraday.py
+      - name: Prepare stable root and dist URLs
+        if: steps.session.outputs.open == 'true'
+        shell: bash
+        run: |
+          mkdir -p _site/dist
+          cp -R dist/. _site/
+          cp -R dist/. _site/dist/
+          touch _site/.nojekyll _site/dist/.nojekyll
+      - uses: actions/configure-pages@v5
+        if: steps.session.outputs.open == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.session.outputs.open == 'true'
+        with:
+          path: _site
+      - name: Deploy
+        if: steps.session.outputs.open == 'true'
+        uses: actions/deploy-pages@v4
+        id: deployment
