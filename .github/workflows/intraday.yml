@@ -3,8 +3,9 @@ name: Refresh five-minute intraday reference
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 9-13 * * 1-5"
-      timezone: "Asia/Taipei"
+    # GitHub cron is UTC: 01:00-05:55 = 09:00-13:55 Asia/Taipei.
+    # The session guard below stops publishing after 13:35.
+    - cron: "*/5 1-5 * * 1-5"
 
 permissions:
   contents: read
