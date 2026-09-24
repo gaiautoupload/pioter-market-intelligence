@@ -1,34 +1,30 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-23T18:00:02+08:00",
+  "generated_at": "2026-09-24T08:00:02+08:00",
   "timezone": "Asia/Taipei",
   "mode": "verified_snapshot",
-  "snapshot_id": "20260923T180002",
+  "snapshot_id": "20260924T080002",
   "metrics": [
     {
       "id": "us30",
       "label": "美債 30 年殖利率",
       "group": "global",
       "unit": "%",
-      "value": 5.29,
-      "observed_at": "2026-09-22",
+      "value": 5.4,
+      "observed_at": "2026-09-23",
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": 0.0,
+      "delta": 11.000000000000032,
       "change_kind": "bp",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "觀察趨勢與期限結構；不能單因子推導個股買賣。",
       "history": [
-        {
-          "date": "2026-08-11",
-          "value": 5.24
-        },
         {
           "date": "2026-08-12",
           "value": 5.24
@@ -144,35 +140,35 @@
         {
           "date": "2026-09-22",
           "value": 5.29
+        },
+        {
+          "date": "2026-09-23",
+          "value": 5.4
         }
       ],
       "details": {},
-      "raw_sha256": "fd9bcf2168a70ca6ff18154fd65062d8ed6d0f041b2373cfb7347fe064a8ae90"
+      "raw_sha256": "0338ed8e89c8b2a843d23aa4c24221f544e485f33a08eaa9574f2fc8c856ed48"
     },
     {
       "id": "us10",
       "label": "美債 10 年殖利率",
       "group": "global",
       "unit": "%",
-      "value": 4.96,
-      "observed_at": "2026-09-22",
+      "value": 5.11,
+      "observed_at": "2026-09-23",
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": 0.0,
+      "delta": 15.000000000000036,
       "change_kind": "bp",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "觀察趨勢與期限結構；不能單因子推導個股買賣。",
       "history": [
-        {
-          "date": "2026-08-11",
-          "value": 4.7
-        },
         {
           "date": "2026-08-12",
           "value": 4.68
@@ -288,35 +284,35 @@
         {
           "date": "2026-09-22",
           "value": 4.96
+        },
+        {
+          "date": "2026-09-23",
+          "value": 5.11
         }
       ],
       "details": {},
-      "raw_sha256": "fd9bcf2168a70ca6ff18154fd65062d8ed6d0f041b2373cfb7347fe064a8ae90"
+      "raw_sha256": "0338ed8e89c8b2a843d23aa4c24221f544e485f33a08eaa9574f2fc8c856ed48"
     },
     {
       "id": "us5",
       "label": "美債 5 年殖利率",
       "group": "global",
       "unit": "%",
-      "value": 4.83,
-      "observed_at": "2026-09-22",
+      "value": 4.99,
+      "observed_at": "2026-09-23",
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": 0.0,
+      "delta": 16.000000000000014,
       "change_kind": "bp",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "觀察趨勢與期限結構；不能單因子推導個股買賣。",
       "history": [
-        {
-          "date": "2026-08-11",
-          "value": 4.39
-        },
         {
           "date": "2026-08-12",
           "value": 4.38
@@ -432,10 +428,14 @@
         {
           "date": "2026-09-22",
           "value": 4.83
+        },
+        {
+          "date": "2026-09-23",
+          "value": 4.99
         }
       ],
       "details": {},
-      "raw_sha256": "fd9bcf2168a70ca6ff18154fd65062d8ed6d0f041b2373cfb7347fe064a8ae90"
+      "raw_sha256": "0338ed8e89c8b2a843d23aa4c24221f544e485f33a08eaa9574f2fc8c856ed48"
     },
     {
       "id": "vix",
@@ -447,10 +447,10 @@
       "session": "美國交易日日終",
       "source_id": "vix",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -4.438466711499656,
       "change_kind": "percent",
@@ -586,41 +586,21 @@
       "label": "Brent 原油現貨",
       "group": "global",
       "unit": "USD / bbl",
-      "value": 130.8,
-      "observed_at": "2026-09-15",
+      "value": 114.89,
+      "observed_at": "2026-09-22",
       "session": "EIA 日資料；發布延遲",
       "source_id": "brent",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU",
-      "fetched_at": "2026-09-23T18:00:02+08:00",
-      "status": "stale",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
+      "status": "ready",
       "quality": "direct",
-      "age_days": 8,
+      "age_days": 2,
       "max_age_days": 7,
-      "delta": 7.8762886597938175,
+      "delta": -1.0848041325871804,
       "change_kind": "percent",
-      "previous_date": "2026-09-14",
+      "previous_date": "2026-09-21",
       "note": "現貨日資料，不等同 ICE Brent 期貨。",
       "history": [
-        {
-          "date": "2026-08-04",
-          "value": 86.47
-        },
-        {
-          "date": "2026-08-05",
-          "value": 86.65
-        },
-        {
-          "date": "2026-08-06",
-          "value": 89.65
-        },
-        {
-          "date": "2026-08-07",
-          "value": 87.62
-        },
-        {
-          "date": "2026-08-10",
-          "value": 92.74
-        },
         {
           "date": "2026-08-11",
           "value": 93.26
@@ -720,29 +700,49 @@
         {
           "date": "2026-09-15",
           "value": 130.8
+        },
+        {
+          "date": "2026-09-16",
+          "value": 127.84
+        },
+        {
+          "date": "2026-09-17",
+          "value": 121.18
+        },
+        {
+          "date": "2026-09-18",
+          "value": 119.66
+        },
+        {
+          "date": "2026-09-21",
+          "value": 116.15
+        },
+        {
+          "date": "2026-09-22",
+          "value": 114.89
         }
       ],
       "details": {},
-      "raw_sha256": "29783075f33251bfa2789e0895aa384cbd2e4926618e467f6e84551f562fd8da"
+      "raw_sha256": "fc3ab55170885e666085c1bdcb9ecf864826055d6370b305c6f8cb1b3e34edd0"
     },
     {
       "id": "gold",
       "label": "黃金現貨參考價",
       "group": "global",
       "unit": "USD / oz",
-      "value": 4315.100098,
-      "observed_at": "2026-09-23",
-      "session": "第三方 XAU/USD · 2026-09-23T10:00:11+00:00",
+      "value": 4290.100098,
+      "observed_at": "2026-09-24",
+      "session": "第三方 XAU/USD · 2026-09-23T23:59:42+00:00",
       "source_id": "goldapi",
       "source_url": "https://api.gold-api.com/price/XAU",
-      "fetched_at": "2026-09-23T18:00:18+08:00",
+      "fetched_at": "2026-09-24T08:00:04+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 0,
       "max_age_days": 2,
-      "delta": -0.5026586846043402,
+      "delta": -0.5793608359534241,
       "change_kind": "percent",
-      "previous_date": "2026-09-22",
+      "previous_date": "2026-09-23",
       "note": "Gold API 免費第三方報價，非 LBMA 定盤價；上游來源未逐筆公開，需與券商報價覆核。日變化是本系統每日取樣差，不是交易所官方收盤漲跌。",
       "history": [
         {
@@ -776,15 +776,19 @@
         {
           "date": "2026-09-23",
           "value": 4315.100098
+        },
+        {
+          "date": "2026-09-24",
+          "value": 4290.100098
         }
       ],
       "details": {
-        "source_timestamp": "2026-09-23T10:00:11+00:00",
+        "source_timestamp": "2026-09-23T23:59:42+00:00",
         "provider": "gold-api.com",
         "terms_url": "https://gold-api.com/terms",
         "quote_kind": "third_party_indicative_spot"
       },
-      "raw_sha256": "4b206b3a3ecf47bf92a5166aee9cde4be6c6bdafa5999d0dcbe562f6c2e611aa"
+      "raw_sha256": "2a9d823f81f814b9c9683a1a347eaac5dc561cd2f93c78ae73f0e1186d0a589a"
     },
     {
       "id": "foreign_long",
@@ -796,10 +800,10 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 422.0,
       "change_kind": "absolute",
@@ -844,10 +848,10 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 1909.0,
       "change_kind": "absolute",
@@ -892,10 +896,10 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -1487.0,
       "change_kind": "absolute",
@@ -935,19 +939,19 @@
       "label": "Put / Call 未平倉比",
       "group": "taiwan",
       "unit": "%",
-      "value": 87.33,
-      "observed_at": "2026-09-22",
+      "value": 79.83,
+      "observed_at": "2026-09-23",
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": -8.870000000000005,
+      "delta": -7.5,
       "change_kind": "absolute",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。",
       "history": [
         {
@@ -1057,29 +1061,33 @@
         {
           "date": "2026-09-22",
           "value": 87.33
+        },
+        {
+          "date": "2026-09-23",
+          "value": 79.83
         }
       ],
       "details": {},
-      "raw_sha256": "2681e3be37e48dc4d41b095b1024b9c54a84caa82998ea3b358edb74cd71f6ef"
+      "raw_sha256": "701e5e2df05a439703fb1a642e831fe99d6bfbe26e37c3e183c2c3e74137d2d1"
     },
     {
       "id": "call_oi",
       "label": "Call 未平倉",
       "group": "taiwan",
       "unit": "口",
-      "value": 88093.0,
-      "observed_at": "2026-09-22",
+      "value": 48680.0,
+      "observed_at": "2026-09-23",
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": 26641.0,
+      "delta": -39413.0,
       "change_kind": "absolute",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。",
       "history": [
         {
@@ -1189,29 +1197,33 @@
         {
           "date": "2026-09-22",
           "value": 88093.0
+        },
+        {
+          "date": "2026-09-23",
+          "value": 48680.0
         }
       ],
       "details": {},
-      "raw_sha256": "2681e3be37e48dc4d41b095b1024b9c54a84caa82998ea3b358edb74cd71f6ef"
+      "raw_sha256": "701e5e2df05a439703fb1a642e831fe99d6bfbe26e37c3e183c2c3e74137d2d1"
     },
     {
       "id": "put_oi",
       "label": "Put 未平倉",
       "group": "taiwan",
       "unit": "口",
-      "value": 76931.0,
-      "observed_at": "2026-09-22",
+      "value": 38859.0,
+      "observed_at": "2026-09-23",
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": 17814.0,
+      "delta": -38072.0,
       "change_kind": "absolute",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。",
       "history": [
         {
@@ -1321,10 +1333,14 @@
         {
           "date": "2026-09-22",
           "value": 76931.0
+        },
+        {
+          "date": "2026-09-23",
+          "value": 38859.0
         }
       ],
       "details": {},
-      "raw_sha256": "2681e3be37e48dc4d41b095b1024b9c54a84caa82998ea3b358edb74cd71f6ef"
+      "raw_sha256": "701e5e2df05a439703fb1a642e831fe99d6bfbe26e37c3e183c2c3e74137d2d1"
     },
     {
       "id": "foreign_call",
@@ -1333,7 +1349,7 @@
       "unit": "口",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "session": null,
       "source_id": "calls",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
@@ -1350,7 +1366,7 @@
       "unit": "口",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "session": null,
       "source_id": "calls",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
@@ -1370,10 +1386,10 @@
       "session": "盤後 · 歸屬交易日 2026-09-22",
       "source_id": "night",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyMarketReportFut",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 1.51,
       "change_kind": "percent",
@@ -1398,25 +1414,21 @@
       "label": "USD / TWD 參考匯率",
       "group": "taiwan",
       "unit": "TWD",
-      "value": 31.708,
-      "observed_at": "2026-09-22",
+      "value": 31.716,
+      "observed_at": "2026-09-23",
       "session": "期交所收盤洗價參考匯率",
       "source_id": "fx",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": -0.1574406448768828,
+      "delta": 0.025230225810535245,
       "change_kind": "percent",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "用於期交所洗價與保證金計算，非央行銀行間收盤匯率。",
       "history": [
-        {
-          "date": "2026-08-12",
-          "value": 32.246
-        },
         {
           "date": "2026-08-13",
           "value": 32.168
@@ -1532,35 +1544,35 @@
         {
           "date": "2026-09-22",
           "value": 31.708
+        },
+        {
+          "date": "2026-09-23",
+          "value": 31.716
         }
       ],
       "details": {},
-      "raw_sha256": "52e1e9781fd9aef3764d3f150f33914e9f56a4066166e5141e934584ce4eaef4"
+      "raw_sha256": "e1c52fcdfe4c6fb45465c193459831388c59f841b9e66e06ecc4c162dc26cb7a"
     },
     {
       "id": "usdhkd",
       "label": "USD / HKD 參考匯率",
       "group": "taiwan",
       "unit": "HKD",
-      "value": 7.84315,
-      "observed_at": "2026-09-22",
+      "value": 7.8434,
+      "observed_at": "2026-09-23",
       "session": "期交所收盤洗價參考匯率",
       "source_id": "fx",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": -0.027404943086950517,
+      "delta": 0.0031874948203336473,
       "change_kind": "percent",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "用於期交所洗價與保證金計算，非央行銀行間收盤匯率。",
       "history": [
-        {
-          "date": "2026-08-12",
-          "value": 7.84705
-        },
         {
           "date": "2026-08-13",
           "value": 7.84625
@@ -1676,10 +1688,14 @@
         {
           "date": "2026-09-22",
           "value": 7.84315
+        },
+        {
+          "date": "2026-09-23",
+          "value": 7.8434
         }
       ],
       "details": {},
-      "raw_sha256": "52e1e9781fd9aef3764d3f150f33914e9f56a4066166e5141e934584ce4eaef4"
+      "raw_sha256": "e1c52fcdfe4c6fb45465c193459831388c59f841b9e66e06ecc4c162dc26cb7a"
     },
     {
       "id": "spot",
@@ -1691,10 +1707,10 @@
       "session": "上市市場收盤 · 不含外資自營商",
       "source_id": "spot",
       "source_url": "https://www.twse.com.tw/fund/BFI82U?response=json",
-      "fetched_at": "2026-09-23T18:00:03+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 0,
+      "age_days": 1,
       "max_age_days": 4,
       "delta": -80.07563926,
       "change_kind": "absolute",
@@ -1727,26 +1743,26 @@
         }
       ],
       "details": {},
-      "raw_sha256": "719831be0cd02686c3180b8200695fde35da4c8f3f6f836c95dff8b5bbb225cd"
+      "raw_sha256": "a2dbe6bb1bcdd01c3f4330e382f4ca10983d3c2c064fbf70d10a6196ba78c72b"
     },
     {
       "id": "lending_balance",
       "label": "借券賣出餘額",
       "group": "taiwan",
       "unit": "億股",
-      "value": 161.77498889,
-      "observed_at": "2026-09-22",
+      "value": 161.71693652,
+      "observed_at": "2026-09-23",
       "session": "上市證券借券賣出 · 股數合計",
       "source_id": "lending",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
-      "fetched_at": "2026-09-23T18:00:04+08:00",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": -0.3618560799999955,
+      "delta": -0.05805237000001284,
       "change_kind": "absolute",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "借券賣出部位，不是全部借券餘額；包含 ETF，不能以單日增加直接判空。",
       "history": [
         {
@@ -1772,6 +1788,10 @@
         {
           "date": "2026-09-22",
           "value": 161.77498889
+        },
+        {
+          "date": "2026-09-23",
+          "value": 161.71693652
         }
       ],
       "details": {
@@ -1779,78 +1799,78 @@
           {
             "code": "3481",
             "name": "群創",
-            "balance_shares": 788795000.0
+            "balance_shares": 798167000.0
           },
           {
             "code": "2409",
             "name": "友達",
-            "balance_shares": 651102000.0
+            "balance_shares": 634835000.0
           },
           {
             "code": "2887",
             "name": "台新新光金",
-            "balance_shares": 499383852.0
+            "balance_shares": 506791852.0
           },
           {
             "code": "00685L",
             "name": "群益臺灣加權正2",
-            "balance_shares": 488913000.0
+            "balance_shares": 488384000.0
           },
           {
             "code": "2002",
             "name": "中鋼",
-            "balance_shares": 379606161.0
+            "balance_shares": 387949161.0
           },
           {
             "code": "00631L",
             "name": "元大台灣50正2",
-            "balance_shares": 306798000.0
+            "balance_shares": 305320000.0
           },
           {
             "code": "2880",
             "name": "華南金",
-            "balance_shares": 290214365.0
+            "balance_shares": 291518365.0
           },
           {
             "code": "2353",
             "name": "宏碁",
-            "balance_shares": 246937175.0
+            "balance_shares": 247762175.0
           },
           {
             "code": "00403A",
             "name": "主動統一升級50",
-            "balance_shares": 212277000.0
+            "balance_shares": 211970000.0
           },
           {
             "code": "2891",
             "name": "中信金",
-            "balance_shares": 203432660.0
+            "balance_shares": 204239660.0
           }
         ],
-        "top10_share_percent": 25.142695053842324,
+        "top10_share_percent": 25.210329237814825,
         "coverage": "上市證券，包含 ETF；股數集中度不是市值集中度",
-        "daily_balance_change": -36185608.0
+        "daily_balance_change": -5805237.0
       },
-      "raw_sha256": "5c88df0713c585874b1d73a9c229b26760c6c169842428daf1a096a3393dd1c7"
+      "raw_sha256": "da06a45fe98b6db675dff70f51c61aabee80b1b7338ef5e5f1627235ca72a566"
     },
     {
       "id": "lending_sell",
       "label": "借券當日賣出",
       "group": "taiwan",
       "unit": "億股",
-      "value": 2.21495,
-      "observed_at": "2026-09-22",
+      "value": 2.27086,
+      "observed_at": "2026-09-23",
       "session": "上市證券借券賣出 · 股數合計",
       "source_id": "lending",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
-      "fetched_at": "2026-09-23T18:00:04+08:00",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": 0.31997999999999993,
+      "delta": 0.055909999999999904,
       "change_kind": "absolute",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "借券賣出部位，不是全部借券餘額；包含 ETF，不能以單日增加直接判空。",
       "history": [
         {
@@ -1876,6 +1896,10 @@
         {
           "date": "2026-09-22",
           "value": 2.21495
+        },
+        {
+          "date": "2026-09-23",
+          "value": 2.27086
         }
       ],
       "details": {
@@ -1883,78 +1907,78 @@
           {
             "code": "3481",
             "name": "群創",
-            "balance_shares": 788795000.0
+            "balance_shares": 798167000.0
           },
           {
             "code": "2409",
             "name": "友達",
-            "balance_shares": 651102000.0
+            "balance_shares": 634835000.0
           },
           {
             "code": "2887",
             "name": "台新新光金",
-            "balance_shares": 499383852.0
+            "balance_shares": 506791852.0
           },
           {
             "code": "00685L",
             "name": "群益臺灣加權正2",
-            "balance_shares": 488913000.0
+            "balance_shares": 488384000.0
           },
           {
             "code": "2002",
             "name": "中鋼",
-            "balance_shares": 379606161.0
+            "balance_shares": 387949161.0
           },
           {
             "code": "00631L",
             "name": "元大台灣50正2",
-            "balance_shares": 306798000.0
+            "balance_shares": 305320000.0
           },
           {
             "code": "2880",
             "name": "華南金",
-            "balance_shares": 290214365.0
+            "balance_shares": 291518365.0
           },
           {
             "code": "2353",
             "name": "宏碁",
-            "balance_shares": 246937175.0
+            "balance_shares": 247762175.0
           },
           {
             "code": "00403A",
             "name": "主動統一升級50",
-            "balance_shares": 212277000.0
+            "balance_shares": 211970000.0
           },
           {
             "code": "2891",
             "name": "中信金",
-            "balance_shares": 203432660.0
+            "balance_shares": 204239660.0
           }
         ],
-        "top10_share_percent": 25.142695053842324,
+        "top10_share_percent": 25.210329237814825,
         "coverage": "上市證券，包含 ETF；股數集中度不是市值集中度",
-        "daily_balance_change": -36185608.0
+        "daily_balance_change": -5805237.0
       },
-      "raw_sha256": "5c88df0713c585874b1d73a9c229b26760c6c169842428daf1a096a3393dd1c7"
+      "raw_sha256": "da06a45fe98b6db675dff70f51c61aabee80b1b7338ef5e5f1627235ca72a566"
     },
     {
       "id": "borrowing",
       "label": "上市櫃借券餘額",
       "group": "taiwan",
       "unit": "億股",
-      "value": 286.83411,
-      "observed_at": "2026-09-22",
+      "value": 287.66616,
+      "observed_at": "2026-09-23",
       "session": "上市櫃借券日終餘額",
       "source_id": "borrowing",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT72U?response=json",
-      "fetched_at": "2026-09-23T18:00:06+08:00",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 1,
       "max_age_days": 4,
-      "delta": -1.74221,
+      "delta": 0.8320499999999811,
       "change_kind": "absolute",
-      "previous_date": "2026-09-21",
+      "previous_date": "2026-09-22",
       "note": "全部借券與借券賣出分開；借券也可能用於避險、套利或履約。",
       "history": [
         {
@@ -1980,122 +2004,380 @@
         {
           "date": "2026-09-22",
           "value": 286.83411
+        },
+        {
+          "date": "2026-09-23",
+          "value": 287.66616
         }
       ],
       "details": {
         "coverage": "證交所借券系統＋證商/證金營業處所，上市櫃證券含 ETF",
-        "top10_market_value_percent": 28.063791250113486,
+        "top10_market_value_percent": 28.41248642840009,
         "top10": [
           {
             "code": "2330",
             "name": "台積電",
             "market": "集中市場",
-            "balance_shares": 158966000.0,
-            "market_value_twd": 391056360000.0
+            "balance_shares": 167053000.0,
+            "market_value_twd": 417632500000.0
           },
           {
             "code": "2454",
             "name": "聯發科",
             "market": "集中市場",
-            "balance_shares": 27158000.0,
-            "market_value_twd": 140678440000.0
+            "balance_shares": 27384000.0,
+            "market_value_twd": 141986040000.0
           },
           {
             "code": "2308",
             "name": "台達電",
             "market": "集中市場",
-            "balance_shares": 50490000.0,
-            "market_value_twd": 95931000000.0
+            "balance_shares": 47013000.0,
+            "market_value_twd": 89324700000.0
           },
           {
             "code": "3037",
             "name": "欣興",
             "market": "集中市場",
-            "balance_shares": 71520000.0,
-            "market_value_twd": 80102400000.0
-          },
-          {
-            "code": "3711",
-            "name": "日月光投控",
-            "market": "集中市場",
-            "balance_shares": 81571000.0,
-            "market_value_twd": 56528703000.0
-          },
-          {
-            "code": "3231",
-            "name": "緯創",
-            "market": "集中市場",
-            "balance_shares": 303908000.0,
-            "market_value_twd": 54855394000.0
+            "balance_shares": 74141000.0,
+            "market_value_twd": 86003560000.0
           },
           {
             "code": "2303",
             "name": "聯電",
             "market": "集中市場",
-            "balance_shares": 335127000.0,
-            "market_value_twd": 53620320000.0
-          },
-          {
-            "code": "2327",
-            "name": "國巨*",
-            "market": "集中市場",
-            "balance_shares": 87814000.0,
-            "market_value_twd": 50141794000.0
+            "balance_shares": 334524000.0,
+            "market_value_twd": 53523840000.0
           },
           {
             "code": "2383",
             "name": "台光電",
             "market": "集中市場",
-            "balance_shares": 9262000.0,
-            "market_value_twd": 45013320000.0
+            "balance_shares": 10507000.0,
+            "market_value_twd": 52745140000.0
           },
           {
-            "code": "2382",
-            "name": "廣達",
+            "code": "3711",
+            "name": "日月光投控",
             "market": "集中市場",
-            "balance_shares": 130289000.0,
-            "market_value_twd": 44558838000.0
+            "balance_shares": 74827000.0,
+            "market_value_twd": 51855111000.0
+          },
+          {
+            "code": "2327",
+            "name": "國巨*",
+            "market": "集中市場",
+            "balance_shares": 85654000.0,
+            "market_value_twd": 49079742000.0
+          },
+          {
+            "code": "3231",
+            "name": "緯創",
+            "market": "集中市場",
+            "balance_shares": 264398000.0,
+            "market_value_twd": 47591640000.0
+          },
+          {
+            "code": "6669",
+            "name": "緯穎",
+            "market": "集中市場",
+            "balance_shares": 21056000.0,
+            "market_value_twd": 44322880000.0
           }
         ],
-        "borrowed_today_shares": 670496000.0,
-        "returned_today_shares": 844717000.0,
-        "daily_balance_change_shares": -174221000.0
+        "borrowed_today_shares": 850649000.0,
+        "returned_today_shares": 767444000.0,
+        "daily_balance_change_shares": 83205000.0
       },
-      "raw_sha256": "4e1b9dc5cd935cc3a417b767dc2227153e002d759595ff7d3b711a3c257b675d"
+      "raw_sha256": "ac4d5f1967d0daa82c636157dbd8686178fa183bf083be1c7965d798e3b37afc"
     },
     {
       "id": "hibor_on",
       "label": "HIBOR 隔夜",
       "group": "taiwan",
       "unit": "%",
-      "value": null,
-      "observed_at": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00",
-      "session": null,
+      "value": 4.09857,
+      "observed_at": "2026-08-31",
+      "session": "香港 HIBOR fixing 日資料",
       "source_id": "hibor",
       "source_url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "status": "error",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
+      "status": "stale",
       "quality": "direct",
-      "delta": null,
-      "history": [],
-      "note": "本次取得失敗；不以舊值冒充最新。"
+      "age_days": 24,
+      "max_age_days": 4,
+      "delta": 67.393,
+      "change_kind": "bp",
+      "previous_date": "2026-08-28",
+      "note": "API 每日序列的發布可能落後；只作香港港元流動性輔助。",
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 2.35857
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.32393
+        },
+        {
+          "date": "2026-07-23",
+          "value": 2.44095
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2.40571
+        },
+        {
+          "date": "2026-07-27",
+          "value": 2.35405
+        },
+        {
+          "date": "2026-07-28",
+          "value": 2.45333
+        },
+        {
+          "date": "2026-07-29",
+          "value": 2.45262
+        },
+        {
+          "date": "2026-07-30",
+          "value": 2.43417
+        },
+        {
+          "date": "2026-07-31",
+          "value": 2.52536
+        },
+        {
+          "date": "2026-08-03",
+          "value": 2.35405
+        },
+        {
+          "date": "2026-08-04",
+          "value": 2.35262
+        },
+        {
+          "date": "2026-08-05",
+          "value": 2.35262
+        },
+        {
+          "date": "2026-08-06",
+          "value": 2.32536
+        },
+        {
+          "date": "2026-08-07",
+          "value": 2.28982
+        },
+        {
+          "date": "2026-08-10",
+          "value": 2.24976
+        },
+        {
+          "date": "2026-08-11",
+          "value": 2.20357
+        },
+        {
+          "date": "2026-08-12",
+          "value": 2.09762
+        },
+        {
+          "date": "2026-08-13",
+          "value": 2.08393
+        },
+        {
+          "date": "2026-08-14",
+          "value": 2.1725
+        },
+        {
+          "date": "2026-08-17",
+          "value": 2.12321
+        },
+        {
+          "date": "2026-08-18",
+          "value": 2.31286
+        },
+        {
+          "date": "2026-08-19",
+          "value": 2.52321
+        },
+        {
+          "date": "2026-08-20",
+          "value": 2.8919
+        },
+        {
+          "date": "2026-08-21",
+          "value": 2.6775
+        },
+        {
+          "date": "2026-08-24",
+          "value": 2.75566
+        },
+        {
+          "date": "2026-08-25",
+          "value": 3.125
+        },
+        {
+          "date": "2026-08-26",
+          "value": 3.13976
+        },
+        {
+          "date": "2026-08-27",
+          "value": 3.19071
+        },
+        {
+          "date": "2026-08-28",
+          "value": 3.42464
+        },
+        {
+          "date": "2026-08-31",
+          "value": 4.09857
+        }
+      ],
+      "details": {},
+      "raw_sha256": "a6098254c234e02ab0c4c4221fea35d9086d590a9e647c3bf251c4b0c75ab943"
     },
     {
       "id": "hibor_1m",
       "label": "HIBOR 1 個月",
       "group": "taiwan",
       "unit": "%",
-      "value": null,
-      "observed_at": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00",
-      "session": null,
+      "value": 2.85,
+      "observed_at": "2026-08-31",
+      "session": "香港 HIBOR fixing 日資料",
       "source_id": "hibor",
       "source_url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "status": "error",
+      "fetched_at": "2026-09-24T08:00:03+08:00",
+      "status": "stale",
       "quality": "direct",
-      "delta": null,
-      "history": [],
-      "note": "本次取得失敗；不以舊值冒充最新。"
+      "age_days": 24,
+      "max_age_days": 4,
+      "delta": 0.0,
+      "change_kind": "bp",
+      "previous_date": "2026-08-28",
+      "note": "API 每日序列的發布可能落後；只作香港港元流動性輔助。",
+      "history": [
+        {
+          "date": "2026-07-21",
+          "value": 2.71548
+        },
+        {
+          "date": "2026-07-22",
+          "value": 2.67988
+        },
+        {
+          "date": "2026-07-23",
+          "value": 2.7147
+        },
+        {
+          "date": "2026-07-24",
+          "value": 2.70619
+        },
+        {
+          "date": "2026-07-27",
+          "value": 2.72333
+        },
+        {
+          "date": "2026-07-28",
+          "value": 2.71875
+        },
+        {
+          "date": "2026-07-29",
+          "value": 2.69268
+        },
+        {
+          "date": "2026-07-30",
+          "value": 2.67536
+        },
+        {
+          "date": "2026-07-31",
+          "value": 2.67536
+        },
+        {
+          "date": "2026-08-03",
+          "value": 2.65589
+        },
+        {
+          "date": "2026-08-04",
+          "value": 2.62679
+        },
+        {
+          "date": "2026-08-05",
+          "value": 2.6275
+        },
+        {
+          "date": "2026-08-06",
+          "value": 2.62702
+        },
+        {
+          "date": "2026-08-07",
+          "value": 2.61327
+        },
+        {
+          "date": "2026-08-10",
+          "value": 2.61327
+        },
+        {
+          "date": "2026-08-11",
+          "value": 2.61399
+        },
+        {
+          "date": "2026-08-12",
+          "value": 2.60619
+        },
+        {
+          "date": "2026-08-13",
+          "value": 2.59292
+        },
+        {
+          "date": "2026-08-14",
+          "value": 2.55476
+        },
+        {
+          "date": "2026-08-17",
+          "value": 2.55476
+        },
+        {
+          "date": "2026-08-18",
+          "value": 2.57655
+        },
+        {
+          "date": "2026-08-19",
+          "value": 2.62655
+        },
+        {
+          "date": "2026-08-20",
+          "value": 2.68
+        },
+        {
+          "date": "2026-08-21",
+          "value": 2.68577
+        },
+        {
+          "date": "2026-08-24",
+          "value": 2.69452
+        },
+        {
+          "date": "2026-08-25",
+          "value": 2.78256
+        },
+        {
+          "date": "2026-08-26",
+          "value": 2.79411
+        },
+        {
+          "date": "2026-08-27",
+          "value": 2.78821
+        },
+        {
+          "date": "2026-08-28",
+          "value": 2.85
+        },
+        {
+          "date": "2026-08-31",
+          "value": 2.85
+        }
+      ],
+      "details": {},
+      "raw_sha256": "a6098254c234e02ab0c4c4221fea35d9086d590a9e647c3bf251c4b0c75ab943"
     },
     {
       "id": "eurusd",
@@ -2107,10 +2389,10 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "stale",
       "quality": "proxy",
-      "age_days": 5,
+      "age_days": 6,
       "max_age_days": 4,
       "delta": -0.13067340360657376,
       "change_kind": "percent",
@@ -2250,10 +2532,10 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "stale",
       "quality": "proxy",
-      "age_days": 5,
+      "age_days": 6,
       "max_age_days": 4,
       "delta": 0.654475457170367,
       "change_kind": "percent",
@@ -2393,10 +2675,10 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "status": "stale",
       "quality": "proxy",
-      "age_days": 5,
+      "age_days": 6,
       "max_age_days": 4,
       "delta": 0.5440215580313712,
       "change_kind": "percent",
@@ -2533,7 +2815,7 @@
       "unit": "USD / tonne",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "session": null,
       "source_id": "copper",
       "source_url": "https://www.lme.com/market-data/market-data-licensing",
@@ -2550,7 +2832,7 @@
       "unit": "指數",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00",
+      "fetched_at": "2026-09-24T08:00:02+08:00",
       "session": null,
       "source_id": "dxy",
       "source_url": "https://www.ice.com/fixed-income-data-services/index-solutions/currency-indices",
@@ -2570,8 +2852,8 @@
       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
       "status": "ready",
       "error": null,
-      "sha256": "fd9bcf2168a70ca6ff18154fd65062d8ed6d0f041b2373cfb7347fe064a8ae90",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "sha256": "0338ed8e89c8b2a843d23aa4c24221f544e485f33a08eaa9574f2fc8c856ed48",
+      "fetched_at": "2026-09-24T08:00:03+08:00"
     },
     {
       "id": "ecb",
@@ -2582,7 +2864,7 @@
       "status": "error",
       "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
       "sha256": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00"
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "vix",
@@ -2593,7 +2875,7 @@
       "status": "ready",
       "error": null,
       "sha256": "c1fa255f4e659d217f8cf244310a126517dc8f832568afe6be8184f46ca6dae7",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "brent",
@@ -2601,10 +2883,10 @@
       "coverage": "Brent 現貨日價（發布有落差）",
       "channel": "CSV",
       "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU",
-      "status": "stale",
+      "status": "ready",
       "error": null,
-      "sha256": "29783075f33251bfa2789e0895aa384cbd2e4926618e467f6e84551f562fd8da",
-      "fetched_at": "2026-09-23T18:00:02+08:00"
+      "sha256": "fc3ab55170885e666085c1bdcb9ecf864826055d6370b305c6f8cb1b3e34edd0",
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "goldapi",
@@ -2614,8 +2896,8 @@
       "url": "https://api.gold-api.com/price/XAU",
       "status": "ready",
       "error": null,
-      "sha256": "4b206b3a3ecf47bf92a5166aee9cde4be6c6bdafa5999d0dcbe562f6c2e611aa",
-      "fetched_at": "2026-09-23T18:00:18+08:00"
+      "sha256": "2a9d823f81f814b9c9683a1a347eaac5dc561cd2f93c78ae73f0e1186d0a589a",
+      "fetched_at": "2026-09-24T08:00:04+08:00"
     },
     {
       "id": "foreign",
@@ -2626,7 +2908,7 @@
       "status": "ready",
       "error": null,
       "sha256": "511b5ee98be79232fd4138f06dd8517378548fa109b4c18f8620d28b804841df",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "pcr",
@@ -2636,8 +2918,8 @@
       "url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
       "status": "ready",
       "error": null,
-      "sha256": "2681e3be37e48dc4d41b095b1024b9c54a84caa82998ea3b358edb74cd71f6ef",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "sha256": "701e5e2df05a439703fb1a642e831fe99d6bfbe26e37c3e183c2c3e74137d2d1",
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "calls",
@@ -2647,8 +2929,8 @@
       "url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
       "status": "error",
       "error": "Expecting value: line 1 column 1 (char 0)",
-      "sha256": "e688cfbcd29abe3f09a731375a00014592d7541e35eedb1ece8951bc3e5d4a34",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "sha256": "e967ddaa0a692fc491944e25171ef1d562b01788108d816401edbac1dfaf29bc",
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "night",
@@ -2659,7 +2941,7 @@
       "status": "ready",
       "error": null,
       "sha256": "39364ab168b44cf60a09003b0173815c4dc1b059e425cb286ec591d10ad4678e",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "fx",
@@ -2669,8 +2951,8 @@
       "url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
       "status": "ready",
       "error": null,
-      "sha256": "52e1e9781fd9aef3764d3f150f33914e9f56a4066166e5141e934584ce4eaef4",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "sha256": "e1c52fcdfe4c6fb45465c193459831388c59f841b9e66e06ecc4c162dc26cb7a",
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "spot",
@@ -2680,8 +2962,8 @@
       "url": "https://www.twse.com.tw/fund/BFI82U?response=json",
       "status": "ready",
       "error": null,
-      "sha256": "719831be0cd02686c3180b8200695fde35da4c8f3f6f836c95dff8b5bbb225cd",
-      "fetched_at": "2026-09-23T18:00:03+08:00"
+      "sha256": "a2dbe6bb1bcdd01c3f4330e382f4ca10983d3c2c064fbf70d10a6196ba78c72b",
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     },
     {
       "id": "lending",
@@ -2691,8 +2973,8 @@
       "url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
       "status": "ready",
       "error": null,
-      "sha256": "5c88df0713c585874b1d73a9c229b26760c6c169842428daf1a096a3393dd1c7",
-      "fetched_at": "2026-09-23T18:00:04+08:00"
+      "sha256": "da06a45fe98b6db675dff70f51c61aabee80b1b7338ef5e5f1627235ca72a566",
+      "fetched_at": "2026-09-24T08:00:03+08:00"
     },
     {
       "id": "borrowing",
@@ -2702,8 +2984,8 @@
       "url": "https://www.twse.com.tw/exchangeReport/TWT72U?response=json",
       "status": "ready",
       "error": null,
-      "sha256": "4e1b9dc5cd935cc3a417b767dc2227153e002d759595ff7d3b711a3c257b675d",
-      "fetched_at": "2026-09-23T18:00:06+08:00"
+      "sha256": "ac4d5f1967d0daa82c636157dbd8686178fa183bf083be1c7965d798e3b37afc",
+      "fetched_at": "2026-09-24T08:00:03+08:00"
     },
     {
       "id": "hibor",
@@ -2711,10 +2993,10 @@
       "coverage": "HIBOR fixing O/N、1M",
       "channel": "JSON",
       "url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "status": "error",
-      "error": "TimeoutError: The read operation timed out",
-      "sha256": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00"
+      "status": "stale",
+      "error": null,
+      "sha256": "a6098254c234e02ab0c4c4221fea35d9086d590a9e647c3bf251c4b0c75ab943",
+      "fetched_at": "2026-09-24T08:00:03+08:00"
     },
     {
       "id": "fedfx",
@@ -2724,7 +3006,7 @@
       "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
       "status": "stale",
       "sha256": "b95f361f5340f98ac88490ddfdc2fc4463ca6b39279634f279d4dec9fb68b735",
-      "fetched_at": "2026-09-23T18:01:23+08:00"
+      "fetched_at": "2026-09-24T08:01:15+08:00"
     },
     {
       "id": "copper",
@@ -2748,11 +3030,11 @@
       "coverage": "戰爭、制裁、關稅、選舉與央行事件",
       "channel": "JSON",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(war%20OR%20conflict%20OR%20sanctions%20OR%20tariff%20OR%20election%20OR%20central%20bank)&mode=artlist&maxrecords=40&format=json&sort=datedesc",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests",
-      "rows": 0,
-      "sha256": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00"
+      "status": "ready",
+      "error": null,
+      "rows": 12,
+      "sha256": "8cdf0f66894e3c558c338465c3221399f6494afecfe636d144994ffc5169323d",
+      "fetched_at": "2026-09-24T08:00:44+08:00"
     },
     {
       "id": "commodities_news",
@@ -2761,13 +3043,158 @@
       "channel": "JSON",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(gold%20OR%20copper%20OR%20oil%20OR%20commodity)%20(supply%20OR%20demand%20OR%20mine%20OR%20shipping)&mode=artlist&maxrecords=40&format=json&sort=datedesc",
       "status": "error",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests",
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
       "rows": 0,
       "sha256": null,
-      "fetched_at": "2026-09-23T18:00:02+08:00"
+      "fetched_at": "2026-09-24T08:00:02+08:00"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "id": "b3b32219fc3a96cb",
+      "category": "政經與衝突",
+      "title": "Water Quality Improves At NSW Beaches |",
+      "url": "https://www.miragenews.com/water-quality-improves-at-nsw-beaches-1749233/",
+      "domain": "miragenews.com",
+      "source_country": "United States",
+      "language": "English",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "cce8f3719c4596fb",
+      "category": "政經與衝突",
+      "title": "The Cats Cradles Boarding Cattery - Buy or Sell a united kingdom Business with Daltons Business",
+      "url": "https://www.daltonsbusiness.com/listing/the-cats-cradles-boarding-cattery-for-sale-DB2529698/",
+      "domain": "daltonsbusiness.com",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "f4caad9a9f5989a1",
+      "category": "政經與衝突",
+      "title": "IPTV , 3년 약정만 ?… 온라인 가입 굴레 사라진다",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01761366645583400&mediaCodeNo=257",
+      "domain": "edaily.co.kr",
+      "source_country": "South Korea",
+      "language": "Korean",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "089cca603a521ab4",
+      "category": "政經與衝突",
+      "title": "EUA convidam Putin para cúpula do G20 na Flórida ; Kremlin avalia",
+      "url": "https://www.gazetadopovo.com.br/mundo/eua-convidam-putin-para-cupula-do-g20-na-florida-e-kremlin-diz-que-avalia-participacao/",
+      "domain": "gazetadopovo.com.br",
+      "source_country": "Brazil",
+      "language": "Portuguese",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "6372cc5b04803f78",
+      "category": "政經與衝突",
+      "title": "Diario Co Latino - Informándote con Credibilidad",
+      "url": "https://www.diariocolatino.com/tension-en-vamos-por-acercamientos-con-el-movimiento-de-izquierda-salvadorena/",
+      "domain": "diariocolatino.com",
+      "source_country": "El Salvador",
+      "language": "Spanish",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "0529b1c41b5f5119",
+      "category": "政經與衝突",
+      "title": "Pacificando por dentro , iluminando por fora | Papo das 9 # 907",
+      "url": "https://mundosustentavel.com.br/papo-das-9-907-pacificando-por-dentro-iluminando-por-fora/",
+      "domain": "mundosustentavel.com.br",
+      "source_country": "Brazil",
+      "language": "Portuguese",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "3ae4db1328653bbc",
+      "category": "政經與衝突",
+      "title": "Nicolás Redondo : Zapatero ahora dice que él nunca ha sabido el valor de las joyas , pero las ha llevado de caja fuerte en caja fuerte , está retratado por deficiencias , supongo , intelectuales",
+      "url": "https://www.cope.es/programas/la-linterna/audios/nicolas-redondo-zapatero-dice-nunca-sabido-valor-joyas-llevado-caja-fuerte-caja-fuerte-retratado-deficiencias-supongo-intelectuales-20260924_3442575.html",
+      "domain": "cope.es",
+      "source_country": "Spain",
+      "language": "Spanish",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "32d9823e8a3f0a78",
+      "category": "政經與衝突",
+      "title": "ONZ : Nawrocki o imperialnej pysze Rosji , która w przeszłości prowadziła do dwóch wojen światowych ( aktualizacja )",
+      "url": "https://www.wnp.pl/rynki/onz-nawrocki-o-imperialnej-pysze-rosji-ktora-w-przeszlosci-prowadzila-do-dwoch-wojen-swiatowych-aktualizacja,1102200.html",
+      "domain": "wnp.pl",
+      "source_country": "Poland",
+      "language": "Polish",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "4a5b6688bfb38687",
+      "category": "政經與衝突",
+      "title": "RedeTV ! Em rede com você",
+      "url": "https://www.redetv.uol.com.br/jornalismo/justica/caso-master-vorcaro-tem-depoimento-a-policia-federal-sobre-o-brb-adiado",
+      "domain": "redetv.uol.com.br",
+      "source_country": "Brazil",
+      "language": "Portuguese",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "0ab63f544e3b3ede",
+      "category": "政經與衝突",
+      "title": "Nucleare , passa la legge : tempi lunghi per i reattori . Pichetto : « I nuovi impianti arriveranno nel 2033 »",
+      "url": "https://www.ilmessaggero.it/economia/nucleare_centrali_reattori_quando_cosa_cambia-9781555.html",
+      "domain": "ilmessaggero.it",
+      "source_country": "Italy",
+      "language": "Italian",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "958acd82b2ed04f6",
+      "category": "政經與衝突",
+      "title": "USA : Donald Trump powitał przywódcę Chin Xi Jinpinga , który przybył z wizytą państwową",
+      "url": "https://www.wnp.pl/rynki/usa-donald-trump-powital-przywodce-chin-xi-jinpinga-ktory-przybyl-z-wizyta-panstwowa,1102201.html",
+      "domain": "wnp.pl",
+      "source_country": "Poland",
+      "language": "Polish",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "ce726935fb1335bf",
+      "category": "政經與衝突",
+      "title": "Marília Campos tem 13 % para o Senado de Minas ; Aécio , Viana e Sávio têm 10 %, aponta Quaest",
+      "url": "https://noticias.r7.com/eleicoes/2026/marilia-campos-tem-13-para-o-senado-de-minas-aecio-viana-e-savio-tem-10-aponta-quaest-23092026/",
+      "domain": "noticias.r7.com",
+      "source_country": "Brazil",
+      "language": "Portuguese",
+      "observed_at": "2026-09-23",
+      "fetched_at": "2026-09-24T08:00:44+08:00",
+      "source_id": "geopolitics"
+    }
+  ],
   "strategies": [
     {
       "id": "momentum",
@@ -2775,184 +3202,184 @@
       "definition": "成交額至少 1 億元，按當日漲幅排序",
       "results": [
         {
-          "code": "3443",
-          "name": "創意",
+          "code": "4770",
+          "name": "上品",
           "market": "TWSE",
-          "industry": "24",
-          "close": 8375.0,
-          "change": 760.0,
-          "change_percent": 9.9803,
-          "open": 8370.0,
-          "high": 8375.0,
-          "low": 8370.0,
-          "volume": 711474.0,
-          "amount": 5957804750.0,
-          "transactions": 5095.0,
-          "pe": 214.69,
-          "pb": 83.35,
-          "dividend_yield": 0.24
+          "industry": "21",
+          "close": 275.0,
+          "change": 25.0,
+          "change_percent": 10.0,
+          "open": 261.5,
+          "high": 275.0,
+          "low": 256.5,
+          "volume": 3344195.0,
+          "amount": 905066878.0,
+          "transactions": 4684.0,
+          "pe": 26.24,
+          "pb": 2.62,
+          "dividend_yield": 2.18
         },
         {
-          "code": "8996",
-          "name": "高力",
+          "code": "6426",
+          "name": "統新",
           "market": "TWSE",
-          "industry": "05",
-          "close": 1655.0,
-          "change": 150.0,
-          "change_percent": 9.9668,
-          "open": 1520.0,
-          "high": 1655.0,
-          "low": 1490.0,
-          "volume": 5780868.0,
-          "amount": 9175872030.0,
-          "transactions": 10490.0,
-          "pe": 111.45,
-          "pb": 30.05,
-          "dividend_yield": 0.28
+          "industry": "27",
+          "close": 391.5,
+          "change": 35.5,
+          "change_percent": 9.9719,
+          "open": 359.0,
+          "high": 391.5,
+          "low": 357.0,
+          "volume": 3158672.0,
+          "amount": 1207122463.0,
+          "transactions": 3168.0,
+          "pe": 98.86,
+          "pb": 15.1,
+          "dividend_yield": 0.13
+        },
+        {
+          "code": "2342",
+          "name": "茂矽",
+          "market": "TWSE",
+          "industry": "24",
+          "close": 46.35,
+          "change": 4.2,
+          "change_percent": 9.9644,
+          "open": 42.65,
+          "high": 46.35,
+          "low": 42.45,
+          "volume": 11049723.0,
+          "amount": 503313306.0,
+          "transactions": 5711.0,
+          "pe": null,
+          "pb": 3.17,
+          "dividend_yield": null
+        },
+        {
+          "code": "3653",
+          "name": "健策",
+          "market": "TWSE",
+          "industry": "28",
+          "close": 6410.0,
+          "change": 580.0,
+          "change_percent": 9.9485,
+          "open": 6005.0,
+          "high": 6410.0,
+          "low": 5930.0,
+          "volume": 1525519.0,
+          "amount": 9557795155.0,
+          "transactions": 10947.0,
+          "pe": 144.66,
+          "pb": 39.89,
+          "dividend_yield": 0.34
+        },
+        {
+          "code": "6526",
+          "name": "達發",
+          "market": "TWSE",
+          "industry": "24",
+          "close": 840.0,
+          "change": 76.0,
+          "change_percent": 9.9476,
+          "open": 777.0,
+          "high": 840.0,
+          "low": 761.0,
+          "volume": 4748267.0,
+          "amount": 3916585488.0,
+          "transactions": 10914.0,
+          "pe": 46.59,
+          "pb": 7.46,
+          "dividend_yield": 1.61
+        },
+        {
+          "code": "6205",
+          "name": "詮欣",
+          "market": "TWSE",
+          "industry": "28",
+          "close": 72.0,
+          "change": 6.5,
+          "change_percent": 9.9237,
+          "open": 66.1,
+          "high": 72.0,
+          "low": 66.1,
+          "volume": 4231383.0,
+          "amount": 301307133.0,
+          "transactions": 4273.0,
+          "pe": 31.58,
+          "pb": 2.22,
+          "dividend_yield": 2.08
+        },
+        {
+          "code": "1727",
+          "name": "中華化",
+          "market": "TWSE",
+          "industry": "21",
+          "close": 116.5,
+          "change": 10.5,
+          "change_percent": 9.9057,
+          "open": 105.0,
+          "high": 116.5,
+          "low": 103.0,
+          "volume": 21402346.0,
+          "amount": 2414755093.0,
+          "transactions": 13355.0,
+          "pe": 168.84,
+          "pb": 6.91,
+          "dividend_yield": 0.13
+        },
+        {
+          "code": "2104",
+          "name": "國際中橡",
+          "market": "TWSE",
+          "industry": "11",
+          "close": 11.65,
+          "change": 1.05,
+          "change_percent": 9.9057,
+          "open": 10.65,
+          "high": 11.65,
+          "low": 10.65,
+          "volume": 21035315.0,
+          "amount": 237648479.0,
+          "transactions": 4977.0,
+          "pe": null,
+          "pb": 0.49,
+          "dividend_yield": null
+        },
+        {
+          "code": "6933",
+          "name": "AMAX-KY",
+          "market": "TWSE",
+          "industry": "25",
+          "close": 350.0,
+          "change": 31.5,
+          "change_percent": 9.8901,
+          "open": 320.0,
+          "high": 350.0,
+          "low": 320.0,
+          "volume": 1318689.0,
+          "amount": 450617602.0,
+          "transactions": 1543.0,
+          "pe": 43.42,
+          "pb": 5.9,
+          "dividend_yield": 0.71
         },
         {
           "code": "3016",
           "name": "嘉晶",
           "market": "TWSE",
           "industry": "24",
-          "close": 132.5,
-          "change": 12.0,
-          "change_percent": 9.9585,
-          "open": 125.0,
-          "high": 132.5,
-          "low": 124.5,
-          "volume": 30369344.0,
-          "amount": 3962592045.0,
-          "transactions": 20785.0,
-          "pe": 110.42,
-          "pb": 7.39,
-          "dividend_yield": 0.38
-        },
-        {
-          "code": "3189",
-          "name": "景碩",
-          "market": "TWSE",
-          "industry": "24",
-          "close": 909.0,
-          "change": 82.0,
-          "change_percent": 9.9154,
-          "open": 875.0,
-          "high": 909.0,
-          "low": 875.0,
-          "volume": 29109027.0,
-          "amount": 26206915085.0,
-          "transactions": 52413.0,
-          "pe": 168.65,
-          "pb": 10.77,
-          "dividend_yield": 0.17
-        },
-        {
-          "code": "2241",
-          "name": "艾姆勒",
-          "market": "TWSE",
-          "industry": "12",
-          "close": 41.05,
-          "change": 3.7,
-          "change_percent": 9.9063,
-          "open": 38.0,
-          "high": 41.05,
-          "low": 36.85,
-          "volume": 6315136.0,
-          "amount": 249802352.0,
-          "transactions": 4586.0,
-          "pe": null,
-          "pb": 3.28,
-          "dividend_yield": null
-        },
-        {
-          "code": "8046",
-          "name": "南電",
-          "market": "TWSE",
-          "industry": "28",
-          "close": 1165.0,
-          "change": 105.0,
-          "change_percent": 9.9057,
-          "open": 1125.0,
-          "high": 1165.0,
-          "low": 1120.0,
-          "volume": 17065812.0,
-          "amount": 19757791920.0,
-          "transactions": 27464.0,
-          "pe": 136.9,
-          "pb": 15.28,
-          "dividend_yield": 0.17
-        },
-        {
-          "code": "2409",
-          "name": "友達",
-          "market": "TWSE",
-          "industry": "26",
-          "close": 36.65,
-          "change": 3.3,
-          "change_percent": 9.8951,
-          "open": 34.9,
-          "high": 36.65,
-          "low": 34.0,
-          "volume": 1162430621.0,
-          "amount": 42147480664.0,
-          "transactions": 236020.0,
-          "pe": 152.71,
-          "pb": 1.79,
-          "dividend_yield": 1.09
-        },
-        {
-          "code": "2030",
-          "name": "彰源",
-          "market": "TWSE",
-          "industry": "10",
-          "close": 27.25,
-          "change": 2.45,
-          "change_percent": 9.879,
-          "open": 24.3,
-          "high": 27.25,
-          "low": 24.3,
-          "volume": 11042702.0,
-          "amount": 295234592.0,
-          "transactions": 5313.0,
-          "pe": 13.9,
-          "pb": 1.41,
-          "dividend_yield": 1.83
-        },
-        {
-          "code": "3055",
-          "name": "蔚華科",
-          "market": "TWSE",
-          "industry": "29",
-          "close": 206.5,
-          "change": 18.5,
-          "change_percent": 9.8404,
-          "open": 196.0,
-          "high": 206.5,
-          "low": 189.5,
-          "volume": 8151045.0,
-          "amount": 1639252233.0,
-          "transactions": 8596.0,
-          "pe": null,
-          "pb": 14.35,
-          "dividend_yield": 0.24
-        },
-        {
-          "code": "3037",
-          "name": "欣興",
-          "market": "TWSE",
-          "industry": "28",
-          "close": 1120.0,
-          "change": 100.0,
-          "change_percent": 9.8039,
-          "open": 1120.0,
-          "high": 1120.0,
-          "low": 1105.0,
-          "volume": 10824677.0,
-          "amount": 12123283240.0,
-          "transactions": 31087.0,
-          "pe": 74.57,
-          "pb": 14.38,
-          "dividend_yield": 0.18
+          "close": 145.5,
+          "change": 13.0,
+          "change_percent": 9.8113,
+          "open": 145.0,
+          "high": 145.5,
+          "low": 141.5,
+          "volume": 31085717.0,
+          "amount": 4515973276.0,
+          "transactions": 14262.0,
+          "pe": 121.25,
+          "pb": 8.11,
+          "dividend_yield": 0.34
         }
       ]
     },
@@ -2967,143 +3394,143 @@
           "market": "TWSE",
           "industry": "14",
           "close": 14.55,
-          "change": -0.15,
-          "change_percent": -1.0204,
-          "open": 14.8,
-          "high": 14.8,
-          "low": 14.5,
-          "volume": 734348.0,
-          "amount": 10672630.0,
-          "transactions": 495.0,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "open": 14.6,
+          "high": 14.6,
+          "low": 14.4,
+          "volume": 564744.0,
+          "amount": 8184713.0,
+          "transactions": 340.0,
           "pe": 2.86,
           "pb": 0.68,
           "dividend_yield": 18.83
-        },
-        {
-          "code": "5519",
-          "name": "隆大",
-          "market": "TWSE",
-          "industry": "14",
-          "close": 25.8,
-          "change": -0.15,
-          "change_percent": -0.578,
-          "open": 26.0,
-          "high": 26.15,
-          "low": 25.8,
-          "volume": 265241.0,
-          "amount": 6883021.0,
-          "transactions": 218.0,
-          "pe": 5.18,
-          "pb": 1.0,
-          "dividend_yield": 14.73
         },
         {
           "code": "2528",
           "name": "皇普",
           "market": "TWSE",
           "industry": "14",
-          "close": 20.45,
-          "change": -0.05,
-          "change_percent": -0.2439,
-          "open": 20.6,
-          "high": 20.65,
-          "low": 20.25,
-          "volume": 349064.0,
-          "amount": 7140374.0,
-          "transactions": 310.0,
-          "pe": 8.31,
-          "pb": 1.18,
-          "dividend_yield": 14.67
+          "close": 19.85,
+          "change": -0.6,
+          "change_percent": -2.934,
+          "open": 20.55,
+          "high": 20.55,
+          "low": 19.8,
+          "volume": 355950.0,
+          "amount": 7143005.0,
+          "transactions": 246.0,
+          "pe": 8.07,
+          "pb": 1.15,
+          "dividend_yield": 15.11
+        },
+        {
+          "code": "5519",
+          "name": "隆大",
+          "market": "TWSE",
+          "industry": "14",
+          "close": 25.5,
+          "change": -0.3,
+          "change_percent": -1.1628,
+          "open": 25.95,
+          "high": 25.95,
+          "low": 25.5,
+          "volume": 245630.0,
+          "amount": 6281187.0,
+          "transactions": 270.0,
+          "pe": 5.12,
+          "pb": 0.99,
+          "dividend_yield": 14.9
         },
         {
           "code": "1436",
           "name": "華友聯",
           "market": "TWSE",
           "industry": "14",
-          "close": 36.9,
-          "change": -0.5,
-          "change_percent": -1.3369,
-          "open": 37.75,
-          "high": 37.75,
-          "low": 36.9,
-          "volume": 230024.0,
-          "amount": 8532157.0,
-          "transactions": 163.0,
-          "pe": 13.09,
-          "pb": 1.29,
-          "dividend_yield": 13.69
+          "close": 36.6,
+          "change": -0.3,
+          "change_percent": -0.813,
+          "open": 36.9,
+          "high": 37.1,
+          "low": 36.55,
+          "volume": 125926.0,
+          "amount": 4626533.0,
+          "transactions": 155.0,
+          "pe": 12.98,
+          "pb": 1.28,
+          "dividend_yield": 13.8
         },
         {
           "code": "1432",
           "name": "大魯閣",
           "market": "TWSE",
           "industry": "37",
-          "close": 15.0,
-          "change": 0.0,
-          "change_percent": 0.0,
+          "close": 15.05,
+          "change": 0.05,
+          "change_percent": 0.3333,
           "open": 15.0,
-          "high": 15.0,
+          "high": 15.05,
           "low": 14.95,
-          "volume": 66946.0,
-          "amount": 1003082.0,
-          "transactions": 256.0,
-          "pe": 2.94,
+          "volume": 36774.0,
+          "amount": 551867.0,
+          "transactions": 190.0,
+          "pe": 2.95,
           "pb": 1.22,
-          "dividend_yield": 13.33
-        },
-        {
-          "code": "5225",
-          "name": "東科-KY",
-          "market": "TWSE",
-          "industry": "31",
-          "close": 55.9,
-          "change": 0.2,
-          "change_percent": 0.3591,
-          "open": 55.7,
-          "high": 56.3,
-          "low": 55.5,
-          "volume": 142404.0,
-          "amount": 7954492.0,
-          "transactions": 152.0,
-          "pe": 8.42,
-          "pb": 1.39,
-          "dividend_yield": 12.9
+          "dividend_yield": 13.29
         },
         {
           "code": "4137",
           "name": "麗豐-KY",
           "market": "TWSE",
           "industry": "22",
-          "close": 78.8,
-          "change": 1.1,
-          "change_percent": 1.4157,
-          "open": 77.8,
-          "high": 78.8,
-          "low": 77.8,
-          "volume": 121222.0,
-          "amount": 9498134.0,
-          "transactions": 143.0,
-          "pe": 11.67,
-          "pb": 1.32,
-          "dividend_yield": 12.69
+          "close": 77.6,
+          "change": -1.2,
+          "change_percent": -1.5228,
+          "open": 78.4,
+          "high": 78.9,
+          "low": 77.6,
+          "volume": 81770.0,
+          "amount": 6395654.0,
+          "transactions": 99.0,
+          "pe": 11.5,
+          "pb": 1.3,
+          "dividend_yield": 12.89
+        },
+        {
+          "code": "5225",
+          "name": "東科-KY",
+          "market": "TWSE",
+          "industry": "31",
+          "close": 56.2,
+          "change": 0.3,
+          "change_percent": 0.5367,
+          "open": 55.9,
+          "high": 56.3,
+          "low": 55.6,
+          "volume": 148449.0,
+          "amount": 8321515.0,
+          "transactions": 171.0,
+          "pe": 8.46,
+          "pb": 1.4,
+          "dividend_yield": 12.83
         },
         {
           "code": "2530",
           "name": "華建",
           "market": "TWSE",
           "industry": "14",
-          "close": 20.4,
-          "change": 0.2,
-          "change_percent": 0.9901,
-          "open": 20.3,
-          "high": 20.6,
-          "low": 20.0,
-          "volume": 655874.0,
-          "amount": 13315736.0,
-          "transactions": 511.0,
-          "pe": 30.91,
-          "pb": 1.72,
-          "dividend_yield": 11.32
+          "close": 20.15,
+          "change": -0.25,
+          "change_percent": -1.2255,
+          "open": 20.55,
+          "high": 20.55,
+          "low": 20.1,
+          "volume": 350868.0,
+          "amount": 7111969.0,
+          "transactions": 282.0,
+          "pe": 30.53,
+          "pb": 1.7,
+          "dividend_yield": 11.46
         },
         {
           "code": "1446",
@@ -3111,14 +3538,14 @@
           "market": "TWSE",
           "industry": "04",
           "close": 13.65,
-          "change": -0.2,
-          "change_percent": -1.444,
-          "open": 13.7,
-          "high": 13.9,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "open": 13.65,
+          "high": 13.75,
           "low": 13.6,
-          "volume": 236260.0,
-          "amount": 3249499.0,
-          "transactions": 105.0,
+          "volume": 23251.0,
+          "amount": 318111.0,
+          "transactions": 53.0,
           "pe": 14.52,
           "pb": 0.7,
           "dividend_yield": 10.99
@@ -3129,14 +3556,14 @@
           "market": "TWSE",
           "industry": "35",
           "close": 27.3,
-          "change": -0.95,
-          "change_percent": -3.3628,
-          "open": 28.3,
-          "high": 28.3,
-          "low": 27.1,
-          "volume": 400953.0,
-          "amount": 11070563.0,
-          "transactions": 465.0,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "open": 27.3,
+          "high": 27.6,
+          "low": 27.15,
+          "volume": 207446.0,
+          "amount": 5676975.0,
+          "transactions": 173.0,
           "pe": 5.0,
           "pb": 0.85,
           "dividend_yield": 10.99
@@ -3149,184 +3576,184 @@
       "definition": "成交額至少 1 億元，按當日跌幅排序",
       "results": [
         {
-          "code": "4956",
-          "name": "光鋐",
+          "code": "3312",
+          "name": "弘憶股",
           "market": "TWSE",
-          "industry": "26",
-          "close": 42.2,
-          "change": -4.65,
-          "change_percent": -9.9253,
-          "open": 47.0,
-          "high": 47.1,
-          "low": 42.2,
-          "volume": 23195519.0,
-          "amount": 1021129674.0,
-          "transactions": 12616.0,
-          "pe": 89.79,
-          "pb": 2.5,
-          "dividend_yield": null
-        },
-        {
-          "code": "6706",
-          "name": "惠特",
-          "market": "TWSE",
-          "industry": "26",
-          "close": 149.0,
-          "change": -15.0,
-          "change_percent": -9.1463,
-          "open": 165.5,
-          "high": 168.0,
-          "low": 148.0,
-          "volume": 13997656.0,
-          "amount": 2183822188.0,
-          "transactions": 12333.0,
-          "pe": null,
-          "pb": 3.16,
-          "dividend_yield": null
-        },
-        {
-          "code": "6224",
-          "name": "聚鼎",
-          "market": "TWSE",
-          "industry": "28",
-          "close": 81.8,
-          "change": -7.4,
-          "change_percent": -8.296,
-          "open": 90.2,
-          "high": 90.3,
-          "low": 80.7,
-          "volume": 3101774.0,
-          "amount": 262129476.0,
-          "transactions": 4152.0,
-          "pe": 68.17,
-          "pb": 3.08,
-          "dividend_yield": 1.53
-        },
-        {
-          "code": "6477",
-          "name": "安集",
-          "market": "TWSE",
-          "industry": "26",
-          "close": 34.5,
-          "change": -2.9,
-          "change_percent": -7.754,
-          "open": 35.65,
-          "high": 36.3,
-          "low": 34.5,
-          "volume": 3066180.0,
-          "amount": 108097249.0,
-          "transactions": 2283.0,
-          "pe": 1150.0,
-          "pb": 1.35,
-          "dividend_yield": 1.01
-        },
-        {
-          "code": "3094",
-          "name": "聯傑",
-          "market": "TWSE",
-          "industry": "24",
-          "close": 52.6,
-          "change": -4.2,
-          "change_percent": -7.3944,
-          "open": 56.2,
-          "high": 56.2,
-          "low": 52.5,
-          "volume": 17360784.0,
-          "amount": 932367841.0,
-          "transactions": 11500.0,
-          "pe": 84.84,
-          "pb": 4.21,
-          "dividend_yield": 0.48
-        },
-        {
-          "code": "6205",
-          "name": "詮欣",
-          "market": "TWSE",
-          "industry": "28",
-          "close": 65.5,
+          "industry": "29",
+          "close": 50.5,
           "change": -4.5,
-          "change_percent": -6.4286,
-          "open": 71.2,
-          "high": 71.2,
-          "low": 65.5,
-          "volume": 2191446.0,
-          "amount": 148542837.0,
-          "transactions": 2384.0,
-          "pe": 28.73,
-          "pb": 2.02,
-          "dividend_yield": 2.29
+          "change_percent": -8.1818,
+          "open": 53.3,
+          "high": 53.3,
+          "low": 50.5,
+          "volume": 3331425.0,
+          "amount": 171683242.0,
+          "transactions": 3404.0,
+          "pe": 13.15,
+          "pb": 2.29,
+          "dividend_yield": 2.57
         },
         {
-          "code": "8110",
-          "name": "華東",
+          "code": "8996",
+          "name": "高力",
+          "market": "TWSE",
+          "industry": "05",
+          "close": 1540.0,
+          "change": -115.0,
+          "change_percent": -6.9486,
+          "open": 1640.0,
+          "high": 1640.0,
+          "low": 1515.0,
+          "volume": 5776754.0,
+          "amount": 9058585445.0,
+          "transactions": 12504.0,
+          "pe": 103.7,
+          "pb": 27.96,
+          "dividend_yield": 0.3
+        },
+        {
+          "code": "6168",
+          "name": "宏齊",
+          "market": "TWSE",
+          "industry": "26",
+          "close": 41.2,
+          "change": -2.8,
+          "change_percent": -6.3636,
+          "open": 43.5,
+          "high": 43.5,
+          "low": 40.2,
+          "volume": 25341487.0,
+          "amount": 1053749382.0,
+          "transactions": 16948.0,
+          "pe": 128.75,
+          "pb": 2.37,
+          "dividend_yield": null
+        },
+        {
+          "code": "00715L",
+          "name": "期街口布蘭特正2",
+          "market": "TWSE",
+          "industry": "未分類",
+          "close": 60.7,
+          "change": -3.85,
+          "change_percent": -5.9644,
+          "open": 61.65,
+          "high": 61.9,
+          "low": 60.15,
+          "volume": 5562559.0,
+          "amount": 339509144.0,
+          "transactions": 2346.0,
+          "pe": null,
+          "pb": null,
+          "dividend_yield": null
+        },
+        {
+          "code": "3380",
+          "name": "明泰",
+          "market": "TWSE",
+          "industry": "27",
+          "close": 31.0,
+          "change": -1.95,
+          "change_percent": -5.9181,
+          "open": 33.0,
+          "high": 33.0,
+          "low": 31.0,
+          "volume": 5531166.0,
+          "amount": 175409139.0,
+          "transactions": 3643.0,
+          "pe": 221.43,
+          "pb": 1.83,
+          "dividend_yield": 1.61
+        },
+        {
+          "code": "2409",
+          "name": "友達",
+          "market": "TWSE",
+          "industry": "26",
+          "close": 34.7,
+          "change": -1.95,
+          "change_percent": -5.3206,
+          "open": 36.65,
+          "high": 36.65,
+          "low": 33.4,
+          "volume": 948644349.0,
+          "amount": 33264615674.0,
+          "transactions": 307537.0,
+          "pe": 144.58,
+          "pb": 1.7,
+          "dividend_yield": 1.15
+        },
+        {
+          "code": "2351",
+          "name": "順德",
           "market": "TWSE",
           "industry": "24",
-          "close": 48.95,
-          "change": -3.15,
-          "change_percent": -6.0461,
-          "open": 53.0,
-          "high": 53.1,
-          "low": 48.7,
-          "volume": 47786757.0,
-          "amount": 2414393425.0,
-          "transactions": 28056.0,
-          "pe": 8.98,
-          "pb": 1.31,
-          "dividend_yield": 3.04
+          "close": 226.0,
+          "change": -12.5,
+          "change_percent": -5.2411,
+          "open": 240.0,
+          "high": 240.0,
+          "low": 225.0,
+          "volume": 6000073.0,
+          "amount": 1374170185.0,
+          "transactions": 7779.0,
+          "pe": 57.8,
+          "pb": 5.36,
+          "dividend_yield": 0.46
         },
         {
-          "code": "3591",
-          "name": "艾笛森",
+          "code": "6668",
+          "name": "中揚光",
           "market": "TWSE",
           "industry": "26",
-          "close": 24.35,
-          "change": -1.5,
-          "change_percent": -5.8027,
-          "open": 25.3,
-          "high": 25.35,
-          "low": 23.3,
-          "volume": 5400296.0,
-          "amount": 129096647.0,
-          "transactions": 6574.0,
+          "close": 46.95,
+          "change": -2.45,
+          "change_percent": -4.9595,
+          "open": 48.95,
+          "high": 49.45,
+          "low": 46.65,
+          "volume": 3591142.0,
+          "amount": 171526638.0,
+          "transactions": 2965.0,
           "pe": null,
-          "pb": 1.19,
+          "pb": 2.26,
           "dividend_yield": null
         },
         {
-          "code": "8215",
-          "name": "明基材",
+          "code": "2360",
+          "name": "致茂",
           "market": "TWSE",
-          "industry": "26",
-          "close": 28.35,
-          "change": -1.7,
-          "change_percent": -5.6572,
-          "open": 29.5,
-          "high": 31.0,
-          "low": 28.35,
-          "volume": 12705569.0,
-          "amount": 375322907.0,
-          "transactions": 6792.0,
-          "pe": null,
-          "pb": 1.89,
-          "dividend_yield": 1.06
+          "industry": "31",
+          "close": 2325.0,
+          "change": -115.0,
+          "change_percent": -4.7131,
+          "open": 2445.0,
+          "high": 2470.0,
+          "low": 2305.0,
+          "volume": 2628143.0,
+          "amount": 6195048285.0,
+          "transactions": 7814.0,
+          "pe": 59.31,
+          "pb": 29.85,
+          "dividend_yield": 0.84
         },
         {
-          "code": "6949",
-          "name": "沛爾生醫*-創",
+          "code": "7610",
+          "name": "聯友金屬-創",
           "market": "TWSE",
-          "industry": "22",
-          "close": 50.8,
-          "change": -3.0,
-          "change_percent": -5.5762,
-          "open": 53.0,
-          "high": 53.8,
-          "low": 50.6,
-          "volume": 3651236.0,
-          "amount": 189769836.0,
-          "transactions": 3369.0,
-          "pe": null,
-          "pb": 25.92,
-          "dividend_yield": null
+          "industry": "35",
+          "close": 1825.0,
+          "change": -80.0,
+          "change_percent": -4.1995,
+          "open": 1905.0,
+          "high": 1905.0,
+          "low": 1825.0,
+          "volume": 508685.0,
+          "amount": 945197980.0,
+          "transactions": 3562.0,
+          "pe": 52.38,
+          "pb": 28.45,
+          "dividend_yield": 0.14
         }
       ]
     }
@@ -3352,9 +3779,9 @@
     "來源擷取成功不等於有當日資料；過期資料不納入當日判斷。"
   ],
   "equity": {
-    "generated_at": "2026-09-23T18:00:02+08:00",
-    "observed_at": "2026-09-22",
-    "stock_count": 1376,
+    "generated_at": "2026-09-24T08:00:02+08:00",
+    "observed_at": "2026-09-23",
+    "stock_count": 1370,
     "strategies": [
       {
         "id": "momentum",
@@ -3362,184 +3789,184 @@
         "definition": "成交額至少 1 億元，按當日漲幅排序",
         "results": [
           {
-            "code": "3443",
-            "name": "創意",
+            "code": "4770",
+            "name": "上品",
             "market": "TWSE",
-            "industry": "24",
-            "close": 8375.0,
-            "change": 760.0,
-            "change_percent": 9.9803,
-            "open": 8370.0,
-            "high": 8375.0,
-            "low": 8370.0,
-            "volume": 711474.0,
-            "amount": 5957804750.0,
-            "transactions": 5095.0,
-            "pe": 214.69,
-            "pb": 83.35,
-            "dividend_yield": 0.24
+            "industry": "21",
+            "close": 275.0,
+            "change": 25.0,
+            "change_percent": 10.0,
+            "open": 261.5,
+            "high": 275.0,
+            "low": 256.5,
+            "volume": 3344195.0,
+            "amount": 905066878.0,
+            "transactions": 4684.0,
+            "pe": 26.24,
+            "pb": 2.62,
+            "dividend_yield": 2.18
           },
           {
-            "code": "8996",
-            "name": "高力",
+            "code": "6426",
+            "name": "統新",
             "market": "TWSE",
-            "industry": "05",
-            "close": 1655.0,
-            "change": 150.0,
-            "change_percent": 9.9668,
-            "open": 1520.0,
-            "high": 1655.0,
-            "low": 1490.0,
-            "volume": 5780868.0,
-            "amount": 9175872030.0,
-            "transactions": 10490.0,
-            "pe": 111.45,
-            "pb": 30.05,
-            "dividend_yield": 0.28
+            "industry": "27",
+            "close": 391.5,
+            "change": 35.5,
+            "change_percent": 9.9719,
+            "open": 359.0,
+            "high": 391.5,
+            "low": 357.0,
+            "volume": 3158672.0,
+            "amount": 1207122463.0,
+            "transactions": 3168.0,
+            "pe": 98.86,
+            "pb": 15.1,
+            "dividend_yield": 0.13
+          },
+          {
+            "code": "2342",
+            "name": "茂矽",
+            "market": "TWSE",
+            "industry": "24",
+            "close": 46.35,
+            "change": 4.2,
+            "change_percent": 9.9644,
+            "open": 42.65,
+            "high": 46.35,
+            "low": 42.45,
+            "volume": 11049723.0,
+            "amount": 503313306.0,
+            "transactions": 5711.0,
+            "pe": null,
+            "pb": 3.17,
+            "dividend_yield": null
+          },
+          {
+            "code": "3653",
+            "name": "健策",
+            "market": "TWSE",
+            "industry": "28",
+            "close": 6410.0,
+            "change": 580.0,
+            "change_percent": 9.9485,
+            "open": 6005.0,
+            "high": 6410.0,
+            "low": 5930.0,
+            "volume": 1525519.0,
+            "amount": 9557795155.0,
+            "transactions": 10947.0,
+            "pe": 144.66,
+            "pb": 39.89,
+            "dividend_yield": 0.34
+          },
+          {
+            "code": "6526",
+            "name": "達發",
+            "market": "TWSE",
+            "industry": "24",
+            "close": 840.0,
+            "change": 76.0,
+            "change_percent": 9.9476,
+            "open": 777.0,
+            "high": 840.0,
+            "low": 761.0,
+            "volume": 4748267.0,
+            "amount": 3916585488.0,
+            "transactions": 10914.0,
+            "pe": 46.59,
+            "pb": 7.46,
+            "dividend_yield": 1.61
+          },
+          {
+            "code": "6205",
+            "name": "詮欣",
+            "market": "TWSE",
+            "industry": "28",
+            "close": 72.0,
+            "change": 6.5,
+            "change_percent": 9.9237,
+            "open": 66.1,
+            "high": 72.0,
+            "low": 66.1,
+            "volume": 4231383.0,
+            "amount": 301307133.0,
+            "transactions": 4273.0,
+            "pe": 31.58,
+            "pb": 2.22,
+            "dividend_yield": 2.08
+          },
+          {
+            "code": "1727",
+            "name": "中華化",
+            "market": "TWSE",
+            "industry": "21",
+            "close": 116.5,
+            "change": 10.5,
+            "change_percent": 9.9057,
+            "open": 105.0,
+            "high": 116.5,
+            "low": 103.0,
+            "volume": 21402346.0,
+            "amount": 2414755093.0,
+            "transactions": 13355.0,
+            "pe": 168.84,
+            "pb": 6.91,
+            "dividend_yield": 0.13
+          },
+          {
+            "code": "2104",
+            "name": "國際中橡",
+            "market": "TWSE",
+            "industry": "11",
+            "close": 11.65,
+            "change": 1.05,
+            "change_percent": 9.9057,
+            "open": 10.65,
+            "high": 11.65,
+            "low": 10.65,
+            "volume": 21035315.0,
+            "amount": 237648479.0,
+            "transactions": 4977.0,
+            "pe": null,
+            "pb": 0.49,
+            "dividend_yield": null
+          },
+          {
+            "code": "6933",
+            "name": "AMAX-KY",
+            "market": "TWSE",
+            "industry": "25",
+            "close": 350.0,
+            "change": 31.5,
+            "change_percent": 9.8901,
+            "open": 320.0,
+            "high": 350.0,
+            "low": 320.0,
+            "volume": 1318689.0,
+            "amount": 450617602.0,
+            "transactions": 1543.0,
+            "pe": 43.42,
+            "pb": 5.9,
+            "dividend_yield": 0.71
           },
           {
             "code": "3016",
             "name": "嘉晶",
             "market": "TWSE",
             "industry": "24",
-            "close": 132.5,
-            "change": 12.0,
-            "change_percent": 9.9585,
-            "open": 125.0,
-            "high": 132.5,
-            "low": 124.5,
-            "volume": 30369344.0,
-            "amount": 3962592045.0,
-            "transactions": 20785.0,
-            "pe": 110.42,
-            "pb": 7.39,
-            "dividend_yield": 0.38
-          },
-          {
-            "code": "3189",
-            "name": "景碩",
-            "market": "TWSE",
-            "industry": "24",
-            "close": 909.0,
-            "change": 82.0,
-            "change_percent": 9.9154,
-            "open": 875.0,
-            "high": 909.0,
-            "low": 875.0,
-            "volume": 29109027.0,
-            "amount": 26206915085.0,
-            "transactions": 52413.0,
-            "pe": 168.65,
-            "pb": 10.77,
-            "dividend_yield": 0.17
-          },
-          {
-            "code": "2241",
-            "name": "艾姆勒",
-            "market": "TWSE",
-            "industry": "12",
-            "close": 41.05,
-            "change": 3.7,
-            "change_percent": 9.9063,
-            "open": 38.0,
-            "high": 41.05,
-            "low": 36.85,
-            "volume": 6315136.0,
-            "amount": 249802352.0,
-            "transactions": 4586.0,
-            "pe": null,
-            "pb": 3.28,
-            "dividend_yield": null
-          },
-          {
-            "code": "8046",
-            "name": "南電",
-            "market": "TWSE",
-            "industry": "28",
-            "close": 1165.0,
-            "change": 105.0,
-            "change_percent": 9.9057,
-            "open": 1125.0,
-            "high": 1165.0,
-            "low": 1120.0,
-            "volume": 17065812.0,
-            "amount": 19757791920.0,
-            "transactions": 27464.0,
-            "pe": 136.9,
-            "pb": 15.28,
-            "dividend_yield": 0.17
-          },
-          {
-            "code": "2409",
-            "name": "友達",
-            "market": "TWSE",
-            "industry": "26",
-            "close": 36.65,
-            "change": 3.3,
-            "change_percent": 9.8951,
-            "open": 34.9,
-            "high": 36.65,
-            "low": 34.0,
-            "volume": 1162430621.0,
-            "amount": 42147480664.0,
-            "transactions": 236020.0,
-            "pe": 152.71,
-            "pb": 1.79,
-            "dividend_yield": 1.09
-          },
-          {
-            "code": "2030",
-            "name": "彰源",
-            "market": "TWSE",
-            "industry": "10",
-            "close": 27.25,
-            "change": 2.45,
-            "change_percent": 9.879,
-            "open": 24.3,
-            "high": 27.25,
-            "low": 24.3,
-            "volume": 11042702.0,
-            "amount": 295234592.0,
-            "transactions": 5313.0,
-            "pe": 13.9,
-            "pb": 1.41,
-            "dividend_yield": 1.83
-          },
-          {
-            "code": "3055",
-            "name": "蔚華科",
-            "market": "TWSE",
-            "industry": "29",
-            "close": 206.5,
-            "change": 18.5,
-            "change_percent": 9.8404,
-            "open": 196.0,
-            "high": 206.5,
-            "low": 189.5,
-            "volume": 8151045.0,
-            "amount": 1639252233.0,
-            "transactions": 8596.0,
-            "pe": null,
-            "pb": 14.35,
-            "dividend_yield": 0.24
-          },
-          {
-            "code": "3037",
-            "name": "欣興",
-            "market": "TWSE",
-            "industry": "28",
-            "close": 1120.0,
-            "change": 100.0,
-            "change_percent": 9.8039,
-            "open": 1120.0,
-            "high": 1120.0,
-            "low": 1105.0,
-            "volume": 10824677.0,
-            "amount": 12123283240.0,
-            "transactions": 31087.0,
-            "pe": 74.57,
-            "pb": 14.38,
-            "dividend_yield": 0.18
+            "close": 145.5,
+            "change": 13.0,
+            "change_percent": 9.8113,
+            "open": 145.0,
+            "high": 145.5,
+            "low": 141.5,
+            "volume": 31085717.0,
+            "amount": 4515973276.0,
+            "transactions": 14262.0,
+            "pe": 121.25,
+            "pb": 8.11,
+            "dividend_yield": 0.34
           }
         ]
       },
@@ -3554,143 +3981,143 @@
             "market": "TWSE",
             "industry": "14",
             "close": 14.55,
-            "change": -0.15,
-            "change_percent": -1.0204,
-            "open": 14.8,
-            "high": 14.8,
-            "low": 14.5,
-            "volume": 734348.0,
-            "amount": 10672630.0,
-            "transactions": 495.0,
+            "change": 0.0,
+            "change_percent": 0.0,
+            "open": 14.6,
+            "high": 14.6,
+            "low": 14.4,
+            "volume": 564744.0,
+            "amount": 8184713.0,
+            "transactions": 340.0,
             "pe": 2.86,
             "pb": 0.68,
             "dividend_yield": 18.83
-          },
-          {
-            "code": "5519",
-            "name": "隆大",
-            "market": "TWSE",
-            "industry": "14",
-            "close": 25.8,
-            "change": -0.15,
-            "change_percent": -0.578,
-            "open": 26.0,
-            "high": 26.15,
-            "low": 25.8,
-            "volume": 265241.0,
-            "amount": 6883021.0,
-            "transactions": 218.0,
-            "pe": 5.18,
-            "pb": 1.0,
-            "dividend_yield": 14.73
           },
           {
             "code": "2528",
             "name": "皇普",
             "market": "TWSE",
             "industry": "14",
-            "close": 20.45,
-            "change": -0.05,
-            "change_percent": -0.2439,
-            "open": 20.6,
-            "high": 20.65,
-            "low": 20.25,
-            "volume": 349064.0,
-            "amount": 7140374.0,
-            "transactions": 310.0,
-            "pe": 8.31,
-            "pb": 1.18,
-            "dividend_yield": 14.67
+            "close": 19.85,
+            "change": -0.6,
+            "change_percent": -2.934,
+            "open": 20.55,
+            "high": 20.55,
+            "low": 19.8,
+            "volume": 355950.0,
+            "amount": 7143005.0,
+            "transactions": 246.0,
+            "pe": 8.07,
+            "pb": 1.15,
+            "dividend_yield": 15.11
+          },
+          {
+            "code": "5519",
+            "name": "隆大",
+            "market": "TWSE",
+            "industry": "14",
+            "close": 25.5,
+            "change": -0.3,
+            "change_percent": -1.1628,
+            "open": 25.95,
+            "high": 25.95,
+            "low": 25.5,
+            "volume": 245630.0,
+            "amount": 6281187.0,
+            "transactions": 270.0,
+            "pe": 5.12,
+            "pb": 0.99,
+            "dividend_yield": 14.9
           },
           {
             "code": "1436",
             "name": "華友聯",
             "market": "TWSE",
             "industry": "14",
-            "close": 36.9,
-            "change": -0.5,
-            "change_percent": -1.3369,
-            "open": 37.75,
-            "high": 37.75,
-            "low": 36.9,
-            "volume": 230024.0,
-            "amount": 8532157.0,
-            "transactions": 163.0,
-            "pe": 13.09,
-            "pb": 1.29,
-            "dividend_yield": 13.69
+            "close": 36.6,
+            "change": -0.3,
+            "change_percent": -0.813,
+            "open": 36.9,
+            "high": 37.1,
+            "low": 36.55,
+            "volume": 125926.0,
+            "amount": 4626533.0,
+            "transactions": 155.0,
+            "pe": 12.98,
+            "pb": 1.28,
+            "dividend_yield": 13.8
           },
           {
             "code": "1432",
             "name": "大魯閣",
             "market": "TWSE",
             "industry": "37",
-            "close": 15.0,
-            "change": 0.0,
-            "change_percent": 0.0,
+            "close": 15.05,
+            "change": 0.05,
+            "change_percent": 0.3333,
             "open": 15.0,
-            "high": 15.0,
+            "high": 15.05,
             "low": 14.95,
-            "volume": 66946.0,
-            "amount": 1003082.0,
-            "transactions": 256.0,
-            "pe": 2.94,
+            "volume": 36774.0,
+            "amount": 551867.0,
+            "transactions": 190.0,
+            "pe": 2.95,
             "pb": 1.22,
-            "dividend_yield": 13.33
-          },
-          {
-            "code": "5225",
-            "name": "東科-KY",
-            "market": "TWSE",
-            "industry": "31",
-            "close": 55.9,
-            "change": 0.2,
-            "change_percent": 0.3591,
-            "open": 55.7,
-            "high": 56.3,
-            "low": 55.5,
-            "volume": 142404.0,
-            "amount": 7954492.0,
-            "transactions": 152.0,
-            "pe": 8.42,
-            "pb": 1.39,
-            "dividend_yield": 12.9
+            "dividend_yield": 13.29
           },
           {
             "code": "4137",
             "name": "麗豐-KY",
             "market": "TWSE",
             "industry": "22",
-            "close": 78.8,
-            "change": 1.1,
-            "change_percent": 1.4157,
-            "open": 77.8,
-            "high": 78.8,
-            "low": 77.8,
-            "volume": 121222.0,
-            "amount": 9498134.0,
-            "transactions": 143.0,
-            "pe": 11.67,
-            "pb": 1.32,
-            "dividend_yield": 12.69
+            "close": 77.6,
+            "change": -1.2,
+            "change_percent": -1.5228,
+            "open": 78.4,
+            "high": 78.9,
+            "low": 77.6,
+            "volume": 81770.0,
+            "amount": 6395654.0,
+            "transactions": 99.0,
+            "pe": 11.5,
+            "pb": 1.3,
+            "dividend_yield": 12.89
+          },
+          {
+            "code": "5225",
+            "name": "東科-KY",
+            "market": "TWSE",
+            "industry": "31",
+            "close": 56.2,
+            "change": 0.3,
+            "change_percent": 0.5367,
+            "open": 55.9,
+            "high": 56.3,
+            "low": 55.6,
+            "volume": 148449.0,
+            "amount": 8321515.0,
+            "transactions": 171.0,
+            "pe": 8.46,
+            "pb": 1.4,
+            "dividend_yield": 12.83
           },
           {
             "code": "2530",
             "name": "華建",
             "market": "TWSE",
             "industry": "14",
-            "close": 20.4,
-            "change": 0.2,
-            "change_percent": 0.9901,
-            "open": 20.3,
-            "high": 20.6,
-            "low": 20.0,
-            "volume": 655874.0,
-            "amount": 13315736.0,
-            "transactions": 511.0,
-            "pe": 30.91,
-            "pb": 1.72,
-            "dividend_yield": 11.32
+            "close": 20.15,
+            "change": -0.25,
+            "change_percent": -1.2255,
+            "open": 20.55,
+            "high": 20.55,
+            "low": 20.1,
+            "volume": 350868.0,
+            "amount": 7111969.0,
+            "transactions": 282.0,
+            "pe": 30.53,
+            "pb": 1.7,
+            "dividend_yield": 11.46
           },
           {
             "code": "1446",
@@ -3698,14 +4125,14 @@
             "market": "TWSE",
             "industry": "04",
             "close": 13.65,
-            "change": -0.2,
-            "change_percent": -1.444,
-            "open": 13.7,
-            "high": 13.9,
+            "change": 0.0,
+            "change_percent": 0.0,
+            "open": 13.65,
+            "high": 13.75,
             "low": 13.6,
-            "volume": 236260.0,
-            "amount": 3249499.0,
-            "transactions": 105.0,
+            "volume": 23251.0,
+            "amount": 318111.0,
+            "transactions": 53.0,
             "pe": 14.52,
             "pb": 0.7,
             "dividend_yield": 10.99
@@ -3716,14 +4143,14 @@
             "market": "TWSE",
             "industry": "35",
             "close": 27.3,
-            "change": -0.95,
-            "change_percent": -3.3628,
-            "open": 28.3,
-            "high": 28.3,
-            "low": 27.1,
-            "volume": 400953.0,
-            "amount": 11070563.0,
-            "transactions": 465.0,
+            "change": 0.0,
+            "change_percent": 0.0,
+            "open": 27.3,
+            "high": 27.6,
+            "low": 27.15,
+            "volume": 207446.0,
+            "amount": 5676975.0,
+            "transactions": 173.0,
             "pe": 5.0,
             "pb": 0.85,
             "dividend_yield": 10.99
@@ -3736,184 +4163,184 @@
         "definition": "成交額至少 1 億元，按當日跌幅排序",
         "results": [
           {
-            "code": "4956",
-            "name": "光鋐",
+            "code": "3312",
+            "name": "弘憶股",
             "market": "TWSE",
-            "industry": "26",
-            "close": 42.2,
-            "change": -4.65,
-            "change_percent": -9.9253,
-            "open": 47.0,
-            "high": 47.1,
-            "low": 42.2,
-            "volume": 23195519.0,
-            "amount": 1021129674.0,
-            "transactions": 12616.0,
-            "pe": 89.79,
-            "pb": 2.5,
-            "dividend_yield": null
-          },
-          {
-            "code": "6706",
-            "name": "惠特",
-            "market": "TWSE",
-            "industry": "26",
-            "close": 149.0,
-            "change": -15.0,
-            "change_percent": -9.1463,
-            "open": 165.5,
-            "high": 168.0,
-            "low": 148.0,
-            "volume": 13997656.0,
-            "amount": 2183822188.0,
-            "transactions": 12333.0,
-            "pe": null,
-            "pb": 3.16,
-            "dividend_yield": null
-          },
-          {
-            "code": "6224",
-            "name": "聚鼎",
-            "market": "TWSE",
-            "industry": "28",
-            "close": 81.8,
-            "change": -7.4,
-            "change_percent": -8.296,
-            "open": 90.2,
-            "high": 90.3,
-            "low": 80.7,
-            "volume": 3101774.0,
-            "amount": 262129476.0,
-            "transactions": 4152.0,
-            "pe": 68.17,
-            "pb": 3.08,
-            "dividend_yield": 1.53
-          },
-          {
-            "code": "6477",
-            "name": "安集",
-            "market": "TWSE",
-            "industry": "26",
-            "close": 34.5,
-            "change": -2.9,
-            "change_percent": -7.754,
-            "open": 35.65,
-            "high": 36.3,
-            "low": 34.5,
-            "volume": 3066180.0,
-            "amount": 108097249.0,
-            "transactions": 2283.0,
-            "pe": 1150.0,
-            "pb": 1.35,
-            "dividend_yield": 1.01
-          },
-          {
-            "code": "3094",
-            "name": "聯傑",
-            "market": "TWSE",
-            "industry": "24",
-            "close": 52.6,
-            "change": -4.2,
-            "change_percent": -7.3944,
-            "open": 56.2,
-            "high": 56.2,
-            "low": 52.5,
-            "volume": 17360784.0,
-            "amount": 932367841.0,
-            "transactions": 11500.0,
-            "pe": 84.84,
-            "pb": 4.21,
-            "dividend_yield": 0.48
-          },
-          {
-            "code": "6205",
-            "name": "詮欣",
-            "market": "TWSE",
-            "industry": "28",
-            "close": 65.5,
+            "industry": "29",
+            "close": 50.5,
             "change": -4.5,
-            "change_percent": -6.4286,
-            "open": 71.2,
-            "high": 71.2,
-            "low": 65.5,
-            "volume": 2191446.0,
-            "amount": 148542837.0,
-            "transactions": 2384.0,
-            "pe": 28.73,
-            "pb": 2.02,
-            "dividend_yield": 2.29
+            "change_percent": -8.1818,
+            "open": 53.3,
+            "high": 53.3,
+            "low": 50.5,
+            "volume": 3331425.0,
+            "amount": 171683242.0,
+            "transactions": 3404.0,
+            "pe": 13.15,
+            "pb": 2.29,
+            "dividend_yield": 2.57
           },
           {
-            "code": "8110",
-            "name": "華東",
+            "code": "8996",
+            "name": "高力",
+            "market": "TWSE",
+            "industry": "05",
+            "close": 1540.0,
+            "change": -115.0,
+            "change_percent": -6.9486,
+            "open": 1640.0,
+            "high": 1640.0,
+            "low": 1515.0,
+            "volume": 5776754.0,
+            "amount": 9058585445.0,
+            "transactions": 12504.0,
+            "pe": 103.7,
+            "pb": 27.96,
+            "dividend_yield": 0.3
+          },
+          {
+            "code": "6168",
+            "name": "宏齊",
+            "market": "TWSE",
+            "industry": "26",
+            "close": 41.2,
+            "change": -2.8,
+            "change_percent": -6.3636,
+            "open": 43.5,
+            "high": 43.5,
+            "low": 40.2,
+            "volume": 25341487.0,
+            "amount": 1053749382.0,
+            "transactions": 16948.0,
+            "pe": 128.75,
+            "pb": 2.37,
+            "dividend_yield": null
+          },
+          {
+            "code": "00715L",
+            "name": "期街口布蘭特正2",
+            "market": "TWSE",
+            "industry": "未分類",
+            "close": 60.7,
+            "change": -3.85,
+            "change_percent": -5.9644,
+            "open": 61.65,
+            "high": 61.9,
+            "low": 60.15,
+            "volume": 5562559.0,
+            "amount": 339509144.0,
+            "transactions": 2346.0,
+            "pe": null,
+            "pb": null,
+            "dividend_yield": null
+          },
+          {
+            "code": "3380",
+            "name": "明泰",
+            "market": "TWSE",
+            "industry": "27",
+            "close": 31.0,
+            "change": -1.95,
+            "change_percent": -5.9181,
+            "open": 33.0,
+            "high": 33.0,
+            "low": 31.0,
+            "volume": 5531166.0,
+            "amount": 175409139.0,
+            "transactions": 3643.0,
+            "pe": 221.43,
+            "pb": 1.83,
+            "dividend_yield": 1.61
+          },
+          {
+            "code": "2409",
+            "name": "友達",
+            "market": "TWSE",
+            "industry": "26",
+            "close": 34.7,
+            "change": -1.95,
+            "change_percent": -5.3206,
+            "open": 36.65,
+            "high": 36.65,
+            "low": 33.4,
+            "volume": 948644349.0,
+            "amount": 33264615674.0,
+            "transactions": 307537.0,
+            "pe": 144.58,
+            "pb": 1.7,
+            "dividend_yield": 1.15
+          },
+          {
+            "code": "2351",
+            "name": "順德",
             "market": "TWSE",
             "industry": "24",
-            "close": 48.95,
-            "change": -3.15,
-            "change_percent": -6.0461,
-            "open": 53.0,
-            "high": 53.1,
-            "low": 48.7,
-            "volume": 47786757.0,
-            "amount": 2414393425.0,
-            "transactions": 28056.0,
-            "pe": 8.98,
-            "pb": 1.31,
-            "dividend_yield": 3.04
+            "close": 226.0,
+            "change": -12.5,
+            "change_percent": -5.2411,
+            "open": 240.0,
+            "high": 240.0,
+            "low": 225.0,
+            "volume": 6000073.0,
+            "amount": 1374170185.0,
+            "transactions": 7779.0,
+            "pe": 57.8,
+            "pb": 5.36,
+            "dividend_yield": 0.46
           },
           {
-            "code": "3591",
-            "name": "艾笛森",
+            "code": "6668",
+            "name": "中揚光",
             "market": "TWSE",
             "industry": "26",
-            "close": 24.35,
-            "change": -1.5,
-            "change_percent": -5.8027,
-            "open": 25.3,
-            "high": 25.35,
-            "low": 23.3,
-            "volume": 5400296.0,
-            "amount": 129096647.0,
-            "transactions": 6574.0,
+            "close": 46.95,
+            "change": -2.45,
+            "change_percent": -4.9595,
+            "open": 48.95,
+            "high": 49.45,
+            "low": 46.65,
+            "volume": 3591142.0,
+            "amount": 171526638.0,
+            "transactions": 2965.0,
             "pe": null,
-            "pb": 1.19,
+            "pb": 2.26,
             "dividend_yield": null
           },
           {
-            "code": "8215",
-            "name": "明基材",
+            "code": "2360",
+            "name": "致茂",
             "market": "TWSE",
-            "industry": "26",
-            "close": 28.35,
-            "change": -1.7,
-            "change_percent": -5.6572,
-            "open": 29.5,
-            "high": 31.0,
-            "low": 28.35,
-            "volume": 12705569.0,
-            "amount": 375322907.0,
-            "transactions": 6792.0,
-            "pe": null,
-            "pb": 1.89,
-            "dividend_yield": 1.06
+            "industry": "31",
+            "close": 2325.0,
+            "change": -115.0,
+            "change_percent": -4.7131,
+            "open": 2445.0,
+            "high": 2470.0,
+            "low": 2305.0,
+            "volume": 2628143.0,
+            "amount": 6195048285.0,
+            "transactions": 7814.0,
+            "pe": 59.31,
+            "pb": 29.85,
+            "dividend_yield": 0.84
           },
           {
-            "code": "6949",
-            "name": "沛爾生醫*-創",
+            "code": "7610",
+            "name": "聯友金屬-創",
             "market": "TWSE",
-            "industry": "22",
-            "close": 50.8,
-            "change": -3.0,
-            "change_percent": -5.5762,
-            "open": 53.0,
-            "high": 53.8,
-            "low": 50.6,
-            "volume": 3651236.0,
-            "amount": 189769836.0,
-            "transactions": 3369.0,
-            "pe": null,
-            "pb": 25.92,
-            "dividend_yield": null
+            "industry": "35",
+            "close": 1825.0,
+            "change": -80.0,
+            "change_percent": -4.1995,
+            "open": 1905.0,
+            "high": 1905.0,
+            "low": 1825.0,
+            "volume": 508685.0,
+            "amount": 945197980.0,
+            "transactions": 3562.0,
+            "pe": 52.38,
+            "pb": 28.45,
+            "dividend_yield": 0.14
           }
         ]
       }
