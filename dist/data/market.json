@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-25T08:00:02+08:00",
+  "generated_at": "2026-09-26T08:00:03+08:00",
   "observed_at": "2026-09-24",
   "mode": "official_eod",
   "stocks": [
@@ -26231,7 +26231,7 @@
       "id": "companies",
       "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
       "rows": 1095,
-      "sha256": "812d3aae38566e20ce1538b8c9c8d81f088f8e9a1f6c50b2cb71a513ba434148",
+      "sha256": "c9143905e09d5b0597854b5f04d40008528c0c167dc938df70752a2c0a19c452",
       "status": "ready"
     }
   ],
