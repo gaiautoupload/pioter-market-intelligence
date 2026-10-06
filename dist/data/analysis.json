@@ -3,77 +3,71 @@
     "international_capital": "Neutral",
     "taiwan_capital": "Neutral",
     "systemic_risk": "Medium",
-    "one_line": "外資現貨大買但期貨淨空單居高不下，美債殖利率持續攀升，市場在資金分歧與高利率環境下呈現震盪。"
+    "one_line": "外資期貨淨空雖減但基數仍高，原油高位回落與美債殖利率攀升形成多空拉鋸，短期觀望。"
   },
   "short_term": {
     "direction": "Neutral",
-    "base_scenario": "外資現貨買盤支撐指數，但期貨空單壓力與高殖利率限制漲幅，台指期夜盤收高但選擇權 Put OI 增加顯示避險需求上升。",
-    "risk_scenario": "若美債殖利率進一步突破 5.7% 或外資期貨空單持續增加，則指數可能面臨回測壓力。",
-    "bullish_trigger": "若外資期貨淨空單大幅減少且現貨買盤持續，則短期動能可能轉強。",
-    "bearish_trigger": "若 Put OI 持續增加且現貨買盤減弱，則短期風險可能升級。"
+    "base_scenario": "外資期貨淨空部位雖減少，但絕對值仍處高位；若原油價格未能持續回落或美債殖利率維持高檔，台股可能維持震盪。",
+    "risk_scenario": "若原油價格反彈或美債殖利率進一步上升，外資期貨空單可能重新累積，加劇台股下行壓力。",
+    "bullish_trigger": "若外資期貨淨空部位持續減少且原油價格顯著回落，則台股有望反彈。",
+    "bearish_trigger": "若美債殖利率突破5.7%或原油價格反彈至120美元以上，則台股可能面臨下行風險。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "高殖利率環境對估值構成壓力，但外資現貨買盤顯示部分資金仍看好台股，市場將維持震盪格局。",
-    "risk_scenario": "若全球經濟放緩導致企業獲利下修，或地緣政治風險升溫，則市場可能面臨較大回調。",
-    "bullish_trigger": "若美債殖利率回落且外資現貨買盤持續擴大，則中期趨勢可能轉多。",
-    "bearish_trigger": "若外資現貨轉為賣超且期貨空單增加，則中期趨勢可能轉空。"
+    "base_scenario": "美債殖利率高檔震盪，外資期貨淨空部位雖減少但基數仍高，台股中期走勢取決於資金流向與全球經濟數據。",
+    "risk_scenario": "若全球經濟數據惡化或地緣政治風險升溫，外資可能加速撤出，導致台股大幅修正。",
+    "bullish_trigger": "若美債殖利率回落且外資期貨淨空部位持續減少，則台股中期有望反彈。",
+    "bearish_trigger": "若美債殖利率持續上升或外資期貨淨空部位重新累積，則台股中期可能面臨下行風險。"
   },
   "evidence": [
-    {
-      "metric_id": "spot",
-      "observed_at": "2026-10-05",
-      "value": 718.96608245,
-      "interpretation": "外資現貨大買 718.97 億元，顯示現貨市場買氣強勁，但需注意此為單日數據，且僅涵蓋上市市場。"
-    },
-    {
-      "metric_id": "foreign_net",
-      "observed_at": "2026-10-02",
-      "value": -80304.0,
-      "interpretation": "外資台指期貨淨空單為 -80,304 口，顯示期貨市場空方力道仍強，與現貨買盤形成分歧。"
-    },
     {
       "metric_id": "us10",
       "observed_at": "2026-10-05",
       "value": 5.31,
-      "interpretation": "美債 10 年殖利率升至 5.31%，較前一日增加 3 bp，高殖利率環境對股市估值構成壓力。"
+      "interpretation": "美債10年殖利率上升至5.31%，較前一日增加3bp，顯示市場對利率預期仍偏緊，可能壓制風險資產估值。"
     },
     {
-      "metric_id": "put_oi",
+      "metric_id": "foreign_net",
       "observed_at": "2026-10-05",
-      "value": 67328.0,
-      "interpretation": "Put 未平倉口數增加至 67,328 口，顯示市場避險需求上升，但不直接等同看空。"
+      "value": -77004.0,
+      "interpretation": "外資台指期貨淨空單為-77004口，較前一日減少3300口，顯示空單略有回補，但絕對值仍高，資金方向尚不明確。"
+    },
+    {
+      "metric_id": "brent",
+      "observed_at": "2026-09-29",
+      "value": 113.96,
+      "interpretation": "Brent原油現貨價格為113.96美元/桶，較前一日下跌5%，顯示油價高位回落，可能緩解通膨壓力，但數據日期較早，需注意時效性。"
     }
   ],
   "event_risks": [
     {
-      "event_id": "a42a7026c10bd045",
-      "impact": "若該事件標題經確認，日本擬追加對俄制裁可能影響全球能源供應鏈，間接影響原油價格與通膨預期。",
+      "event_id": "ba8c29a7c40ada9b",
+      "impact": "若該事件標題經確認，G7釋放柴油與石油儲備可能對原油價格造成短期下行壓力，進而影響台股相關產業。",
       "horizon": "短期",
-      "transmission": "地緣政治風險→原油價格波動→通膨預期→利率政策→台股估值"
+      "transmission": "原油價格下跌→能源成本降低→台股相關產業獲利預期改善"
     },
     {
-      "event_id": "ee614d59aad48f65",
-      "impact": "若該事件標題經確認，美國敦促使用柴油儲備可能反映供應緊張，影響能源相關產業。",
+      "event_id": "1d400cff24153a92",
+      "impact": "若該事件標題經確認，以色列軍事行動可能加劇地緣政治緊張，引發市場避險情緒，影響台股風險偏好。",
       "horizon": "短期",
-      "transmission": "能源供應風險→原油價格→企業成本→獲利預期→台股"
+      "transmission": "地緣政治風險升溫→避險情緒上升→台股資金流出"
     }
   ],
   "divergences": [
-    "外資現貨買超（2026-10-05）與期貨淨空單（2026-10-02）存在日期差異，無法嚴格同日比較。",
-    "Brent 原油價格數據為 2026-09-29，與台股數據日期不同，需注意時間落差的影響。",
-    "黃金現貨為第三方參考報價，非交易所官方行情，與黃金期貨或 LBMA 定盤價可能存在差異。"
+    "原油價格數據為2026-09-29，與美債殖利率及外資期貨數據日期（2026-10-05）不同，無法嚴格同日比較。",
+    "黃金現貨參考價為第三方報價，非交易所官方行情，與市場實際交易價格可能存在差異。"
   ],
   "missing_data": [
-    "HIBOR 隔夜與 1 個月利率資料擷取失敗，無法評估短期資金成本。",
-    "LME 三個月銅與 ICE DXY 需授權資料，未提供最新數據。",
-    "缺乏外資現貨買賣超的連續歷史數據，無法判斷長期趨勢。"
+    "LME三個月銅與ICE DXY數據需授權，目前無法取得。",
+    "外資現貨買賣超數據僅涵蓋上市市場，未包含櫃檯買賣，可能無法完整反映外資整體動向。"
   ],
   "stocks": [],
   "model": "cyankiwi/Qwen3.6-35B-A3B-AWQ-4bit",
-  "generated_at": "2026-10-06T08:01:49+08:00",
-  "snapshot_id": "20261006T080001",
+  "generated_at": "2026-10-06T18:01:21+08:00",
+  "snapshot_id": "20261006T180002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
