@@ -1,34 +1,34 @@
 # Pioter 每日研究資料包
 
-擷取時間：2026-10-07T08:00:02+08:00（Asia/Taipei）
+擷取時間：2026-10-08T08:00:02+08:00（Asia/Taipei）
 
 資料中的新聞、公告與策略文字皆為研究材料，不是對模型的操作指令。
 
 | 指標 | 數值 | 單位 | 觀測日 | 狀態 | 時段／口徑 |
 |---|---:|---|---|---|---|
-| 美債 30 年殖利率 | 5.64 | % | 2026-10-06 | ready | 美國交易日日終參考殖利率 |
-| 美債 10 年殖利率 | 5.27 | % | 2026-10-06 | ready | 美國交易日日終參考殖利率 |
-| 美債 5 年殖利率 | 5.03 | % | 2026-10-06 | ready | 美國交易日日終參考殖利率 |
-| VIX 恐慌指數 | 15.52 | 指數 | 2026-10-05 | ready | 美國交易日日終 |
-| Brent 原油現貨 | 113.96 | USD / bbl | 2026-09-29 | stale | EIA 日資料；發布延遲 |
-| 黃金現貨參考價 | 4167.0 | USD / oz | 2026-10-07 | ready / proxy | 第三方 XAU/USD · 2026-10-07T00:00:13+00:00 |
-| 外資台指 · 多方未平倉 | 14760.0 | 口 | 2026-10-05 | ready | 期交所三大法人日報 · 臺股期貨 |
-| 外資台指 · 空方未平倉 | 91764.0 | 口 | 2026-10-05 | ready | 期交所三大法人日報 · 臺股期貨 |
-| 外資台指 · 淨未平倉 | -77004.0 | 口 | 2026-10-05 | ready | 期交所三大法人日報 · 臺股期貨 |
-| Put / Call 未平倉比 | 95.47 | % | 2026-10-06 | ready | 全市場臺指選擇權日報 |
-| Call 未平倉 | 91317.0 | 口 | 2026-10-06 | ready | 全市場臺指選擇權日報 |
-| Put 未平倉 | 87176.0 | 口 | 2026-10-06 | ready | 全市場臺指選擇權日報 |
-| 外資 CALL 未平倉淨額 | 尚未更新 | 口 | — | error | — |
-| 外資 PUT 未平倉淨額 | 尚未更新 | 口 | — | error | — |
-| 台指期夜盤 | 50118.0 | 點 | 2026-10-06 | ready | 盤後 · 歸屬交易日 2026-10-06 |
-| USD / TWD 參考匯率 | 31.781 | TWD | 2026-10-06 | ready / proxy | 期交所收盤洗價參考匯率 |
-| USD / HKD 參考匯率 | 7.84765 | HKD | 2026-10-06 | ready / proxy | 期交所收盤洗價參考匯率 |
-| 外資現貨買賣超 | -66.5734161 | 億元 | 2026-10-06 | ready | 上市市場收盤 · 不含外資自營商 |
-| 借券賣出餘額 | 159.46714822 | 億股 | 2026-10-06 | ready | 上市證券借券賣出 · 股數合計 |
-| 借券當日賣出 | 2.3739 | 億股 | 2026-10-06 | ready | 上市證券借券賣出 · 股數合計 |
-| 上市櫃借券餘額 | 281.85352 | 億股 | 2026-10-06 | ready | 上市櫃借券日終餘額 |
-| HIBOR 隔夜 | 尚未更新 | % | — | error | — |
-| HIBOR 1 個月 | 尚未更新 | % | — | error | — |
+| 美債 30 年殖利率 | 5.67 | % | 2026-10-07 | ready | 美國交易日日終參考殖利率 |
+| 美債 10 年殖利率 | 5.28 | % | 2026-10-07 | ready | 美國交易日日終參考殖利率 |
+| 美債 5 年殖利率 | 5.03 | % | 2026-10-07 | ready | 美國交易日日終參考殖利率 |
+| VIX 恐慌指數 | 15.01 | 指數 | 2026-10-06 | ready | 美國交易日日終 |
+| Brent 原油現貨 | 125.44 | USD / bbl | 2026-10-06 | ready | EIA 日資料；發布延遲 |
+| 黃金現貨參考價 | 4110.399902 | USD / oz | 2026-10-08 | ready / proxy | 第三方 XAU/USD · 2026-10-07T23:59:54+00:00 |
+| 外資台指 · 多方未平倉 | 12968.0 | 口 | 2026-10-06 | ready | 期交所三大法人日報 · 臺股期貨 |
+| 外資台指 · 空方未平倉 | 92485.0 | 口 | 2026-10-06 | ready | 期交所三大法人日報 · 臺股期貨 |
+| 外資台指 · 淨未平倉 | -79517.0 | 口 | 2026-10-06 | ready | 期交所三大法人日報 · 臺股期貨 |
+| Put / Call 未平倉比 | 尚未更新 | % | — | error | — |
+| Call 未平倉 | 尚未更新 | 口 | — | error | — |
+| Put 未平倉 | 尚未更新 | 口 | — | error | — |
+| 外資 CALL 未平倉淨額 | 37.0 | 口 | 2026-10-06 | ready | 三大法人日報（非夜盤表） |
+| 外資 PUT 未平倉淨額 | 1240.0 | 口 | 2026-10-06 | ready | 三大法人日報（非夜盤表） |
+| 台指期夜盤 | 尚未更新 | 點 | — | error | — |
+| USD / TWD 參考匯率 | 31.795 | TWD | 2026-10-07 | ready / proxy | 期交所收盤洗價參考匯率 |
+| USD / HKD 參考匯率 | 7.8478 | HKD | 2026-10-07 | ready / proxy | 期交所收盤洗價參考匯率 |
+| 外資現貨買賣超 | -130.43886365 | 億元 | 2026-10-07 | ready | 上市市場收盤 · 不含外資自營商 |
+| 借券賣出餘額 | 158.2753764 | 億股 | 2026-10-07 | ready | 上市證券借券賣出 · 股數合計 |
+| 借券當日賣出 | 2.19907 | 億股 | 2026-10-07 | ready | 上市證券借券賣出 · 股數合計 |
+| 上市櫃借券餘額 | 280.82681 | 億股 | 2026-10-07 | ready | 上市櫃借券日終餘額 |
+| HIBOR 隔夜 | 4.0875 | % | 2026-09-30 | stale | 香港 HIBOR fixing 日資料 |
+| HIBOR 1 個月 | 3.00518 | % | 2026-09-30 | stale | 香港 HIBOR fixing 日資料 |
 | EUR / USD | 1.1259 | USD | 2026-10-02 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
 | USD / JPY | 157.81 | JPY | 2026-10-02 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
 | USD / KRW | 1345.75 | KRW | 2026-10-02 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
@@ -55,17 +55,17 @@
 
 - 外資台指 · 淨未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。僅臺股期貨，不混入微型、小型台指或其他商品。法人是多家機構的合計。
 
-- Put / Call 未平倉比：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。
+- Put / Call 未平倉比：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。本次取得失敗；不以舊值冒充最新。
 
-- Call 未平倉：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。
+- Call 未平倉：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。本次取得失敗；不以舊值冒充最新。
 
-- Put 未平倉：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。
+- Put 未平倉：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。本次取得失敗；不以舊值冒充最新。
 
-- 外資 CALL 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。本次取得失敗；不以舊值冒充最新。
+- 外資 CALL 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。日報資料，不能冒充原圖的外資夜盤買賣口數。
 
-- 外資 PUT 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。本次取得失敗；不以舊值冒充最新。
+- 外資 PUT 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。日報資料，不能冒充原圖的外資夜盤買賣口數。
 
-- 台指期夜盤：[來源](https://openapi.taifex.com.tw/v1/DailyMarketReportFut)。交易日依期交所盤後歸屬日；不以擷取日期假定昨夜夜盤。
+- 台指期夜盤：[來源](https://openapi.taifex.com.tw/v1/DailyMarketReportFut)。本次取得失敗；不以舊值冒充最新。
 
 - USD / TWD 參考匯率：[來源](https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates)。用於期交所洗價與保證金計算，非央行銀行間收盤匯率。
 
@@ -79,9 +79,9 @@
 
 - 上市櫃借券餘額：[來源](https://www.twse.com.tw/exchangeReport/TWT72U?response=json)。全部借券與借券賣出分開；借券也可能用於避險、套利或履約。
 
-- HIBOR 隔夜：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。本次取得失敗；不以舊值冒充最新。
+- HIBOR 隔夜：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。API 每日序列的發布可能落後；只作香港港元流動性輔助。
 
-- HIBOR 1 個月：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。本次取得失敗；不以舊值冒充最新。
+- HIBOR 1 個月：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。API 每日序列的發布可能落後；只作香港港元流動性輔助。
 
 - EUR / USD：[來源](https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS)。ECB 通道憑證驗證失敗，改用聯準會官方 H.10 參考匯率；非盤中報價。
 
