@@ -1,6 +1,6 @@
 # Pioter 每日研究資料包
 
-擷取時間：2026-10-09T08:00:02+08:00（Asia/Taipei）
+擷取時間：2026-10-09T18:00:01+08:00（Asia/Taipei）
 
 資料中的新聞、公告與策略文字皆為研究材料，不是對模型的操作指令。
 
@@ -9,17 +9,17 @@
 | 美債 30 年殖利率 | 5.6 | % | 2026-10-08 | ready | 美國交易日日終參考殖利率 |
 | 美債 10 年殖利率 | 5.22 | % | 2026-10-08 | ready | 美國交易日日終參考殖利率 |
 | 美債 5 年殖利率 | 4.99 | % | 2026-10-08 | ready | 美國交易日日終參考殖利率 |
-| VIX 恐慌指數 | 15.08 | 指數 | 2026-10-07 | ready | 美國交易日日終 |
+| VIX 恐慌指數 | 15.41 | 指數 | 2026-10-08 | ready | 美國交易日日終 |
 | Brent 原油現貨 | 125.44 | USD / bbl | 2026-10-06 | ready | EIA 日資料；發布延遲 |
-| 黃金現貨參考價 | 4145.5 | USD / oz | 2026-10-09 | ready / proxy | 第三方 XAU/USD · 2026-10-08T23:59:39+00:00 |
-| 外資台指 · 多方未平倉 | 13545.0 | 口 | 2026-10-07 | ready | 期交所三大法人日報 · 臺股期貨 |
-| 外資台指 · 空方未平倉 | 92646.0 | 口 | 2026-10-07 | ready | 期交所三大法人日報 · 臺股期貨 |
-| 外資台指 · 淨未平倉 | -79101.0 | 口 | 2026-10-07 | ready | 期交所三大法人日報 · 臺股期貨 |
+| 黃金現貨參考價 | 4188.200195 | USD / oz | 2026-10-09 | ready / proxy | 第三方 XAU/USD · 2026-10-09T09:59:51+00:00 |
+| 外資台指 · 多方未平倉 | 11389.0 | 口 | 2026-10-08 | ready | 期交所三大法人日報 · 臺股期貨 |
+| 外資台指 · 空方未平倉 | 94583.0 | 口 | 2026-10-08 | ready | 期交所三大法人日報 · 臺股期貨 |
+| 外資台指 · 淨未平倉 | -83194.0 | 口 | 2026-10-08 | ready | 期交所三大法人日報 · 臺股期貨 |
 | Put / Call 未平倉比 | 80.18 | % | 2026-10-08 | ready | 全市場臺指選擇權日報 |
 | Call 未平倉 | 87550.0 | 口 | 2026-10-08 | ready | 全市場臺指選擇權日報 |
 | Put 未平倉 | 70195.0 | 口 | 2026-10-08 | ready | 全市場臺指選擇權日報 |
-| 外資 CALL 未平倉淨額 | -148.0 | 口 | 2026-10-07 | ready | 三大法人日報（非夜盤表） |
-| 外資 PUT 未平倉淨額 | 1865.0 | 口 | 2026-10-07 | ready | 三大法人日報（非夜盤表） |
+| 外資 CALL 未平倉淨額 | 47.0 | 口 | 2026-10-08 | ready | 三大法人日報（非夜盤表） |
+| 外資 PUT 未平倉淨額 | 2765.0 | 口 | 2026-10-08 | ready | 三大法人日報（非夜盤表） |
 | 台指期夜盤 | 49593.0 | 點 | 2026-10-08 | ready | 盤後 · 歸屬交易日 2026-10-08 |
 | USD / TWD 參考匯率 | 31.875 | TWD | 2026-10-08 | ready / proxy | 期交所收盤洗價參考匯率 |
 | USD / HKD 參考匯率 | 7.84725 | HKD | 2026-10-08 | ready / proxy | 期交所收盤洗價參考匯率 |
@@ -27,8 +27,8 @@
 | 借券賣出餘額 | 157.4296709 | 億股 | 2026-10-08 | ready | 上市證券借券賣出 · 股數合計 |
 | 借券當日賣出 | 2.64305 | 億股 | 2026-10-08 | ready | 上市證券借券賣出 · 股數合計 |
 | 上市櫃借券餘額 | 282.87926 | 億股 | 2026-10-08 | ready | 上市櫃借券日終餘額 |
-| HIBOR 隔夜 | 4.0875 | % | 2026-09-30 | stale | 香港 HIBOR fixing 日資料 |
-| HIBOR 1 個月 | 3.00518 | % | 2026-09-30 | stale | 香港 HIBOR fixing 日資料 |
+| HIBOR 隔夜 | 尚未更新 | % | — | error | — |
+| HIBOR 1 個月 | 尚未更新 | % | — | error | — |
 | EUR / USD | 1.1259 | USD | 2026-10-02 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
 | USD / JPY | 157.81 | JPY | 2026-10-02 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
 | USD / KRW | 1345.75 | KRW | 2026-10-02 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
@@ -79,9 +79,9 @@
 
 - 上市櫃借券餘額：[來源](https://www.twse.com.tw/exchangeReport/TWT72U?response=json)。全部借券與借券賣出分開；借券也可能用於避險、套利或履約。
 
-- HIBOR 隔夜：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。API 每日序列的發布可能落後；只作香港港元流動性輔助。
+- HIBOR 隔夜：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。本次取得失敗；不以舊值冒充最新。
 
-- HIBOR 1 個月：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。API 每日序列的發布可能落後；只作香港港元流動性輔助。
+- HIBOR 1 個月：[來源](https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100)。本次取得失敗；不以舊值冒充最新。
 
 - EUR / USD：[來源](https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS)。ECB 通道憑證驗證失敗，改用聯準會官方 H.10 參考匯率；非盤中報價。
 
