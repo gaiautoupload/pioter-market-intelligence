@@ -3,70 +3,76 @@
     "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率維持高檔且外資現貨大幅賣超，台股期貨淨空部位擴大，短期資金面承壓。"
+    "one_line": "美債殖利率雖單日回落但仍處高檔，外資現貨大幅賣超且期貨淨空部位擴大，短期市場情緒偏空。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "若外資現貨持續賣超且期貨淨空部位未見收斂，則台股指數可能維持震盪偏弱格局。",
-    "risk_scenario": "若美債殖利率進一步攀升或地緣政治風險升溫導致避險情緒增強，則可能引發更大規模的資金撤離。",
-    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位顯著減少，則短期壓力可能緩解。",
-    "bearish_trigger": "若外資現貨賣超金額持續擴大或期貨淨空部位創下近期高點，則下行風險增加。"
+    "base_scenario": "若外資現貨賣超趨勢延續且期貨淨空部位未見明顯回補，則台股短期可能維持震盪偏弱格局。",
+    "risk_scenario": "若美債殖利率再度反彈或VIX指數突破近期區間，則市場避險情緒可能升溫，導致指數進一步下探。",
+    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位連續兩日減少，則短期壓力可能緩解。",
+    "bearish_trigger": "若外資現貨賣超金額持續擴大且期貨淨空部位創近期新高，則下行風險增加。"
   },
   "medium_term": {
     "direction": "Neutral",
     "base_scenario": "若全球利率環境穩定且台股基本面未出現重大惡化，則指數可能在當前區間整理。",
-    "risk_scenario": "若美國通膨數據意外走高導致聯準會鷹派立場強化，則可能對新興市場資金流動造成中期壓力。",
-    "bullish_trigger": "若美債殖利率回落且外資連續多日轉為買超，則中期趨勢可能轉強。",
-    "bearish_trigger": "若全球經濟衰退預期升溫導致企業獲利下修，則中期估值可能承壓。"
+    "risk_scenario": "若地緣政治風險（如原油價格波動）導致通膨預期上升，則可能壓抑估值，使中期趨勢轉弱。",
+    "bullish_trigger": "若美債殖利率持續下行且外資期貨部位轉為淨多，則中期趨勢可能轉強。",
+    "bearish_trigger": "若原油價格持續高檔震盪且美元指數走強，則可能對新興市場資金形成壓力。"
   },
   "evidence": [
-    {
-      "metric_id": "us10",
-      "observed_at": "2026-10-07",
-      "value": 5.28,
-      "interpretation": "美債10年殖利率為5.28%，較前一日上升1bp，顯示利率環境仍具壓力。"
-    },
     {
       "metric_id": "spot",
       "observed_at": "2026-10-08",
       "value": -758.5229349,
-      "interpretation": "外資現貨單日賣超758.52億元，較前一日賣超金額擴大，顯示現貨市場資金流出明顯。"
+      "interpretation": "外資現貨單日賣超約758億元，較前一日（-130億元）賣超幅度顯著擴大，顯示外資現貨態度轉趨保守。"
     },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-10-07",
       "value": -79101.0,
-      "interpretation": "外資台指期貨淨未平倉部位為-79,101口，較前一日增加416口空單，顯示期貨端避險或看空情緒仍存。"
+      "interpretation": "外資期貨淨未平倉部位為-79,101口，較前一日（-79,517口）略有回補但整體仍維持高檔淨空，反映避險或看空情緒。"
+    },
+    {
+      "metric_id": "us10",
+      "observed_at": "2026-10-08",
+      "value": 5.22,
+      "interpretation": "美債10年殖利率降至5.22%，較前一日下降6bp，但較9月底（5.29%）仍處高檔，對成長股估值構成壓力。"
+    },
+    {
+      "metric_id": "vix",
+      "observed_at": "2026-10-07",
+      "value": 15.08,
+      "interpretation": "VIX指數為15.08，較前一日微幅上升，處於相對溫和區間，未顯示極端恐慌，但需留意後續變化。"
     }
   ],
   "event_risks": [
     {
       "event_id": "34b93fee8d814e06",
-      "impact": "若該事件標題經確認，地緣政治衝突可能推升原物料價格與避險資產需求，間接影響全球風險偏好。",
+      "impact": "若該事件標題經確認，地緣衝突可能影響能源供應預期，間接影響通膨與利率預期。",
       "horizon": "短期",
-      "transmission": "地緣衝突 → 原油/黃金避險需求上升 → 全球通膨預期升溫 → 美債殖利率壓力 → 台股資金流出"
+      "transmission": "衝突升級 → 原油/天然氣價格波動 → 通膨預期上升 → 利率預期變化 → 股市估值承壓"
     },
     {
       "event_id": "651eed107b308ab1",
-      "impact": "若該事件標題經確認，荷姆茲海峽航運成本上升可能反映供應鏈風險，影響原物料供應預期。",
+      "impact": "若該事件標題經確認，荷姆茲海峽航運成本上升可能推高原物料運輸成本。",
       "horizon": "中期",
-      "transmission": "航運成本上升 → 原物料運輸成本增加 → 通膨壓力 → 貨幣政策緊縮預期 → 成長股估值承壓"
+      "transmission": "航運成本上升 → 原物料進口成本增加 → 企業毛利受壓 → 台股相關產業獲利下修"
     }
   ],
   "divergences": [
-    "外資現貨賣超數據為2026-10-08，而期貨淨未平倉數據為2026-10-07，兩者非同一交易日，需注意時效差異。",
-    "黃金報價來源為第三方API (gold-api.com)，非LBMA定盤價，僅供參考，需與券商報價覆核。",
-    "EUR/USD, USD/JPY, USD/KRW 匯率數據狀態為 stale (2026-10-02)，無法用於2026-10-08的即時匯率分析。"
+    "外資現貨數據為2026-10-08，而外資期貨淨部位數據為2026-10-07，兩者非同一交易日，無法直接作同日資金流向比較。",
+    "黃金報價來源為第三方API（gold-api.com），非LBMA定盤價或交易所官方行情，僅供參考。",
+    "USD/TWD匯率為期交所洗價參考匯率，非央行銀行間收盤匯率，可能存在微小差異。"
   ],
   "missing_data": [
-    "HIBOR 隔夜與1個月利率 (status: error)",
-    "LME 三個月銅 (status: license_required)",
-    "ICE 美元指數 DXY (status: license_required)"
+    "LME三個月銅價格（需授權）",
+    "ICE美元指數DXY（需授權）",
+    "HIBOR數據過期（最新為2026-09-30），無法反映當前港元流動性狀況。"
   ],
   "stocks": [],
   "model": "qwen3.8-flash-next-iq3_s",
-  "generated_at": "2026-10-08T18:02:20+08:00",
-  "snapshot_id": "20261008T180001",
+  "generated_at": "2026-10-09T08:01:43+08:00",
+  "snapshot_id": "20261009T080002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
   "review_flags": [],
   "review_status": "machine_validated_not_human_reviewed"
