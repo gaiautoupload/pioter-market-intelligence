@@ -3,63 +3,71 @@
     "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率雖單日回落但仍處高檔，外資期貨淨空部位擴大且現貨大幅賣超，顯示資金避險情緒濃厚。"
+    "one_line": "美債殖利率維持高檔且外資期貨淨空部位擴大，疊加現貨大幅賣超，顯示資金避險情緒升溫。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "若外資期貨淨空部位持續擴大且現貨賣超未止，則台股短期可能維持震盪偏弱格局。",
-    "risk_scenario": "若 VIX 進一步攀升或美元指數走強導致台幣貶值壓力加劇，則可能引發更多外資撤離。",
-    "bullish_trigger": "若外資期貨淨空部位明顯收斂且現貨轉為買超，則短期情緒有望修復。",
-    "bearish_trigger": "若外資期貨淨空部位繼續擴大超過 -85,000 口（示例門檻，尚未回測），則下行風險升級。"
+    "base_scenario": "若外資期貨淨空部位持續擴大且現貨賣超未止，則台股短期可能面臨回測壓力。",
+    "risk_scenario": "若VIX反彈且美債殖利率突破近期高點，則市場波動風險將顯著增加。",
+    "bullish_trigger": "若外資期貨淨空部位縮減並轉為淨多，且現貨出現連續買超，則短期情緒有望修復。",
+    "bearish_trigger": "若外資期貨淨空部位進一步擴大超過10萬口（示例門檻，尚未回測），且VIX突破16，則下跌風險升級。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "若美債殖利率維持在 5.2% 以上高檔，則台股中期估值壓力仍存，指數難有大幅反彈。",
-    "risk_scenario": "若全球風險偏好持續下降（VIX 維持高檔），則中期資金流向可能持續不利於新興市場。",
-    "bullish_trigger": "若美債 10 年殖利率回落至 5.0% 以下（示例門檻，尚未回測）且外資現貨轉為連續買超，則中期趨勢可能翻多。",
-    "bearish_trigger": "若美債殖利率再度突破 5.3% 且台幣匯率貶值超過 32.0（示例門檻，尚未回測），則中期風險升級。"
+    "base_scenario": "若高利率環境持續但經濟數據未惡化，則市場可能在震盪中尋找新的平衡點。",
+    "risk_scenario": "若油價維持高檔導致通膨預期升溫，迫使聯準會維持鷹派，則中期估值承壓。",
+    "bullish_trigger": "若美債殖利率明顯回落且外資回流現貨，則中期趨勢可能轉多。",
+    "bearish_trigger": "若全球風險資產持續遭拋售且台股借券賣出餘額不降反升，則中期看空。"
   },
   "evidence": [
-    {
-      "metric_id": "us10",
-      "observed_at": "2026-10-08",
-      "value": 5.22,
-      "interpretation": "美債 10 年殖利率單日下跌 6 bp，但較 9 月底仍處高檔，反映利率壓力未完全解除。"
-    },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-10-08",
       "value": -83194.0,
-      "interpretation": "外資台指期貨淨未平倉部位為 -83,194 口，較前一日減少 4,093 口（空方增加），顯示避險或看空情緒增強。"
+      "interpretation": "外資台指期貨淨未平倉為負83,194口，較前一日減少4,093口（即空頭部位增加），顯示外資在期貨端偏向避險或看空。"
     },
     {
       "metric_id": "spot",
       "observed_at": "2026-10-08",
       "value": -758.5229349,
-      "interpretation": "外資現貨單日賣超 758.52 億元，較前一日賣超幅度擴大，顯示現貨端資金流出壓力大。"
+      "interpretation": "外資現貨單日淨賣超758.52億元，較前一日擴大賣超628.08億元，顯示現貨端資金流出壓力大。"
+    },
+    {
+      "metric_id": "us10",
+      "observed_at": "2026-10-09",
+      "value": 5.24,
+      "interpretation": "美債10年殖利率為5.24%，較前一日上升2bp，處於相對高檔，對成長股估值構成壓力。"
     },
     {
       "metric_id": "vix",
-      "observed_at": "2026-10-08",
-      "value": 15.41,
-      "interpretation": "VIX 指數單日上漲 2.19%，反映市場波動性預期上升，風險偏好轉趨保守。"
+      "observed_at": "2026-10-09",
+      "value": 14.84,
+      "interpretation": "VIX為14.84，較前一日下降3.7%，顯示美股波動率暫緩，但需留意與台股資金流出的背離。"
     }
   ],
-  "event_risks": [],
+  "event_risks": [
+    {
+      "event_id": "5df8eb2da126cce4",
+      "impact": "若該事件標題經確認，美國颶風可能影響供應鏈或能源基礎設施，間接影響市場風險偏好。",
+      "horizon": "短期",
+      "transmission": "事件→能源/供應鏈中斷預期→避險情緒→台股相關產業股波動"
+    }
+  ],
   "divergences": [
-    "美債殖利率與台股資金數據均為 2026-10-08 觀測值，但黃金報價為 2026-10-09 第三方參考價，非交易所官方收盤，且與台股交易日不同步。",
-    "外資期貨淨空部位擴大與現貨賣超方向一致，但 VIX 上升幅度相對溫和，顯示市場恐慌程度尚未極端化。",
-    "Brent 原油數據最新為 2026-10-06，與台股 2026-10-08 數據存在 2 日時差，無法嚴格作同日因果比較。"
+    "美債殖利率與VIX數據日期為2026-10-09，而台股外資期貨與現貨數據日期為2026-10-08，存在一日時間差，無法嚴格作同日比較。",
+    "Brent原油數據日期為2026-10-06，與台股最新資金數據（2026-10-08）相差兩日，油價對台股的即時傳導效應需謹慎解讀。",
+    "黃金報價為第三方參考價（quality=proxy），非交易所官方收盤，僅作參考。"
   ],
   "missing_data": [
-    "HIBOR 隔夜與 1 個月利率取得失敗 (status=error)。",
-    "LME 三個月銅與 ICE DXY 需授權資料 (status=license_required)。",
-    "EUR/USD, USD/JPY, USD/KRW 匯率資料過期 (status=stale, age_days=7)。"
+    "PCRs (Put/Call Ratio) 數據取得失敗 (status=error)。",
+    "HIBOR 利率數據取得失敗 (status=error)。",
+    "LME 銅價與 ICE DXY 因授權問題缺失 (status=license_required)。",
+    "EUR/USD, USD/JPY, USD/KRW 匯率數據過期 (status=stale, age_days=9)。"
   ],
   "stocks": [],
   "model": "qwen3.8-flash-next-iq3_s",
-  "generated_at": "2026-10-09T18:01:45+08:00",
-  "snapshot_id": "20261009T180001",
+  "generated_at": "2026-10-11T08:01:48+08:00",
+  "snapshot_id": "20261011T080002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
   "review_flags": [],
   "review_status": "machine_validated_not_human_reviewed"
