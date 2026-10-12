@@ -3,71 +3,65 @@
     "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率維持高檔且外資期貨淨空部位擴大，疊加現貨大幅賣超，顯示資金避險情緒升溫。"
+    "one_line": "美債殖利率維持高檔且外資期貨空單增加，台股資金面偏空，需警惕高油價對通膨與利率的壓力。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "若外資期貨淨空部位持續擴大且現貨賣超未止，則台股短期可能面臨回測壓力。",
-    "risk_scenario": "若VIX反彈且美債殖利率突破近期高點，則市場波動風險將顯著增加。",
-    "bullish_trigger": "若外資期貨淨空部位縮減並轉為淨多，且現貨出現連續買超，則短期情緒有望修復。",
-    "bearish_trigger": "若外資期貨淨空部位進一步擴大超過10萬口（示例門檻，尚未回測），且VIX突破16，則下跌風險升級。"
+    "base_scenario": "若外資期貨淨空單持續增加且現貨賣超未止，則台股短期可能承受賣壓，指數震盪偏弱。",
+    "risk_scenario": "若 VIX 反彈且美債殖利率再度上行，則市場避險情緒升溫，可能引發進一步修正。",
+    "bullish_trigger": "若外資期貨淨空單大幅減少且現貨轉為買超，則短期資金面有望回穩。",
+    "bearish_trigger": "若外資期貨淨空單繼續擴大且 VIX 突破近期高點，則下跌風險升級。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "若高利率環境持續但經濟數據未惡化，則市場可能在震盪中尋找新的平衡點。",
-    "risk_scenario": "若油價維持高檔導致通膨預期升溫，迫使聯準會維持鷹派，則中期估值承壓。",
-    "bullish_trigger": "若美債殖利率明顯回落且外資回流現貨，則中期趨勢可能轉多。",
-    "bearish_trigger": "若全球風險資產持續遭拋售且台股借券賣出餘額不降反升，則中期看空。"
+    "base_scenario": "若高油價與高利率環境持續，則企業獲利預期可能下修，台股中期走勢偏向震盪整理。",
+    "risk_scenario": "若全球經濟數據惡化導致衰退預期升溫，則系統性風險可能壓低估值。",
+    "bullish_trigger": "若美債殖利率明顯回落且原油價格穩定，則有利於風險資產評價回升。",
+    "bearish_trigger": "若通膨數據意外走高迫使央行維持鷹派，則高利率環境將持續壓抑股市表現。"
   },
   "evidence": [
+    {
+      "metric_id": "us10",
+      "observed_at": "2026-10-09",
+      "value": 5.24,
+      "interpretation": "美債10年殖利率為5.24%，較前一日上升2bp，顯示利率環境仍具壓力。"
+    },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-10-08",
       "value": -83194.0,
-      "interpretation": "外資台指期貨淨未平倉為負83,194口，較前一日減少4,093口（即空頭部位增加），顯示外資在期貨端偏向避險或看空。"
+      "interpretation": "外資台指期貨淨未平倉部位為-83,194口，較前一日減少4,093口（空單增加），反映外資避險或看空情緒。"
     },
     {
       "metric_id": "spot",
       "observed_at": "2026-10-08",
       "value": -758.5229349,
-      "interpretation": "外資現貨單日淨賣超758.52億元，較前一日擴大賣超628.08億元，顯示現貨端資金流出壓力大。"
+      "interpretation": "外資現貨賣超758.52億元，較前一日擴大賣超，顯示現貨端資金流出明顯。"
     },
     {
-      "metric_id": "us10",
-      "observed_at": "2026-10-09",
-      "value": 5.24,
-      "interpretation": "美債10年殖利率為5.24%，較前一日上升2bp，處於相對高檔，對成長股估值構成壓力。"
-    },
-    {
-      "metric_id": "vix",
-      "observed_at": "2026-10-09",
-      "value": 14.84,
-      "interpretation": "VIX為14.84，較前一日下降3.7%，顯示美股波動率暫緩，但需留意與台股資金流出的背離。"
+      "metric_id": "brent",
+      "observed_at": "2026-10-06",
+      "value": 125.44,
+      "interpretation": "Brent原油現貨價格125.44美元/桶，處於相對高檔，可能支撐通膨預期。"
     }
   ],
-  "event_risks": [
-    {
-      "event_id": "5df8eb2da126cce4",
-      "impact": "若該事件標題經確認，美國颶風可能影響供應鏈或能源基礎設施，間接影響市場風險偏好。",
-      "horizon": "短期",
-      "transmission": "事件→能源/供應鏈中斷預期→避險情緒→台股相關產業股波動"
-    }
-  ],
+  "event_risks": [],
   "divergences": [
-    "美債殖利率與VIX數據日期為2026-10-09，而台股外資期貨與現貨數據日期為2026-10-08，存在一日時間差，無法嚴格作同日比較。",
-    "Brent原油數據日期為2026-10-06，與台股最新資金數據（2026-10-08）相差兩日，油價對台股的即時傳導效應需謹慎解讀。",
-    "黃金報價為第三方參考價（quality=proxy），非交易所官方收盤，僅作參考。"
+    "美債殖利率數據日期為2026-10-09，而台股外資期貨與現貨數據日期為2026-10-08，兩者非同日數據，無法直接作同日因果比較。",
+    "Brent原油數據日期為2026-10-06，與台股最新交易日（2026-10-08）存在時間差，油價對台股的傳導可能有滯後。",
+    "黃金報價來源為第三方API（gold-api.com），非交易所官方定盤價，僅作參考。"
   ],
   "missing_data": [
-    "PCRs (Put/Call Ratio) 數據取得失敗 (status=error)。",
-    "HIBOR 利率數據取得失敗 (status=error)。",
-    "LME 銅價與 ICE DXY 因授權問題缺失 (status=license_required)。",
-    "EUR/USD, USD/JPY, USD/KRW 匯率數據過期 (status=stale, age_days=9)。"
+    "PCP (Put/Call Ratio) 未平倉比數據取得失敗 (status=error)。",
+    "Call/Put 未平倉總量數據取得失敗 (status=error)。",
+    "LME 三個月銅價格需授權，目前無數據 (status=license_required)。",
+    "ICE DXY 美元指數需授權，目前無數據 (status=license_required)。",
+    "HIBOR 數據過期 (status=stale)，不作為當日流動性判斷依據。"
   ],
   "stocks": [],
   "model": "qwen3.8-flash-next-iq3_s",
-  "generated_at": "2026-10-11T08:01:48+08:00",
-  "snapshot_id": "20261011T080002",
+  "generated_at": "2026-10-12T08:01:53+08:00",
+  "snapshot_id": "20261012T080002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
   "review_flags": [],
   "review_status": "machine_validated_not_human_reviewed"
