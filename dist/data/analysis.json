@@ -3,66 +3,86 @@
     "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率維持高檔且外資期貨空單增加，台股資金面偏空，需警惕高油價對通膨與利率的壓力。"
+    "one_line": "全球高利率環境持續壓抑估值，外資期貨淨空部位擴大且現貨連續賣超，台股短期面臨資金流出與避險情緒升溫的雙重壓力。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "若外資期貨淨空單持續增加且現貨賣超未止，則台股短期可能承受賣壓，指數震盪偏弱。",
-    "risk_scenario": "若 VIX 反彈且美債殖利率再度上行，則市場避險情緒升溫，可能引發進一步修正。",
-    "bullish_trigger": "若外資期貨淨空單大幅減少且現貨轉為買超，則短期資金面有望回穩。",
-    "bearish_trigger": "若外資期貨淨空單繼續擴大且 VIX 突破近期高點，則下跌風險升級。"
+    "base_scenario": "若外資期貨淨空部位維持在-8萬口以上且現貨持續賣超，則台股加權指數可能維持震盪偏弱格局，波動率受VIX與期權Put OI支撐。",
+    "risk_scenario": "若地緣政治事件（如中東供應鏈風險）導致原油價格進一步上漲或避險需求激增，則可能引發市場恐慌性拋售，加劇指數下跌。",
+    "bullish_trigger": "若外資期貨淨空部位顯著收斂（例如單日減少超過5,000口，示例門檻，尚未回測）且現貨轉為買超，則短期跌勢可能止穩。",
+    "bearish_trigger": "若VIX突破16.5（示例門檻，尚未回測）且外資期貨淨空部位進一步擴大至-8.5萬口以上，則下行風險升級。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "若高油價與高利率環境持續，則企業獲利預期可能下修，台股中期走勢偏向震盪整理。",
-    "risk_scenario": "若全球經濟數據惡化導致衰退預期升溫，則系統性風險可能壓低估值。",
-    "bullish_trigger": "若美債殖利率明顯回落且原油價格穩定，則有利於風險資產評價回升。",
-    "bearish_trigger": "若通膨數據意外走高迫使央行維持鷹派，則高利率環境將持續壓抑股市表現。"
+    "base_scenario": "若美國10年期殖利率穩定在5.2%-5.3%區間，則台股估值壓力雖存但不至於崩盤，市場將回歸個股基本面與產業循環。",
+    "risk_scenario": "若美國長端利率突破5.7%或美元指數顯著走强，則新興市場資金外流壓力將持續，對台股中期表現構成壓制。",
+    "bullish_trigger": "若美國通膨數據降溫導致長端利率回落至5.0%以下，且外資現貨連續多日轉為買超，則中期趨勢有望翻多。",
+    "bearish_trigger": "若全球經濟衰退預期升溫導致企業獲利下修，且外資期貨淨空部位長期維持高位，則中期趨勢將轉弱。"
   },
   "evidence": [
     {
       "metric_id": "us10",
       "observed_at": "2026-10-09",
       "value": 5.24,
-      "interpretation": "美債10年殖利率為5.24%，較前一日上升2bp，顯示利率環境仍具壓力。"
+      "interpretation": "美國10年期殖利率維持在5.24%的高檔，較前一日上升2bp。高利率環境增加持有股票的機會成本，對成長股估值構成壓力。"
     },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-10-08",
       "value": -83194.0,
-      "interpretation": "外資台指期貨淨未平倉部位為-83,194口，較前一日減少4,093口（空單增加），反映外資避險或看空情緒。"
+      "interpretation": "外資台指期貨淨未平倉部位為-83,194口，較前一日擴大4,093口空單。顯示外資在期貨端維持防禦性避險或看空立場。"
     },
     {
       "metric_id": "spot",
-      "observed_at": "2026-10-08",
-      "value": -758.5229349,
-      "interpretation": "外資現貨賣超758.52億元，較前一日擴大賣超，顯示現貨端資金流出明顯。"
+      "observed_at": "2026-10-12",
+      "value": -521.98146456,
+      "interpretation": "外資現貨單日賣超521.98億元。雖然較10/8的-758億元賣超幅度縮小，但連續多日賣超顯示資金流出趨勢未止。"
+    },
+    {
+      "metric_id": "vix",
+      "observed_at": "2026-10-09",
+      "value": 14.84,
+      "interpretation": "VIX恐慌指數為14.84，較前一日下降3.7%。雖然處於相對低檔，但需結合期貨避險部位解讀，低VIX可能反映市場對波動率的低估或期權策略調整。"
     },
     {
       "metric_id": "brent",
       "observed_at": "2026-10-06",
       "value": 125.44,
-      "interpretation": "Brent原油現貨價格125.44美元/桶，處於相對高檔，可能支撐通膨預期。"
+      "interpretation": "Brent原油現貨價格為125.44美元/桶。高油價可能推升通膨預期，間接支持高利率環境，對非能源類股構成成本壓力。注意此數據為10/6，與台股10/12數據存在時間差。"
     }
   ],
-  "event_risks": [],
+  "event_risks": [
+    {
+      "event_id": "fe03de9c1c7306ce",
+      "impact": "若該事件標題經確認，中東供應風險導致Brent原油包含戰爭溢價，可能推升全球通膨預期與避險資產需求。",
+      "horizon": "短期",
+      "transmission": "地緣衝突 → 原油供應風險升溫 → 通膨預期上升/避險情緒 → 美債殖利率壓力/台股風險偏好下降"
+    },
+    {
+      "event_id": "bdb37761f128079d",
+      "impact": "若該事件標題經確認，油輪遭受無人機攻擊事件，若升級可能影響航運保險費率與供應鏈穩定性。",
+      "horizon": "短期",
+      "transmission": "供應鏈中斷風險 → 運輸成本上升 → 企業獲利預期下修 → 台股出口導向產業承壓"
+    }
+  ],
   "divergences": [
-    "美債殖利率數據日期為2026-10-09，而台股外資期貨與現貨數據日期為2026-10-08，兩者非同日數據，無法直接作同日因果比較。",
-    "Brent原油數據日期為2026-10-06，與台股最新交易日（2026-10-08）存在時間差，油價對台股的傳導可能有滯後。",
-    "黃金報價來源為第三方API（gold-api.com），非交易所官方定盤價，僅作參考。"
+    "Brent原油數據日期為2026-10-06，而台股外資現貨數據日期為2026-10-12，兩者存在6天時間差，無法直接進行同日因果比較。",
+    "外資期貨淨空部位（10/08）與外資現貨買賣超（10/12）日期不同，反映不同時點的資金態度，需留意週末與週一盤勢變化。",
+    "黃金報價來源為第三方API（gold-api.com），非LBMA定盤價或交易所官方行情，僅作參考，可能存在報價延遲或偏差。"
   ],
   "missing_data": [
-    "PCP (Put/Call Ratio) 未平倉比數據取得失敗 (status=error)。",
-    "Call/Put 未平倉總量數據取得失敗 (status=error)。",
-    "LME 三個月銅價格需授權，目前無數據 (status=license_required)。",
-    "ICE DXY 美元指數需授權，目前無數據 (status=license_required)。",
-    "HIBOR 數據過期 (status=stale)，不作為當日流動性判斷依據。"
+    "LME三個月銅價格（需授權資料）",
+    "ICE美元指數DXY（需授權資料）",
+    "HIBOR隔夜與1個月利率（數據過期，status=stale，不作為當日證據）",
+    "EUR/USD, USD/JPY, USD/KRW匯率（數據過期，status=stale，不作為當日證據）"
   ],
   "stocks": [],
   "model": "qwen3.8-flash-next-iq3_s",
-  "generated_at": "2026-10-12T08:01:53+08:00",
-  "snapshot_id": "20261012T080002",
+  "generated_at": "2026-10-12T18:02:10+08:00",
+  "snapshot_id": "20261012T180002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
