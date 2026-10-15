@@ -3,80 +3,80 @@
     "international_capital": "Neutral",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率回落與VIX穩定提供緩衝，但外資期貨淨空加碼與現貨持續賣超構成短期壓力。"
+    "one_line": "美債殖利率短線回落但水準仍高，外資期貨淨空部位擴大且現貨持續賣超，台股資金面承壓。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "外資期貨淨空部位持續擴大，現貨賣超規模縮小但未轉正，台指期夜盤收跌0.81%，市場維持防禦姿態。",
-    "risk_scenario": "若外資現貨賣超連續兩日超過500億元（示例門檻，尚未回測），且期貨淨空部位突破-90,000口（示例門檻，尚未回測），則可能引發進一步拋售。",
-    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位縮小至-80,000口以內（示例門檻，尚未回測），則短期壓力緩解。",
-    "bearish_trigger": "若VIX突破18（示例門檻，尚未回測）且美債10年殖利率回升至5.30%以上（示例門檻，尚未回測），則風險偏好進一步下降。"
+    "base_scenario": "若外資期貨淨空部位維持在 -87,000 口以上且現貨賣超持續，則台股短期承壓，波動率可能維持在 15 以上。",
+    "risk_scenario": "若美債 10 年殖利率回升至 5.25% 以上，且 VIX 突破 16，則避險情緒升溫，台股可能進一步回調。",
+    "bullish_trigger": "若外資期貨淨空部位縮減至 -80,000 口以下，且現貨轉為買超，則短期壓力緩解。",
+    "bearish_trigger": "若外資期貨淨空部位擴大至 -90,000 口以上，且借券賣出餘額持續增加，則賣壓加劇。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "美債殖利率自高點回落，VIX維持低檔，但外資期貨空方未平倉仍高於97,000口，中期資金面仍偏空。",
-    "risk_scenario": "若Brent原油價格持續高於120美元/桶（示例門檻，尚未回測）且USD/TWD匯率突破32.2（示例門檻，尚未回測），則通膨與匯率壓力可能延遲資金回流。",
-    "bullish_trigger": "若外資期貨淨空部位連續三日縮小且現貨累計買超超過1,000億元（示例門檻，尚未回測），則中期資金面轉多。",
-    "bearish_trigger": "若美債30年殖利率突破5.70%（示例門檻，尚未回測）且VIX持續高於17，則全球風險資產承壓。"
+    "base_scenario": "若美債殖利率維持在 5.0%-5.5% 區間，且外資期貨部位未出現單邊大幅變動，則台股中期區間震盪。",
+    "risk_scenario": "若美債 30 年殖利率突破 5.6%，且原油價格維持高檔，則通膨壓力可能延遲降息預期，台股估值承壓。",
+    "bullish_trigger": "若美債 10 年殖利率回落至 5.0% 以下，且外資現貨連續多日買超，則中期資金面改善。",
+    "bearish_trigger": "若 VIX 持續高於 18，且外資期貨淨空部位創近期新高，則系統性風險上升。"
   },
   "evidence": [
+    {
+      "metric_id": "us10",
+      "observed_at": "2026-10-14",
+      "value": 5.19,
+      "interpretation": "美債 10 年殖利率 5.19%，較前一日下降 2bp，但仍處於高檔，對台股估值形成壓力。"
+    },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-10-13",
       "value": -87239.0,
-      "interpretation": "外資台指期貨淨未平倉為-87,239口，較前一日減少4,433口，顯示空方部位加碼。此為期貨市場數據，不直接等同現貨方向。"
+      "interpretation": "外資台指期貨淨未平倉 -87,239 口，較前一日減少 4,433 口（即淨空增加），顯示外資期貨部位偏空。"
     },
     {
       "metric_id": "spot",
       "observed_at": "2026-10-14",
       "value": -200.37340628,
-      "interpretation": "外資現貨買賣超為-200.37億元，較前一日改善145.25億元，但仍為賣超。僅上市市場，不含外資自營商。"
-    },
-    {
-      "metric_id": "us10",
-      "observed_at": "2026-10-13",
-      "value": 5.21,
-      "interpretation": "美債10年殖利率為5.21%，較前一日下降3bp，自9月底高點5.29%回落，對全球風險資產壓力略有緩解。"
+      "interpretation": "外資現貨買賣超 -200.37 億元，較前一日改善 145.25 億元，但仍為賣超，顯示現貨資金面承壓。"
     },
     {
       "metric_id": "vix",
       "observed_at": "2026-10-13",
       "value": 15.27,
-      "interpretation": "VIX恐慌指數為15.27，較前一日上升0.39%，仍處於相對低檔，顯示市場恐慌情緒未顯著升溫。"
+      "interpretation": "VIX 15.27，較前一日上升 0.39%，波動率溫和上升，反映市場情緒略偏謹慎。"
     },
     {
-      "metric_id": "night",
-      "observed_at": "2026-10-13",
-      "value": 48946.0,
-      "interpretation": "台指期夜盤收於48,946點，較前收下跌0.81%（-399點），反映盤後市場情緒偏空。"
+      "metric_id": "lending_balance",
+      "observed_at": "2026-10-14",
+      "value": 161.70674553,
+      "interpretation": "借券賣出餘額 161.71 億股，較前一日增加 1.25 億股，顯示賣壓部位增加，但需結合其他指標判斷。"
     }
   ],
   "event_risks": [
     {
       "event_id": "5df8eb2da126cce4",
-      "impact": "若該事件標題經確認，Hurricane Isaias在陸地移動，可能影響美國南部能源生產與物流，但對台股直接傳導有限。",
+      "impact": "若該事件標題經確認，Hurricane Isaias 登陸並向北移動，可能影響美國能源供應鏈，進而影響原油價格與通膨預期。",
       "horizon": "短期",
-      "transmission": "颶風→美國能源供應中斷→原油價格波動→全球通膨預期→美債殖利率→台股資金面"
+      "transmission": "颶風→原油供應中斷→油價上漲→通膨壓力→美債殖利率上升→台股估值承壓"
     }
   ],
   "divergences": [
-    "Brent原油數據觀測於2026-10-06，狀態為stale（8天前），無法與2026-10-13/14的台股數據作同日比較。",
-    "HIBOR隔夜與1個月利率觀測於2026-09-30，狀態為stale（14天前），不作為當日流動性證據。",
-    "EUR/USD、USD/JPY、USD/KRW匯率觀測於2026-10-09，狀態為stale（5天前），無法反映最新匯率變動。",
-    "黃金價格為第三方XAU/USD參考報價（2026-10-14），非LBMA定盤價，口徑與交易所官方行情不同。",
-    "USD/TWD為期交所洗價參考匯率（2026-10-13），非央行銀行間收盤匯率，口徑差異需注意。"
+    "Brent 原油數據為 2026-10-06 的 stale 資料，無法與 2026-10-14 的美債殖利率進行同日比較。",
+    "HIBOR 數據為 2026-09-30 的 stale 資料，無法反映當前港元流動性狀況。",
+    "EUR/USD、USD/JPY、USD/KRW 匯率數據為 2026-10-09 的 stale 資料，無法與 2026-10-14 的台股資金流進行同日比較。"
   ],
   "missing_data": [
-    "LME三個月銅價格（license_required）",
-    "ICE美元指數DXY（license_required）",
-    "外資現貨連續多日累計數據（僅有單日delta）",
-    "外資期貨夜盤買賣口數（僅有日報數據）"
+    "LME 三個月銅價格（license_required）",
+    "ICE DXY 美元指數（license_required）",
+    "2026-10-14 的 VIX 收盤價（僅有 2026-10-13 數據）",
+    "2026-10-14 的外資期貨夜盤詳細買賣口數（僅有日報淨額）"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-10-14T18:02:51+08:00",
-  "snapshot_id": "20261014T180001",
+  "generated_at": "2026-10-15T08:02:24+08:00",
+  "snapshot_id": "20261015T080002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
