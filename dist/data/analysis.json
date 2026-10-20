@@ -3,85 +3,54 @@
     "international_capital": "Neutral",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率回穩但VIX上升，外資期貨淨空部位雖縮減但現貨持續賣超，台股短線承壓。"
+    "one_line": "美債殖利率維持高位且VIX回落，但外資現貨持續賣超與期貨淨空部位擴大，顯示台股資金面承壓。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "若美債殖利率維持在5.15%附近且VIX未進一步突破20，台股可能於47,366點附近震盪整理，消化外資現貨賣壓。",
-    "risk_scenario": "若VIX繼續上升或美債30年殖利率重返5.5%以上，外資可能擴大期貨空單，導致台股跌破近期支撐。",
-    "bullish_trigger": "若外資現貨買賣超轉正，且期貨淨空部位進一步縮減至-85,000口以下，則短線壓力緩解。",
-    "bearish_trigger": "若外資現貨單日賣超超過1,000億元，或期貨淨空部位擴大至-95,000口以上，則短線看空訊號增強。"
+    "base_scenario": "外資現貨持續賣超，期貨淨空部位維持高檔，台股承壓整理。",
+    "risk_scenario": "若美債殖利率進一步上行或VIX回升，台股可能加速下跌。",
+    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位顯著縮減，則台股可能反彈。",
+    "bearish_trigger": "若外資現貨賣超幅度擴大且期貨淨空部位繼續增加，則台股可能進一步下跌。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "若全球風險偏好穩定，且借券賣出餘額未持續大幅增加，台股中期趨勢將取決於個股財報與產業景氣。",
-    "risk_scenario": "若高殖利率環境持續壓抑估值，且借券賣出餘額持續攀升，台股中期可能面臨估值修正壓力。",
-    "bullish_trigger": "若美債殖利率趨勢轉為下降，且外資期貨淨空部位持續縮減，則中期趨勢可能轉多。",
-    "bearish_trigger": "若美債殖利率持續上行，且借券賣出餘額突破170億股，則中期趨勢可能轉空。"
+    "base_scenario": "外資現貨賣超與期貨淨空部位波動，台股區間震盪。",
+    "risk_scenario": "若美債殖利率持續高位且VIX回升，台股可能承壓下跌。",
+    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位顯著縮減，則台股可能反彈。",
+    "bearish_trigger": "若外資現貨賣超幅度擴大且期貨淨空部位繼續增加，則台股可能進一步下跌。"
   },
   "evidence": [
     {
-      "metric_id": "us10",
-      "observed_at": "2026-10-19",
-      "value": 5.15,
-      "interpretation": "美債10年殖利率較前一日(10/16)上升6bp至5.15%，顯示長端利率壓力仍在，但較9月底高點(5.29%)有所回落。"
-    },
-    {
-      "metric_id": "vix",
-      "observed_at": "2026-10-16",
-      "value": 19.99,
-      "interpretation": "VIX於10/16收於19.99，較10/15的16.46大幅上升21.4%，顯示市場波動率預期顯著上升，但此數據為10/16，非10/19最新值。"
+      "metric_id": "spot",
+      "observed_at": "2026-10-20",
+      "value": -795.39692396,
+      "interpretation": "外資現貨賣超795.4億元，顯示外資在現貨市場持續賣出。"
     },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-10-19",
       "value": -91145.0,
-      "interpretation": "外資台指期貨淨未平倉為-91,145口，較10/16的-93,675口縮減2,530口，顯示空方部位略有減少，但仍處於淨空狀態。"
+      "interpretation": "外資期貨淨空部位91145口，顯示外資在期貨市場維持淨空部位。"
     },
     {
-      "metric_id": "spot",
+      "metric_id": "us10",
       "observed_at": "2026-10-19",
-      "value": -767.42735769,
-      "interpretation": "外資現貨買賣超為-767.43億元，較10/16的-461.47億元賣超幅度擴大，顯示現貨市場賣壓持續。"
-    },
-    {
-      "metric_id": "lending_balance",
-      "observed_at": "2026-10-19",
-      "value": 166.82073033,
-      "interpretation": "借券賣出餘額為166.82億股，較10/16的165.16億股增加1.66億股，顯示借券賣出部位持續增加，但需留意此為股數而非市值，且包含ETF。"
+      "value": 5.15,
+      "interpretation": "美債10年殖利率5.15%，顯示全球利率環境維持高位。"
     }
   ],
-  "event_risks": [
-    {
-      "event_id": "3f02865053d37baa",
-      "impact": "若該事件標題經確認，斯洛伐克與匈牙利要求歐盟在2027年停止俄氣前提供彈性，可能影響歐洲能源供應穩定性，進而影響全球能源價格與通膨預期。",
-      "horizon": "中期",
-      "transmission": "歐洲能源供應不確定性 → 能源價格波動 → 全球通膨預期 → 美債殖利率 → 台股估值壓力"
-    },
-    {
-      "event_id": "31d84cb0a24e68ce",
-      "impact": "若該事件標題經確認，特朗普對烏克蘭談判的言論可能影響地緣政治風險，若談判破裂可能加劇市場避險情緒。",
-      "horizon": "短期",
-      "transmission": "地緣政治風險上升 → 避險情緒升溫 → VIX上升 → 台股波動率增加"
-    }
-  ],
+  "event_risks": [],
   "divergences": [
-    "VIX數據為2026-10-16，而美債殖利率與外資期貨數據為2026-10-19，無法進行同日比較。",
-    "Brent原油數據為2026-10-14，較其他指標舊6天，無法反映最新油價對通膨的影響。",
-    "黃金數據為第三方報價，非交易所官方行情，且日期為2026-10-20，與其他指標日期不同。"
+    "美債殖利率與VIX數據為2026-10-19，而外資現貨數據為2026-10-20，無法嚴格作同日比較。"
   ],
   "missing_data": [
-    "Put/Call未平倉比、Call未平倉、Put未平倉數據取得失敗，無法評估選擇權市場情緒。",
-    "LME三個月銅與ICE DXY數據需授權，無法評估商品與美元指數影響。",
-    "HIBOR數據為2026-09-30，已過期，無法反映最新港元流動性。"
+    "LME三個月銅與ICE DXY數據缺失，無法評估大宗商品與美元指數對台股的影響。"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-10-20T08:02:19+08:00",
-  "snapshot_id": "20261020T080003",
+  "generated_at": "2026-10-20T18:01:58+08:00",
+  "snapshot_id": "20261020T180001",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [
-    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
-  ],
-  "review_status": "machine_validated_with_notes"
+  "review_flags": [],
+  "review_status": "machine_validated_not_human_reviewed"
 }
