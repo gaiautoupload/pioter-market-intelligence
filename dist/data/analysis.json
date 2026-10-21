@@ -3,54 +3,85 @@
     "international_capital": "Neutral",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率維持高位且VIX回落，但外資現貨持續賣超與期貨淨空部位擴大，顯示台股資金面承壓。"
+    "one_line": "美債殖利率回落但油價高企，外資期貨淨空雖縮減但現貨持續賣超，台股短線承壓。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "外資現貨持續賣超，期貨淨空部位維持高檔，台股承壓整理。",
-    "risk_scenario": "若美債殖利率進一步上行或VIX回升，台股可能加速下跌。",
-    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位顯著縮減，則台股可能反彈。",
-    "bearish_trigger": "若外資現貨賣超幅度擴大且期貨淨空部位繼續增加，則台股可能進一步下跌。"
+    "base_scenario": "若美債殖利率維持在 5.1%-5.4% 區間且油價穩定，台股可能於低檔震盪，外資現貨賣超持續但期貨淨空不再大幅擴大。",
+    "risk_scenario": "若油價因地緣政治緊張進一步上漲，或美債 10 年殖利率重新突破 5.2%，台股可能出現補跌，外資現貨賣超金額可能擴大。",
+    "bullish_trigger": "若外資現貨買賣超轉正，且台指期貨淨空部位縮減超過 5,000 口，則短線可能出現反彈。",
+    "bearish_trigger": "若外資現貨單日賣超超過 1,000 億元，或 VIX 指數回升至 20 以上，則短線風險升級。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "外資現貨賣超與期貨淨空部位波動，台股區間震盪。",
-    "risk_scenario": "若美債殖利率持續高位且VIX回升，台股可能承壓下跌。",
-    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位顯著縮減，則台股可能反彈。",
-    "bearish_trigger": "若外資現貨賣超幅度擴大且期貨淨空部位繼續增加，則台股可能進一步下跌。"
+    "base_scenario": "若全球通膨預期穩定，且美債殖利率不再大幅上升，台股中期可能維持區間震盪，個股表現分化。",
+    "risk_scenario": "若油價持續高於 125 美元，導致全球通膨壓力上升，美債殖利率可能維持高位，台股中期承壓。",
+    "bullish_trigger": "若美債 10 年殖利率回落至 5.0% 以下，且外資期貨淨空部位持續縮減，則中期可能轉多。",
+    "bearish_trigger": "若美債 30 年殖利率突破 5.5%，且外資現貨連續多日大幅賣超，則中期風險升級。"
   },
   "evidence": [
+    {
+      "metric_id": "us10",
+      "observed_at": "2026-10-20",
+      "value": 5.12,
+      "interpretation": "美債 10 年殖利率 5.12%，較前一日下降 3bp，顯示長端利率壓力略有緩解，但仍處於相對高位。"
+    },
+    {
+      "metric_id": "brent",
+      "observed_at": "2026-10-14",
+      "value": 126.55,
+      "interpretation": "Brent 原油現貨 126.55 美元/桶，較前一日上漲 0.61%，高油價可能對通膨與企業成本構成壓力。注意：此數據為 10 月 14 日，與台股 10 月 20 日數據非同日，無法直接作同日因果推導。"
+    },
+    {
+      "metric_id": "foreign_net",
+      "observed_at": "2026-10-20",
+      "value": -89748.0,
+      "interpretation": "外資台指期貨淨未平倉 -89,748 口，較前一日縮減 1,397 口，顯示空方部位略有減少，但整體仍為淨空。"
+    },
     {
       "metric_id": "spot",
       "observed_at": "2026-10-20",
       "value": -795.39692396,
-      "interpretation": "外資現貨賣超795.4億元，顯示外資在現貨市場持續賣出。"
+      "interpretation": "外資現貨買賣超 -795.40 億元，較前一日賣超金額增加 27.97 億元，顯示現貨市場外資持續賣出。"
     },
     {
-      "metric_id": "foreign_net",
+      "metric_id": "vix",
       "observed_at": "2026-10-19",
-      "value": -91145.0,
-      "interpretation": "外資期貨淨空部位91145口，顯示外資在期貨市場維持淨空部位。"
-    },
-    {
-      "metric_id": "us10",
-      "observed_at": "2026-10-19",
-      "value": 5.15,
-      "interpretation": "美債10年殖利率5.15%，顯示全球利率環境維持高位。"
+      "value": 18.44,
+      "interpretation": "VIX 恐慌指數 18.44，較前一日下降 7.75%，顯示市場恐慌情緒略有緩解，但仍高於長期平均值。"
     }
   ],
-  "event_risks": [],
+  "event_risks": [
+    {
+      "event_id": "8e038cdc9a8ef6fe",
+      "impact": "若該事件標題經確認，油價因地緣政治緊張可能進一步上漲，影響通膨預期。",
+      "horizon": "短期",
+      "transmission": "地緣政治緊張 → 油價上漲 → 通膨預期上升 → 美債殖利率上升 → 台股承壓"
+    },
+    {
+      "event_id": "9a81d7dd1f299976",
+      "impact": "若該事件標題經確認，美國豁免對俄柴油進口制裁，可能影響全球能源供應與價格。",
+      "horizon": "中期",
+      "transmission": "制裁豁免 → 俄柴油供應增加 → 油價可能回落 → 通膨壓力緩解 → 台股壓力減輕"
+    }
+  ],
   "divergences": [
-    "美債殖利率與VIX數據為2026-10-19，而外資現貨數據為2026-10-20，無法嚴格作同日比較。"
+    "Brent 原油數據為 2026-10-14，而台股與美債數據為 2026-10-20，兩者非同日，無法直接作同日因果推導。",
+    "VIX 數據為 2026-10-19，而台股與美債數據為 2026-10-20，兩者非同日，無法直接作同日因果推導。",
+    "黃金數據為第三方參考報價，非交易所官方行情，且日期為 2026-10-21，與其他數據非同日。"
   ],
   "missing_data": [
-    "LME三個月銅與ICE DXY數據缺失，無法評估大宗商品與美元指數對台股的影響。"
+    "LME 三個月銅數據缺失，無法評估工業金屬需求。",
+    "ICE DXY 數據缺失，無法評估美元指數變化。",
+    "HIBOR 數據過期（2026-09-30），無法評估香港流動性。"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-10-20T18:01:58+08:00",
-  "snapshot_id": "20261020T180001",
+  "generated_at": "2026-10-21T08:02:17+08:00",
+  "snapshot_id": "20261021T080003",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
