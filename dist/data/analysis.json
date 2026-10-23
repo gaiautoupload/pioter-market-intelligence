@@ -3,67 +3,68 @@
     "international_capital": "Neutral",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率維持高檔且VIX回落，但外資現貨大幅賣超與期貨淨空部位擴大，顯示台股資金面承壓。"
+    "one_line": "美債殖利率單日大幅回落但台股外資現貨持續流出，且期貨未平倉資料缺失，短期方向不明確。"
   },
   "short_term": {
-    "direction": "Bearish",
-    "base_scenario": "外資現貨賣超與期貨淨空部位維持高檔，台股承壓整理。",
-    "risk_scenario": "若美債殖利率進一步上升或VIX反彈，台股可能加速下跌。",
-    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位縮減，台股可能反彈。",
-    "bearish_trigger": "若外資現貨賣超擴大且期貨淨空部位增加，台股可能進一步下跌。"
+    "direction": "Unknown",
+    "base_scenario": "美債殖利率回落（10/22）與外資現貨流出（10/22）並存，若夜盤收漲（10/22）能持續，則現貨賣壓可能緩解；若現貨流出擴大，則指數承壓。",
+    "risk_scenario": "若外資現貨流出持續且借券賣出餘額（10/22）繼續上升，則個股空頭部位可能增加，加劇波動。",
+    "bullish_trigger": "外資現貨轉為買超，或期貨未平倉數據恢復顯示外資淨多頭增加。",
+    "bearish_trigger": "外資現貨流出幅度擴大（例如超過前一日815.82億元的絕對值），或借券賣出餘額單日增加超過1億股（示例門檻，尚未回測）。"
   },
   "medium_term": {
-    "direction": "Neutral",
-    "base_scenario": "美債殖利率與VIX維持現狀，台股在資金面與全球風險偏好之間尋找平衡。",
-    "risk_scenario": "若美債殖利率持續上升或VIX大幅反彈，台股可能面臨更大壓力。",
-    "bullish_trigger": "若美債殖利率回落且VIX維持低檔，台股可能反彈。",
-    "bearish_trigger": "若美債殖利率持續上升且VIX大幅反彈，台股可能進一步下跌。"
+    "direction": "Unknown",
+    "base_scenario": "美債殖利率在9月高點後回落，但台股外資現貨在10月中下旬呈現波動流出，若殖利率維持低位且現貨流出止穩，則中期壓力減輕。",
+    "risk_scenario": "若美債殖利率反彈，或外資現貨持續大幅流出，則台股估值承壓，個股分化加劇。",
+    "bullish_trigger": "外資現貨連續多日買超，且美債10年殖利率維持在5%以下。",
+    "bearish_trigger": "外資現貨連續多日大幅賣超，且借券賣出餘額持續創新高（需更多歷史數據確認）。"
   },
   "evidence": [
     {
-      "metric_id": "us30",
-      "observed_at": "2026-10-21",
-      "value": 5.42,
-      "interpretation": "美債30年殖利率維持高檔，顯示長期利率壓力。"
-    },
-    {
-      "metric_id": "vix",
-      "observed_at": "2026-10-21",
-      "value": 16.68,
-      "interpretation": "VIX回落，顯示市場恐慌情緒緩解。"
-    },
-    {
-      "metric_id": "foreign_net",
-      "observed_at": "2026-10-21",
-      "value": -86072.0,
-      "interpretation": "外資台指淨未平倉為負，顯示外資整體偏空。"
+      "metric_id": "us10",
+      "observed_at": "2026-10-22",
+      "value": 4.96,
+      "interpretation": "美債10年殖利率單日下降17bp，顯示全球利率壓力可能緩解，但需觀察是否持續。"
     },
     {
       "metric_id": "spot",
       "observed_at": "2026-10-22",
-      "value": -816.5652779,
-      "interpretation": "外資現貨買賣超為負，顯示外資現貨賣超。"
-    }
-  ],
-  "event_risks": [
+      "value": -815.82101452,
+      "interpretation": "外資現貨買賣超為-815.82億元，顯示外資在現貨市場持續賣出，對台股構成壓力。"
+    },
     {
-      "event_id": "41ea107c81d6165e",
-      "impact": "若該事件標題經確認，可能影響市場風險偏好，但不確定性高。",
-      "horizon": "短期",
-      "transmission": "地緣政治風險→避險需求增加→台股承壓"
+      "metric_id": "night",
+      "observed_at": "2026-10-22",
+      "value": 47482.0,
+      "interpretation": "台指期夜盤收47482點，漲1.0%，顯示期貨市場情緒偏多，但與現貨流出存在分歧。"
+    },
+    {
+      "metric_id": "lending_balance",
+      "observed_at": "2026-10-22",
+      "value": 166.8749989,
+      "interpretation": "借券賣出餘額166.87億股，單日增加0.20億股，顯示空頭部位可能增加，但需結合個股分析。"
     }
   ],
+  "event_risks": [],
   "divergences": [
-    "美債殖利率與VIX的觀測日期為2026-10-21，而外資現貨買賣超的觀測日期為2026-10-22，無法嚴格作同日比較。"
+    "美債殖利率數據為2026-10-22，而外資現貨與期貨數據亦為2026-10-22，但VIX為2026-10-21，Brent原油為2026-10-20，無法進行嚴格同日比較。",
+    "外資期貨未平倉（foreign_long, foreign_short, foreign_net）與PCR數據缺失（status=error），無法確認期貨市場外資整體方向，淨空部位不代表外資整體單一方向。"
   ],
   "missing_data": [
-    "LME三個月銅與ICE DXY資料缺失，無法評估大宗商品與美元指數的影響。"
+    "外資台指期貨未平倉（多方、空方、淨額）",
+    "Put/Call Ratio (PCR)",
+    "Call/Call 未平倉",
+    "Put 未平倉",
+    "LME 三個月銅",
+    "美元指數 DXY"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-10-22T18:02:06+08:00",
-  "snapshot_id": "20261022T180002",
+  "generated_at": "2026-10-23T08:02:14+08:00",
+  "snapshot_id": "20261023T080002",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
