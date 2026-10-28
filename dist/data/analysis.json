@@ -1,71 +1,67 @@
 {
   "summary": {
     "international_capital": "Neutral",
-    "taiwan_capital": "Unknown",
+    "taiwan_capital": "Neutral",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率趨穩但VIX維持高位，台股資金面因資料過期無法確認方向，系統性風險中等。"
+    "one_line": "美債殖利率回落與VIX降溫提供緩衝，但外資期貨淨空部位仍高且現貨持續流出，短線方向不明確。"
   },
   "short_term": {
     "direction": "Neutral",
-    "base_scenario": "若美債殖利率維持在5.0%-5.3%區間且VIX未突破20，台股預期在區間震盪，缺乏明確方向性催化。",
-    "risk_scenario": "若VIX進一步上升或美債30年殖利率突破5.5%，可能引發避險情緒，導致台股承壓。",
-    "bullish_trigger": "若外資現貨轉為淨買超且期貨淨空部位縮減，則短期可能出現反彈。",
-    "bearish_trigger": "若借券賣出餘額持續增加且外資期貨淨空部位擴大，則短期下行風險增加。"
+    "base_scenario": "美債殖利率維持在5.3%附近，VIX在18-19區間震盪，外資期貨淨空部位小幅縮減，台股在區間內整理。",
+    "risk_scenario": "若美債30年殖利率回升至5.5%以上，或VIX突破20，外資現貨流出加速，台股可能回測前低。",
+    "bullish_trigger": "若外資現貨轉為買超且期貨淨空部位縮減超過2,000口，則短線偏多。",
+    "bearish_trigger": "若外資現貨賣超超過200億元且期貨淨空部位擴大超過2,000口，則短線偏空。"
   },
   "medium_term": {
     "direction": "Neutral",
-    "base_scenario": "若全球流動性維持穩定且地緣政治風險未升級，台股中期趨勢將取決於個股財報與產業景氣。",
-    "risk_scenario": "若地緣政治衝突升級或通膨數據高於預期，可能導致全球風險資產承壓，台股中期表現轉弱。",
-    "bullish_trigger": "若外資持續淨買超且借券賣出餘額下降，則中期趨勢可能轉多。",
-    "bearish_trigger": "若外資持續淨賣超且借券賣出餘額創新高，則中期趨勢可能轉空。"
+    "base_scenario": "美債殖利率在5.0-5.5%區間波動，外資期貨淨空部位維持在-8萬口附近，台股隨個股財報與產業趨勢震盪。",
+    "risk_scenario": "若美債殖利率持續高於5.5%且VIX維持在20以上，外資持續流出，台股中期承壓。",
+    "bullish_trigger": "若美債10年殖利率回落至4.8%以下且外資期貨淨空部位縮減至-7萬口以下，則中期偏多。",
+    "bearish_trigger": "若美債10年殖利率突破5.2%且外資期貨淨空部位擴大至-9萬口以上，則中期偏空。"
   },
   "evidence": [
     {
       "metric_id": "us30",
-      "observed_at": "2026-10-26",
-      "value": 5.31,
-      "interpretation": "美債30年殖利率較前一日下降2bp，顯示長期利率壓力略有緩解，但仍處於相對高位。"
+      "observed_at": "2026-10-27",
+      "value": 5.3,
+      "interpretation": "美債30年殖利率較前一日下降1bp，顯示長端利率壓力略有緩解，但絕對水準仍高。"
     },
     {
       "metric_id": "vix",
-      "observed_at": "2026-10-23",
-      "value": 19.45,
-      "interpretation": "VIX指數較前一日上升2.21%，顯示市場波動性預期增加，但尚未達到極端水平。"
+      "observed_at": "2026-10-26",
+      "value": 18.39,
+      "interpretation": "VIX較前一日下降5.45%，顯示市場恐慌情緒降溫，但仍在18以上，未進入低波動區間。"
     },
     {
-      "metric_id": "brent",
-      "observed_at": "2026-10-20",
-      "value": 115.22,
-      "interpretation": "Brent原油現貨價格較前一日下降3.03%，顯示能源價格壓力略有緩解，但需注意資料日期與台股交易日不同。"
-    }
-  ],
-  "event_risks": [
-    {
-      "event_id": "054a8cd1f8b68b1c",
-      "impact": "若該事件標題經確認，巴西選舉結果可能影響新興市場情緒，但對台股直接影響有限。",
-      "horizon": "中期",
-      "transmission": "巴西選舉→新興市場資金流動→全球風險偏好→台股"
+      "metric_id": "foreign_net",
+      "observed_at": "2026-10-27",
+      "value": -86043.0,
+      "interpretation": "外資台指期貨淨未平倉為-86,043口，較前一日縮減1,254口，顯示空方部位略有減少，但仍處於淨空狀態。"
     },
     {
-      "event_id": "dc7d00d51ccba1bc",
-      "impact": "若該事件標題經確認，俄烏談判進展可能影響地緣政治風險，進而影響能源價格與避險情緒。",
-      "horizon": "短期",
-      "transmission": "俄烏談判→能源價格→避險情緒→台股"
+      "metric_id": "spot",
+      "observed_at": "2026-10-27",
+      "value": -80.38873139,
+      "interpretation": "外資現貨買賣超為-80.39億元，較前一日改善735.43億元，顯示現貨流出幅度縮小，但仍為賣超。"
     }
   ],
+  "event_risks": [],
   "divergences": [
-    "美債殖利率與VIX資料日期為2026-10-26與2026-10-23，與台股資料日期2026-10-22不同，無法進行同日比較。",
-    "Brent原油資料日期為2026-10-20，與台股資料日期2026-10-22不同，無法進行同日比較。"
+    "美債殖利率觀測日期為2026-10-27，VIX觀測日期為2026-10-26，兩者非同日，無法嚴格作同日比較。",
+    "外資期貨與現貨數據觀測日期均為2026-10-27，但期貨為未平倉部位，現貨為單日買賣超，口徑不同，不能直接加總或互為因果。"
   ],
   "missing_data": [
-    "外資現貨買賣超、期貨淨未平倉、借券賣出餘額等台股資金面資料均為stale狀態，無法作為當日證據。",
-    "LME三個月銅與ICE DXY資料因授權問題缺失，無法評估商品與美元指數影響。"
+    "Put/Call未平倉比、Call未平倉、Put未平倉數據取得失敗，無法評估選擇權市場情緒。",
+    "LME三個月銅與ICE DXY數據需授權，無法取得，影響商品與美元指數分析。",
+    "事件資料為空，無法評估特定事件對市場的影響。"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-10-27T08:02:13+08:00",
-  "snapshot_id": "20261027T080002",
+  "generated_at": "2026-10-28T08:02:19+08:00",
+  "snapshot_id": "20261028T080003",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
