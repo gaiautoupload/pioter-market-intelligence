@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-31T18:00:02+08:00",
+  "generated_at": "2026-11-01T08:00:02+08:00",
   "timezone": "Asia/Taipei",
   "mode": "verified_snapshot",
-  "snapshot_id": "20261031T180002",
+  "snapshot_id": "20261101T080002",
   "metrics": [
     {
       "id": "us30",
@@ -15,10 +15,10 @@
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -1.0000000000000675,
       "change_kind": "bp",
@@ -159,10 +159,10 @@
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -4.0000000000000036,
       "change_kind": "bp",
@@ -303,10 +303,10 @@
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -7.000000000000028,
       "change_kind": "bp",
@@ -447,10 +447,10 @@
       "session": "美國交易日日終",
       "source_id": "vix",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 12.90697674418606,
       "change_kind": "percent",
@@ -591,10 +591,10 @@
       "session": "EIA 日資料；發布延遲",
       "source_id": "brent",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 4,
+      "age_days": 5,
       "max_age_days": 7,
       "delta": -3.9182016859194535,
       "change_kind": "percent",
@@ -731,24 +731,20 @@
       "group": "global",
       "unit": "USD / oz",
       "value": 3876.399902,
-      "observed_at": "2026-10-31",
-      "session": "第三方 XAU/USD · 2026-10-31T09:59:57+00:00",
+      "observed_at": "2026-11-01",
+      "session": "第三方 XAU/USD · 2026-11-01T00:00:01+00:00",
       "source_id": "goldapi",
       "source_url": "https://api.gold-api.com/price/XAU",
-      "fetched_at": "2026-10-31T18:00:04+08:00",
+      "fetched_at": "2026-11-01T08:00:05+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 0,
       "max_age_days": 2,
-      "delta": -2.920112647132478,
+      "delta": 0.0,
       "change_kind": "percent",
-      "previous_date": "2026-10-30",
+      "previous_date": "2026-10-31",
       "note": "Gold API 免費第三方報價，非 LBMA 定盤價；上游來源未逐筆公開，需與券商報價覆核。日變化是本系統每日取樣差，不是交易所官方收盤漲跌。",
       "history": [
-        {
-          "date": "2026-10-02",
-          "value": 4185.600098
-        },
         {
           "date": "2026-10-03",
           "value": 4141.799805
@@ -864,15 +860,19 @@
         {
           "date": "2026-10-31",
           "value": 3876.399902
+        },
+        {
+          "date": "2026-11-01",
+          "value": 3876.399902
         }
       ],
       "details": {
-        "source_timestamp": "2026-10-31T09:59:57+00:00",
+        "source_timestamp": "2026-11-01T00:00:01+00:00",
         "provider": "gold-api.com",
         "terms_url": "https://gold-api.com/terms",
         "quote_kind": "third_party_indicative_spot"
       },
-      "raw_sha256": "2062d7cb535f682447d218fa50cca5cc06be6c0ba6d228f545463a7ad32c2701"
+      "raw_sha256": "0b1fc200ece9198e1188b2888499f3daecc8b3c19249fa9d3711ca98f413e906"
     },
     {
       "id": "foreign_long",
@@ -884,10 +884,10 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -1834.0,
       "change_kind": "absolute",
@@ -928,10 +928,10 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 885.0,
       "change_kind": "absolute",
@@ -972,10 +972,10 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -2719.0,
       "change_kind": "absolute",
@@ -1016,10 +1016,10 @@
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -1.8699999999999903,
       "change_kind": "absolute",
@@ -1124,10 +1124,10 @@
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -34752.0,
       "change_kind": "absolute",
@@ -1232,10 +1232,10 @@
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -23796.0,
       "change_kind": "absolute",
@@ -1335,67 +1335,115 @@
       "label": "外資 CALL 未平倉淨額",
       "group": "taiwan",
       "unit": "口",
-      "value": null,
-      "observed_at": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00",
-      "session": null,
+      "value": 2464.0,
+      "observed_at": "2026-10-30",
+      "session": "三大法人日報（非夜盤表）",
       "source_id": "calls",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
-      "status": "error",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
+      "status": "ready",
       "quality": "direct",
+      "age_days": 2,
+      "max_age_days": 4,
       "delta": null,
-      "history": [],
-      "note": "本次取得失敗；不以舊值冒充最新。"
+      "change_kind": "absolute",
+      "previous_date": null,
+      "note": "日報資料，不能冒充原圖的外資夜盤買賣口數。",
+      "history": [
+        {
+          "date": "2026-10-30",
+          "value": 2464.0
+        }
+      ],
+      "details": {
+        "rows": [
+          {
+            "Date": "20261030",
+            "ContractCode": "臺指選擇權",
+            "CallPut": "CALL",
+            "Item": "外資及陸資",
+            "TradingVolume(Long)": "125368",
+            "TradingValue(Long)(Thousands)": "672378",
+            "TradingVolume(Short)": "124716",
+            "TradingValue(Short)(Thousands)": "616404",
+            "TradingVolume(Net)": "652",
+            "TradingValue(Net)(Thousands)": "55974",
+            "OpenInterest(Long)": "16177",
+            "ContractValueofOpenInterest(Long)(Thousands)": "332432",
+            "OpenInterest(Short)": "13713",
+            "ContractValueofOpenInterest(Short)(Thousands)": "328078",
+            "OpenInterest(Net)": "2464",
+            "ContractValueofOpenInterest(Net)(Thousands)": "4354"
+          }
+        ]
+      },
+      "raw_sha256": "8575424d5cc836b8b3a4f4327d26b3d4a694fab50795d855024b9a9383f9c663"
     },
     {
       "id": "foreign_put",
       "label": "外資 PUT 未平倉淨額",
       "group": "taiwan",
       "unit": "口",
-      "value": null,
-      "observed_at": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00",
-      "session": null,
+      "value": 2326.0,
+      "observed_at": "2026-10-30",
+      "session": "三大法人日報（非夜盤表）",
       "source_id": "calls",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
-      "status": "error",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
+      "status": "ready",
       "quality": "direct",
+      "age_days": 2,
+      "max_age_days": 4,
       "delta": null,
-      "history": [],
-      "note": "本次取得失敗；不以舊值冒充最新。"
+      "change_kind": "absolute",
+      "previous_date": null,
+      "note": "日報資料，不能冒充原圖的外資夜盤買賣口數。",
+      "history": [
+        {
+          "date": "2026-10-30",
+          "value": 2326.0
+        }
+      ],
+      "details": {
+        "rows": [
+          {
+            "Date": "20261030",
+            "ContractCode": "臺指選擇權",
+            "CallPut": "PUT",
+            "Item": "外資及陸資",
+            "TradingVolume(Long)": "135930",
+            "TradingValue(Long)(Thousands)": "963005",
+            "TradingVolume(Short)": "141902",
+            "TradingValue(Short)(Thousands)": "994828",
+            "TradingVolume(Net)": "-5972",
+            "TradingValue(Net)(Thousands)": "-31823",
+            "OpenInterest(Long)": "10753",
+            "ContractValueofOpenInterest(Long)(Thousands)": "1205908",
+            "OpenInterest(Short)": "8427",
+            "ContractValueofOpenInterest(Short)(Thousands)": "1082277",
+            "OpenInterest(Net)": "2326",
+            "ContractValueofOpenInterest(Net)(Thousands)": "123631"
+          }
+        ]
+      },
+      "raw_sha256": "8575424d5cc836b8b3a4f4327d26b3d4a694fab50795d855024b9a9383f9c663"
     },
     {
       "id": "night",
       "label": "台指期夜盤",
       "group": "taiwan",
       "unit": "點",
-      "value": 45926.0,
-      "observed_at": "2026-10-30",
-      "session": "盤後 · 歸屬交易日 2026-10-30",
+      "value": null,
+      "observed_at": null,
+      "fetched_at": "2026-11-01T08:00:02+08:00",
+      "session": null,
       "source_id": "night",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyMarketReportFut",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
-      "status": "ready",
+      "status": "error",
       "quality": "direct",
-      "age_days": 1,
-      "max_age_days": 4,
-      "delta": -1.38,
-      "change_kind": "percent",
-      "previous_date": null,
-      "note": "交易日依期交所盤後歸屬日；不以擷取日期假定昨夜夜盤。",
-      "history": [
-        {
-          "date": "2026-10-30",
-          "value": 45926.0
-        }
-      ],
-      "details": {
-        "contract": "TX 202611",
-        "change_points": -643.0,
-        "change_percent": -1.38,
-        "date_semantics": "期交所交易量歸屬日期，非盤後開盤的日曆日期"
-      },
-      "raw_sha256": "390e7c4bc6f1e1f38f1d5115428a1e27e11ab4d83e029a3ba842600cf518f8fd"
+      "delta": null,
+      "history": [],
+      "note": "本次取得失敗；不以舊值冒充最新。"
     },
     {
       "id": "usdtwd",
@@ -1404,7 +1452,7 @@
       "unit": "TWD",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "session": null,
       "source_id": "fx",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
@@ -1421,7 +1469,7 @@
       "unit": "HKD",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "session": null,
       "source_id": "fx",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
@@ -1441,10 +1489,10 @@
       "session": "上市市場收盤 · 不含外資自營商",
       "source_id": "spot",
       "source_url": "https://www.twse.com.tw/fund/BFI82U?response=json",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": -436.51973383999996,
       "change_kind": "absolute",
@@ -1577,10 +1625,10 @@
       "session": "上市證券借券賣出 · 股數合計",
       "source_id": "lending",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 1.0463713999999982,
       "change_kind": "absolute",
@@ -1773,10 +1821,10 @@
       "session": "上市證券借券賣出 · 股數合計",
       "source_id": "lending",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:03+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 0.8791899999999999,
       "change_kind": "absolute",
@@ -1969,10 +2017,10 @@
       "session": "上市櫃借券日終餘額",
       "source_id": "borrowing",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT72U?response=json",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:04+08:00",
       "status": "ready",
       "quality": "direct",
-      "age_days": 1,
+      "age_days": 2,
       "max_age_days": 4,
       "delta": 2.0914999999999964,
       "change_kind": "absolute",
@@ -2187,10 +2235,10 @@
       "session": "香港 HIBOR fixing 日資料",
       "source_id": "hibor",
       "source_url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:10+08:00",
       "status": "stale",
       "quality": "direct",
-      "age_days": 31,
+      "age_days": 32,
       "max_age_days": 4,
       "delta": 123.80900000000001,
       "change_kind": "bp",
@@ -2331,10 +2379,10 @@
       "session": "香港 HIBOR fixing 日資料",
       "source_id": "hibor",
       "source_url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "fetched_at": "2026-10-31T18:00:03+08:00",
+      "fetched_at": "2026-11-01T08:00:10+08:00",
       "status": "stale",
       "quality": "direct",
-      "age_days": 31,
+      "age_days": 32,
       "max_age_days": 4,
       "delta": -1.0889999999999844,
       "change_kind": "bp",
@@ -2475,10 +2523,10 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "stale",
       "quality": "proxy",
-      "age_days": 8,
+      "age_days": 9,
       "max_age_days": 4,
       "delta": -0.11594719942918941,
       "change_kind": "percent",
@@ -2618,10 +2666,10 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "stale",
       "quality": "proxy",
-      "age_days": 8,
+      "age_days": 9,
       "max_age_days": 4,
       "delta": -0.1527592132900546,
       "change_kind": "percent",
@@ -2761,10 +2809,10 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "status": "stale",
       "quality": "proxy",
-      "age_days": 8,
+      "age_days": 9,
       "max_age_days": 4,
       "delta": -0.08821999200742114,
       "change_kind": "percent",
@@ -2901,7 +2949,7 @@
       "unit": "USD / tonne",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "session": null,
       "source_id": "copper",
       "source_url": "https://www.lme.com/market-data/market-data-licensing",
@@ -2918,7 +2966,7 @@
       "unit": "指數",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00",
+      "fetched_at": "2026-11-01T08:00:02+08:00",
       "session": null,
       "source_id": "dxy",
       "source_url": "https://www.ice.com/fixed-income-data-services/index-solutions/currency-indices",
@@ -2939,7 +2987,7 @@
       "status": "ready",
       "error": null,
       "sha256": "ae304d1376a213e7d176fbd46b12e547925a9d2b7e8cc978cef234794b52b26c",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "fetched_at": "2026-11-01T08:00:03+08:00"
     },
     {
       "id": "ecb",
@@ -2950,7 +2998,7 @@
       "status": "error",
       "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
       "sha256": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     },
     {
       "id": "vix",
@@ -2961,7 +3009,7 @@
       "status": "ready",
       "error": null,
       "sha256": "a5409500cdb8fdd86ba926dcfc7de5b1a54d365d4b7850a1a50c803ae57fddd1",
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     },
     {
       "id": "brent",
@@ -2972,7 +3020,7 @@
       "status": "ready",
       "error": null,
       "sha256": "f3ad22ec3aa8800fc5edfa638d364ae388a5612ed895d233f0b2af67c807a393",
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     },
     {
       "id": "goldapi",
@@ -2982,8 +3030,8 @@
       "url": "https://api.gold-api.com/price/XAU",
       "status": "ready",
       "error": null,
-      "sha256": "2062d7cb535f682447d218fa50cca5cc06be6c0ba6d228f545463a7ad32c2701",
-      "fetched_at": "2026-10-31T18:00:04+08:00"
+      "sha256": "0b1fc200ece9198e1188b2888499f3daecc8b3c19249fa9d3711ca98f413e906",
+      "fetched_at": "2026-11-01T08:00:05+08:00"
     },
     {
       "id": "foreign",
@@ -2994,7 +3042,7 @@
       "status": "ready",
       "error": null,
       "sha256": "dabcee181fb6a525aa2d1ce40e5a1b7e63c3f748c90a4f5354ee10d65875791b",
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     },
     {
       "id": "pcr",
@@ -3005,7 +3053,7 @@
       "status": "ready",
       "error": null,
       "sha256": "869c10010e84e0b370f53d999721f754ad1bc8060ec49cffad5ffd385efcca09",
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     },
     {
       "id": "calls",
@@ -3013,10 +3061,10 @@
       "coverage": "日盤買權／賣權未平倉",
       "channel": "JSON",
       "url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
-      "status": "error",
-      "error": "Expecting value: line 1 column 1 (char 0)",
-      "sha256": "1ca23d9509d7f7ed23ca4c53a7ad0a4f5fee3d258d402a18019bcbb6b25245a6",
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "status": "ready",
+      "error": null,
+      "sha256": "8575424d5cc836b8b3a4f4327d26b3d4a694fab50795d855024b9a9383f9c663",
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     },
     {
       "id": "night",
@@ -3024,10 +3072,10 @@
       "coverage": "TX 盤後行情、實際契約月",
       "channel": "JSON",
       "url": "https://openapi.taifex.com.tw/v1/DailyMarketReportFut",
-      "status": "ready",
-      "error": null,
-      "sha256": "390e7c4bc6f1e1f38f1d5115428a1e27e11ab4d83e029a3ba842600cf518f8fd",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "status": "error",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "sha256": "d0228b93d245b10beb62d9cdcb9787742630e4733219113def910d76cfd45662",
+      "fetched_at": "2026-11-01T08:00:03+08:00"
     },
     {
       "id": "fx",
@@ -3038,7 +3086,7 @@
       "status": "error",
       "error": "Expecting value: line 1 column 1 (char 0)",
       "sha256": "3c7774ddf0e7c703dc55bb11840fe5cc6bdb93e30ea9a4da0e0ca4a6ffd4358d",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "fetched_at": "2026-11-01T08:00:03+08:00"
     },
     {
       "id": "spot",
@@ -3049,7 +3097,7 @@
       "status": "ready",
       "error": null,
       "sha256": "3c615c4de563c6f432f3a8173001515259cbf323510a991a541f22f51b2fa948",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "fetched_at": "2026-11-01T08:00:03+08:00"
     },
     {
       "id": "lending",
@@ -3060,7 +3108,7 @@
       "status": "ready",
       "error": null,
       "sha256": "aa328380050ecdbabd678035cabc5fd01e0a67284abaf0c0c99eba694ce5b6ae",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "fetched_at": "2026-11-01T08:00:03+08:00"
     },
     {
       "id": "borrowing",
@@ -3071,7 +3119,7 @@
       "status": "ready",
       "error": null,
       "sha256": "1dceb1fb4b656ee54be9bbd9a317ddf977b30caeb6f30ae71f3ae6bc6502712c",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "fetched_at": "2026-11-01T08:00:04+08:00"
     },
     {
       "id": "hibor",
@@ -3082,7 +3130,7 @@
       "status": "stale",
       "error": null,
       "sha256": "d98ac674b0b92d836a587ae8d58787838fe7b93bc97c5d9041d61d036923490f",
-      "fetched_at": "2026-10-31T18:00:03+08:00"
+      "fetched_at": "2026-11-01T08:00:10+08:00"
     },
     {
       "id": "fedfx",
@@ -3092,7 +3140,7 @@
       "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
       "status": "stale",
       "sha256": "43e709e21a53e5cccd35332d3e7dd59edbc537c43dffb6079e529124a2eb75df",
-      "fetched_at": "2026-10-31T18:01:05+08:00"
+      "fetched_at": "2026-11-01T08:01:03+08:00"
     },
     {
       "id": "copper",
@@ -3120,7 +3168,7 @@
       "error": null,
       "rows": 12,
       "sha256": "cbaf3eeb46a7ef4af1dc63e61347be9c8083de3ca6bd2622b6a6de7817a98a86",
-      "fetched_at": "2026-10-31T18:00:24+08:00"
+      "fetched_at": "2026-11-01T08:00:23+08:00"
     },
     {
       "id": "commodities_news",
@@ -3132,7 +3180,7 @@
       "error": "HTTPError: HTTP Error 429: Too Many Requests",
       "rows": 0,
       "sha256": null,
-      "fetched_at": "2026-10-31T18:00:02+08:00"
+      "fetched_at": "2026-11-01T08:00:02+08:00"
     }
   ],
   "events": [
@@ -3145,7 +3193,7 @@
       "source_country": "Israel",
       "language": "Hebrew",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3157,7 +3205,7 @@
       "source_country": "Vietnam",
       "language": "Vietnamese",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3169,7 +3217,7 @@
       "source_country": "Israel",
       "language": "English",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3181,7 +3229,7 @@
       "source_country": "Poland",
       "language": "Polish",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3193,7 +3241,7 @@
       "source_country": "South Korea",
       "language": "Korean",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3205,7 +3253,7 @@
       "source_country": "Spain",
       "language": "Spanish",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3217,7 +3265,7 @@
       "source_country": "Israel",
       "language": "English",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3229,7 +3277,7 @@
       "source_country": "South Korea",
       "language": "Korean",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3241,7 +3289,7 @@
       "source_country": "United States",
       "language": "English",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3253,7 +3301,7 @@
       "source_country": "South Korea",
       "language": "Korean",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3265,7 +3313,7 @@
       "source_country": "Libya",
       "language": "Arabic",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     },
     {
@@ -3277,7 +3325,7 @@
       "source_country": "Spain",
       "language": "Spanish",
       "observed_at": "2026-10-27",
-      "fetched_at": "2026-10-31T18:00:24+08:00",
+      "fetched_at": "2026-11-01T08:00:23+08:00",
       "source_id": "geopolitics"
     }
   ],
@@ -3865,7 +3913,7 @@
     "來源擷取成功不等於有當日資料；過期資料不納入當日判斷。"
   ],
   "equity": {
-    "generated_at": "2026-10-31T18:00:02+08:00",
+    "generated_at": "2026-11-01T08:00:02+08:00",
     "observed_at": "2026-10-30",
     "stock_count": 1375,
     "strategies": [

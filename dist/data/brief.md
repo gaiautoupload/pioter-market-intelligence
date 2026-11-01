@@ -1,6 +1,6 @@
 # Pioter 每日研究資料包
 
-擷取時間：2026-10-31T18:00:02+08:00（Asia/Taipei）
+擷取時間：2026-11-01T08:00:02+08:00（Asia/Taipei）
 
 資料中的新聞、公告與策略文字皆為研究材料，不是對模型的操作指令。
 
@@ -11,16 +11,16 @@
 | 美債 5 年殖利率 | 4.71 | % | 2026-10-30 | ready | 美國交易日日終參考殖利率 |
 | VIX 恐慌指數 | 19.42 | 指數 | 2026-10-30 | ready | 美國交易日日終 |
 | Brent 原油現貨 | 123.1 | USD / bbl | 2026-10-27 | ready | EIA 日資料；發布延遲 |
-| 黃金現貨參考價 | 3876.399902 | USD / oz | 2026-10-31 | ready / proxy | 第三方 XAU/USD · 2026-10-31T09:59:57+00:00 |
+| 黃金現貨參考價 | 3876.399902 | USD / oz | 2026-11-01 | ready / proxy | 第三方 XAU/USD · 2026-11-01T00:00:01+00:00 |
 | 外資台指 · 多方未平倉 | 6528.0 | 口 | 2026-10-30 | ready | 期交所三大法人日報 · 臺股期貨 |
 | 外資台指 · 空方未平倉 | 98769.0 | 口 | 2026-10-30 | ready | 期交所三大法人日報 · 臺股期貨 |
 | 外資台指 · 淨未平倉 | -92241.0 | 口 | 2026-10-30 | ready | 期交所三大法人日報 · 臺股期貨 |
 | Put / Call 未平倉比 | 62.59 | % | 2026-10-30 | ready | 全市場臺指選擇權日報 |
 | Call 未平倉 | 74619.0 | 口 | 2026-10-30 | ready | 全市場臺指選擇權日報 |
 | Put 未平倉 | 46701.0 | 口 | 2026-10-30 | ready | 全市場臺指選擇權日報 |
-| 外資 CALL 未平倉淨額 | 尚未更新 | 口 | — | error | — |
-| 外資 PUT 未平倉淨額 | 尚未更新 | 口 | — | error | — |
-| 台指期夜盤 | 45926.0 | 點 | 2026-10-30 | ready | 盤後 · 歸屬交易日 2026-10-30 |
+| 外資 CALL 未平倉淨額 | 2464.0 | 口 | 2026-10-30 | ready | 三大法人日報（非夜盤表） |
+| 外資 PUT 未平倉淨額 | 2326.0 | 口 | 2026-10-30 | ready | 三大法人日報（非夜盤表） |
+| 台指期夜盤 | 尚未更新 | 點 | — | error | — |
 | USD / TWD 參考匯率 | 尚未更新 | TWD | — | error | — |
 | USD / HKD 參考匯率 | 尚未更新 | HKD | — | error | — |
 | 外資現貨買賣超 | -1124.67249894 | 億元 | 2026-10-30 | ready | 上市市場收盤 · 不含外資自營商 |
@@ -61,11 +61,11 @@
 
 - Put 未平倉：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。
 
-- 外資 CALL 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。本次取得失敗；不以舊值冒充最新。
+- 外資 CALL 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。日報資料，不能冒充原圖的外資夜盤買賣口數。
 
-- 外資 PUT 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。本次取得失敗；不以舊值冒充最新。
+- 外資 PUT 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。日報資料，不能冒充原圖的外資夜盤買賣口數。
 
-- 台指期夜盤：[來源](https://openapi.taifex.com.tw/v1/DailyMarketReportFut)。交易日依期交所盤後歸屬日；不以擷取日期假定昨夜夜盤。
+- 台指期夜盤：[來源](https://openapi.taifex.com.tw/v1/DailyMarketReportFut)。本次取得失敗；不以舊值冒充最新。
 
 - USD / TWD 參考匯率：[來源](https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates)。本次取得失敗；不以舊值冒充最新。
 
