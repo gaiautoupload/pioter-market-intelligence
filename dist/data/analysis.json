@@ -1,76 +1,76 @@
 {
   "summary": {
-    "international_capital": "Neutral",
+    "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
-    "systemic_risk": "Medium",
-    "one_line": "美債殖利率下行與VIX回落顯示全球風險偏好修復，但台股外資期貨淨空倉增加、現貨持續賣超及借券餘額上升，顯示本地資金面仍偏空。"
+    "systemic_risk": "High",
+    "one_line": "VIX單日上升與美債殖利率下行並存，顯示避險情緒升溫，台股外資期貨淨空部位擴大且現貨持續賣超，短期承壓。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "若外資期貨淨空倉維持在 -95,000 口以上且現貨賣超持續，台股短期承壓，但美債殖利率下行可能限制跌幅。",
-    "risk_scenario": "若借券賣出餘額單日增加超過 5 億股且外資現貨賣超擴大至 -1,500 億元以上，台股可能出現加速下跌。",
-    "bullish_trigger": "若外資期貨淨空倉減少超過 5,000 口且現貨轉為買超，台股可能出現反彈。",
-    "bearish_trigger": "若 VIX 回升至 20 以上且美債 10 年殖利率反彈超過 10bp，台股可能進一步承壓。"
+    "base_scenario": "若VIX維持高檔且外資期貨淨空部位持續擴大，台股現貨可能延續承壓，個股波動率上升。",
+    "risk_scenario": "若美債殖利率進一步下行伴隨VIX突破30，可能引發全球風險資產拋售，台股跌幅擴大。",
+    "bullish_trigger": "若外資期貨淨空部位轉為淨多，且現貨買賣超轉正，則短期壓力緩解。",
+    "bearish_trigger": "若VIX單日漲幅超過10%且外資現貨賣超超過1500億元，則風險升級。"
   },
   "medium_term": {
-    "direction": "Neutral",
-    "base_scenario": "若美債殖利率維持在 4.8%-5.0% 區間且外資期貨淨空倉穩定，台股中期將呈現震盪格局。",
-    "risk_scenario": "若借券餘額持續上升且外資現貨賣超連續多日超過 -1,000 億元，台股中期可能面臨調整壓力。",
-    "bullish_trigger": "若外資期貨淨空倉減少至 -80,000 口以下且現貨轉為買超，台股中期可能轉強。",
-    "bearish_trigger": "若美債 30 年殖利率反彈至 5.5% 以上且 VIX 維持在 20 以上，台股中期可能承壓。"
+    "direction": "Bearish",
+    "base_scenario": "若借券賣出餘額持續增加且外資期貨淨空部位維持高檔，台股中期趨勢偏空。",
+    "risk_scenario": "若全球避險情緒持續升溫，且原油價格因地緣政治波動，台股中期承壓加劇。",
+    "bullish_trigger": "若外資期貨淨空部位連續三日減少，且現貨買賣超連續三日轉正，則中期趨勢轉多。",
+    "bearish_trigger": "若借券賣出餘額單日增加超過5億股，且外資期貨淨空部位超過10萬口，則風險升級。"
   },
   "evidence": [
     {
-      "metric_id": "us10",
-      "observed_at": "2026-11-05",
-      "value": 4.84,
-      "interpretation": "美債 10 年殖利率降至 4.84%，較前一日下降 6bp，顯示全球利率壓力緩解，對台股估值面有利。"
-    },
-    {
       "metric_id": "vix",
-      "observed_at": "2026-11-04",
-      "value": 16.61,
-      "interpretation": "VIX 降至 16.61，較前一日下降 20.26%，顯示市場恐慌情緒緩解，風險偏好修復。"
+      "observed_at": "2026-11-05",
+      "value": 28.18,
+      "interpretation": "VIX單日漲幅69.66%，顯示避險情緒上升，非VIX期貨，為Cboe收盤值。"
     },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-11-05",
       "value": -95651.0,
-      "interpretation": "外資台指期貨淨未平倉為 -95,651 口，較前一日減少 2,004 口，顯示外資期貨部位仍偏空，但空頭部位略有減少。"
+      "interpretation": "外資台指期貨淨未平倉為-95651口，單日減少2004口，顯示外資期貨部位偏空。"
     },
     {
       "metric_id": "spot",
-      "observed_at": "2026-11-05",
-      "value": -1024.60621838,
-      "interpretation": "外資現貨買賣超為 -1,024.61 億元，較前一日減少 474.39 億元，顯示外資現貨賣壓減輕，但仍為賣超。"
+      "observed_at": "2026-11-06",
+      "value": -911.88249259,
+      "interpretation": "外資現貨買賣超為-911.88億元，單日減少112.72億元，顯示外資現貨持續賣超。"
     },
     {
-      "metric_id": "lending_balance",
+      "metric_id": "us10",
       "observed_at": "2026-11-05",
-      "value": 178.66876765,
-      "interpretation": "借券賣出餘額為 178.67 億股，較前一日增加 3.06 億股，顯示借券賣出部位增加，可能反映市場對下跌的預期。"
+      "value": 4.84,
+      "interpretation": "美債10年殖利率為4.84%，單日下降6bp，顯示債券市場避險需求增加。"
     }
   ],
   "event_risks": [
     {
-      "event_id": "80389831ea56e551",
-      "impact": "若該事件標題經確認，美股費半暴跌 12.3%、那斯達克陷修正，可能影響台股科技股表現。",
+      "event_id": "2fe55a2333f9f492",
+      "impact": "若該事件標題經確認，全球股市下跌，AI與晶片股承壓，可能影響台股科技股表現。",
       "horizon": "短期",
-      "transmission": "美股科技股下跌 → 台股科技股跟跌 → 台股承壓"
+      "transmission": "事件→全球股市下跌→避險情緒升溫→台股科技股承壓"
+    },
+    {
+      "event_id": "07a228fdf92c9628",
+      "impact": "若該事件標題經確認，台股一個月內下跌超過萬點，法人指出三大原因，可能影響市場情緒。",
+      "horizon": "短期",
+      "transmission": "事件→台股下跌→市場情緒轉弱→外資賣超加劇"
     }
   ],
   "divergences": [
-    "美債殖利率與 VIX 數據為 2026-11-05 與 2026-11-04，與台股外資期貨與現貨數據（2026-11-05）存在一日差異，無法嚴格作同日比較。",
-    "借券賣出餘額與外資現貨買賣超數據均為 2026-11-05，但借券賣出餘額包含 ETF，不能直接等同於個股空頭部位。"
+    "VIX與美債殖利率數據為2026-11-05，而外資現貨買賣超為2026-11-06，無法嚴格作同日比較。",
+    "原油價格數據為2026-11-03，與台股數據日期不同，無法直接比較。"
   ],
   "missing_data": [
-    "台指期夜盤數據取得失敗，無法評估夜盤外資部位變化。",
-    "LME 三個月銅與 ICE DXY 數據需授權，無法評估商品與美元指數對台股的影響。"
+    "LME三個月銅與ICE DXY數據缺失，無法評估大宗商品與美元指數影響。",
+    "HIBOR與匯率數據過期，無法作為當日流動性與匯率風險依據。"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-11-06T08:02:09+08:00",
-  "snapshot_id": "20261106T080001",
+  "generated_at": "2026-11-06T18:03:11+08:00",
+  "snapshot_id": "20261106T180001",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
   "review_flags": [
     "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
