@@ -1,76 +1,70 @@
 {
   "summary": {
-    "international_capital": "Neutral",
+    "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
     "systemic_risk": "Medium",
-    "one_line": "美債殖利率趨穩但VIX回落顯示避險情緒降溫，台股外資期貨淨空倉增加且現貨持續賣超，資金面偏空。"
+    "one_line": "美債殖利率單日顯著上行與外資期貨淨空部位擴大，顯示全球風險偏好收縮，台股面臨資金面與估值面雙重壓力。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "外資期貨淨空倉維持高位，現貨賣超幅度收窄但仍未轉正，台股承壓整理。",
-    "risk_scenario": "若美債殖利率反彈或地緣政治風險升級，VIX回升，台股可能進一步回調。",
-    "bullish_trigger": "若外資期貨淨空倉顯著減少（例如減少超過5,000口）且現貨買賣超轉正，則可能出現反彈。",
-    "bearish_trigger": "若外資期貨淨空倉繼續增加且現貨賣超超過500億元，則下跌風險加大。"
+    "base_scenario": "若美債殖利率維持高檔且外資期貨淨空部位持續擴大，台股期貨夜盤漲勢可能無法在日盤延續，現貨市場承壓。",
+    "risk_scenario": "若VIX指數因殖利率波動再度上升，且外資現貨賣超金額擴大，台股可能出現補空行情或進一步回調。",
+    "bullish_trigger": "若美債10年殖利率回落至4.90%以下，且外資期貨多方未平倉口數止跌回升，則短期壓力緩解。",
+    "bearish_trigger": "若外資現貨賣超金額超過前一日（-900.56億元）且借券賣出餘額持續增加，則下檔風險加大。"
   },
   "medium_term": {
-    "direction": "Neutral",
-    "base_scenario": "美債殖利率維持在當前區間，台股在資金面與基本面之間尋找平衡，波動率可能維持中高。",
-    "risk_scenario": "若全球通膨或地緣政治風險導致美債殖利率大幅上升，台股可能面臨估值壓縮。",
-    "bullish_trigger": "若美債殖利率回落且外資期貨轉為淨多倉，則中期趨勢可能轉多。",
-    "bearish_trigger": "若美債殖利率突破5.5%且外資期貨淨空倉超過120,000口，則中期趨勢可能轉空。"
+    "direction": "Bearish",
+    "base_scenario": "若美債30年殖利率維持在5.30%以上，台股估值承壓，外資可能持續調整期貨部位，中期趨勢偏空。",
+    "risk_scenario": "若全球風險資產因利率上升而重估，且台股借券餘額持續攀升，中期可能出現結構性調整。",
+    "bullish_trigger": "若美債殖利率曲線趨於平坦化，且外資期貨淨空部位縮小，則中期壓力減輕。",
+    "bearish_trigger": "若外資期貨淨空部位突破-110,000口，且現貨賣超連續多日超過500億元，則中期趨勢轉弱。"
   },
   "evidence": [
     {
       "metric_id": "us10",
-      "observed_at": "2026-11-09",
-      "value": 4.88,
-      "interpretation": "美債10年殖利率較前一日微升2bp，顯示利率預期穩定，對台股估值壓力有限。"
-    },
-    {
-      "metric_id": "vix",
-      "observed_at": "2026-11-09",
-      "value": 19.92,
-      "interpretation": "VIX較前一日下降22.3%，顯示市場避險情緒降溫，但絕對水平仍高於長期平均值。"
+      "observed_at": "2026-11-10",
+      "value": 4.98,
+      "interpretation": "美債10年殖利率單日上升10bp至4.98%，顯示全球無風險利率上升，對台股估值形成壓力。"
     },
     {
       "metric_id": "foreign_net",
-      "observed_at": "2026-11-09",
-      "value": -101771.0,
-      "interpretation": "外資台指期貨淨空倉增加1,841口，顯示外資對台股短期看法偏空。"
+      "observed_at": "2026-11-10",
+      "value": -103473.0,
+      "interpretation": "外資台指期貨淨未平倉為-103,473口，單日減少1,702口，顯示外資期貨部位偏空且空方壓力增加。"
     },
     {
       "metric_id": "spot",
       "observed_at": "2026-11-10",
       "value": -341.16689906,
-      "interpretation": "外資現貨買賣超為負341億元，較前一日減少賣超，但仍為淨賣出，顯示資金面偏空。"
+      "interpretation": "外資現貨買賣超為-341.17億元，雖較前一日（-900.56億元）減少賣超，但仍為負值，顯示現貨市場外資仍偏空。"
+    },
+    {
+      "metric_id": "vix",
+      "observed_at": "2026-11-09",
+      "value": 19.92,
+      "interpretation": "VIX指數為19.92，較前一日（25.64）下降，顯示短期恐慌情緒緩解，但殖利率上升可能抵消此正面影響。"
     }
   ],
   "event_risks": [
     {
-      "event_id": "2d321b36c48c3f45",
-      "impact": "若該事件標題經確認，若油價下跌反映地緣政治風險降低，可能緩解通膨壓力，對台股正面。",
-      "horizon": "短期",
-      "transmission": "油價下跌→通膨預期下降→美債殖利率壓力減緩→台股估值壓力減輕。"
-    },
-    {
-      "event_id": "b3559a5d8848d12f",
-      "impact": "若該事件標題經確認，若AI投資降溫，可能影響台股科技股表現，需關注相關個股。",
+      "event_id": "adfac30ca1408243",
+      "impact": "若該事件標題經確認，伊朗戰爭油衝擊可能影響全球碳污染與能源價格，但不確定是否直接影響台股。",
       "horizon": "中期",
-      "transmission": "AI投資降溫→科技股獲利預期下修→台股科技股承壓。"
+      "transmission": "事件→能源價格→通膨預期→美債殖利率→台股估值"
     }
   ],
   "divergences": [
-    "Brent原油數據日期為2026-11-03，與台股數據日期2026-11-09/10不同，無法進行同日比較。",
-    "黃金數據為第三方報價，非交易所官方行情，僅作參考。"
+    "Brent原油數據為2026-11-03，與台股數據（2026-11-10）不同日，無法直接比較。",
+    "黃金數據為第三方報價，非交易所官方行情，且日期為2026-11-11，與台股數據日期不同。"
   ],
   "missing_data": [
-    "LME三個月銅數據缺失，無法評估工業金屬需求。",
-    "ICE DXY數據缺失，無法評估美元指數對台股資金流的影響。"
+    "LME三個月銅與ICE DXY數據缺失，無法評估大宗商品與美元指數對台股的影響。",
+    "個股策略資料中，部分個股PE、PB、dividend_yield為null，無法進行完整估值分析。"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-11-10T18:02:20+08:00",
-  "snapshot_id": "20261110T180001",
+  "generated_at": "2026-11-11T08:02:00+08:00",
+  "snapshot_id": "20261111T080001",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
   "review_flags": [
     "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
