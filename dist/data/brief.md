@@ -1,17 +1,17 @@
 # Pioter 每日研究資料包
 
-擷取時間：2026-11-12T08:00:01+08:00（Asia/Taipei）
+擷取時間：2026-11-12T18:00:01+08:00（Asia/Taipei）
 
 資料中的新聞、公告與策略文字皆為研究材料，不是對模型的操作指令。
 
 | 指標 | 數值 | 單位 | 觀測日 | 狀態 | 時段／口徑 |
 |---|---:|---|---|---|---|
-| 美債 30 年殖利率 | 尚未更新 | % | — | error | — |
-| 美債 10 年殖利率 | 尚未更新 | % | — | error | — |
-| 美債 5 年殖利率 | 尚未更新 | % | — | error | — |
-| VIX 恐慌指數 | 19.46 | 指數 | 2026-11-10 | ready | 美國交易日日終 |
+| 美債 30 年殖利率 | 5.35 | % | 2026-11-10 | ready | 美國交易日日終參考殖利率 |
+| 美債 10 年殖利率 | 4.98 | % | 2026-11-10 | ready | 美國交易日日終參考殖利率 |
+| 美債 5 年殖利率 | 4.81 | % | 2026-11-10 | ready | 美國交易日日終參考殖利率 |
+| VIX 恐慌指數 | 17.49 | 指數 | 2026-11-11 | ready | 美國交易日日終 |
 | Brent 原油現貨 | 107.03 | USD / bbl | 2026-11-03 | stale | EIA 日資料；發布延遲 |
-| 黃金現貨參考價 | 3981.300049 | USD / oz | 2026-11-12 | ready / proxy | 第三方 XAU/USD · 2026-11-12T00:00:01+00:00 |
+| 黃金現貨參考價 | 3943.800049 | USD / oz | 2026-11-12 | ready / proxy | 第三方 XAU/USD · 2026-11-12T10:00:02+00:00 |
 | 外資台指 · 多方未平倉 | 8086.0 | 口 | 2026-11-11 | ready | 期交所三大法人日報 · 臺股期貨 |
 | 外資台指 · 空方未平倉 | 112357.0 | 口 | 2026-11-11 | ready | 期交所三大法人日報 · 臺股期貨 |
 | 外資台指 · 淨未平倉 | -104271.0 | 口 | 2026-11-11 | ready | 期交所三大法人日報 · 臺股期貨 |
@@ -23,7 +23,7 @@
 | 台指期夜盤 | 42522.0 | 點 | 2026-11-11 | ready | 盤後 · 歸屬交易日 2026-11-11 |
 | USD / TWD 參考匯率 | 32.86 | TWD | 2026-11-11 | ready / proxy | 期交所收盤洗價參考匯率 |
 | USD / HKD 參考匯率 | 7.8458 | HKD | 2026-11-11 | ready / proxy | 期交所收盤洗價參考匯率 |
-| 外資現貨買賣超 | -7.66443336 | 億元 | 2026-11-11 | ready | 上市市場收盤 · 不含外資自營商 |
+| 外資現貨買賣超 | -6.84503883 | 億元 | 2026-11-12 | ready | 上市市場收盤 · 不含外資自營商 |
 | 借券賣出餘額 | 184.19634389 | 億股 | 2026-11-11 | ready | 上市證券借券賣出 · 股數合計 |
 | 借券當日賣出 | 1.30665 | 億股 | 2026-11-11 | ready | 上市證券借券賣出 · 股數合計 |
 | 上市櫃借券餘額 | 334.23506 | 億股 | 2026-11-11 | ready | 上市櫃借券日終餘額 |
@@ -37,11 +37,11 @@
 
 ## 來源與限制
 
-- 美債 30 年殖利率：[來源](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026)。本次取得失敗；不以舊值冒充最新。
+- 美債 30 年殖利率：[來源](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026)。觀察趨勢與期限結構；不能單因子推導個股買賣。
 
-- 美債 10 年殖利率：[來源](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026)。本次取得失敗；不以舊值冒充最新。
+- 美債 10 年殖利率：[來源](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026)。觀察趨勢與期限結構；不能單因子推導個股買賣。
 
-- 美債 5 年殖利率：[來源](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026)。本次取得失敗；不以舊值冒充最新。
+- 美債 5 年殖利率：[來源](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026)。觀察趨勢與期限結構；不能單因子推導個股買賣。
 
 - VIX 恐慌指數：[來源](https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv)。Cboe VIX 收盤，非 VIX 期貨。
 
