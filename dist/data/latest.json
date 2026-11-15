@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-15T08:00:01+08:00",
+  "generated_at": "2026-11-15T18:00:01+08:00",
   "timezone": "Asia/Taipei",
   "mode": "verified_snapshot",
-  "snapshot_id": "20261115T080001",
+  "snapshot_id": "20261115T180001",
   "metrics": [
     {
       "id": "us30",
@@ -15,7 +15,7 @@
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -147,7 +147,7 @@
         }
       ],
       "details": {},
-      "raw_sha256": "452287ae39bd22707fec8aa73753e6154ad922b0bf1490be8f8d3a257640cde7"
+      "raw_sha256": "dc2c387162af0013c4da3fc4c597524578be3d4d23f1e9c6ee6e0a49c1e9a8f6"
     },
     {
       "id": "us10",
@@ -159,7 +159,7 @@
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -291,7 +291,7 @@
         }
       ],
       "details": {},
-      "raw_sha256": "452287ae39bd22707fec8aa73753e6154ad922b0bf1490be8f8d3a257640cde7"
+      "raw_sha256": "dc2c387162af0013c4da3fc4c597524578be3d4d23f1e9c6ee6e0a49c1e9a8f6"
     },
     {
       "id": "us5",
@@ -303,7 +303,7 @@
       "session": "美國交易日日終參考殖利率",
       "source_id": "treasury",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -435,7 +435,7 @@
         }
       ],
       "details": {},
-      "raw_sha256": "452287ae39bd22707fec8aa73753e6154ad922b0bf1490be8f8d3a257640cde7"
+      "raw_sha256": "dc2c387162af0013c4da3fc4c597524578be3d4d23f1e9c6ee6e0a49c1e9a8f6"
     },
     {
       "id": "vix",
@@ -447,7 +447,7 @@
       "session": "美國交易日日終",
       "source_id": "vix",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:01+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -591,7 +591,7 @@
       "session": "EIA 日資料；發布延遲",
       "source_id": "brent",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 4,
@@ -732,10 +732,10 @@
       "unit": "USD / oz",
       "value": 3887.600098,
       "observed_at": "2026-11-15",
-      "session": "第三方 XAU/USD · 2026-11-14T23:59:56+00:00",
+      "session": "第三方 XAU/USD · 2026-11-15T09:59:56+00:00",
       "source_id": "goldapi",
       "source_url": "https://api.gold-api.com/price/XAU",
-      "fetched_at": "2026-11-15T08:00:08+08:00",
+      "fetched_at": "2026-11-15T18:00:03+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 0,
@@ -867,12 +867,12 @@
         }
       ],
       "details": {
-        "source_timestamp": "2026-11-14T23:59:56+00:00",
+        "source_timestamp": "2026-11-15T09:59:56+00:00",
         "provider": "gold-api.com",
         "terms_url": "https://gold-api.com/terms",
         "quote_kind": "third_party_indicative_spot"
       },
-      "raw_sha256": "41283b68a22569054ea9032638f7006454b3a7993d1c7f288832ff406f34fdbd"
+      "raw_sha256": "cf5f1b9779dc9d023ebb9377a4e58de8db1bbb3796e3894178ded323169eb02b"
     },
     {
       "id": "foreign_long",
@@ -884,7 +884,7 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -968,7 +968,7 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1052,7 +1052,7 @@
       "session": "期交所三大法人日報 · 臺股期貨",
       "source_id": "foreign",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1136,7 +1136,7 @@
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1280,7 +1280,7 @@
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1424,7 +1424,7 @@
       "session": "全市場臺指選擇權日報",
       "source_id": "pcr",
       "source_url": "https://openapi.taifex.com.tw/v1/PutCallRatio",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1568,7 +1568,7 @@
       "session": "三大法人日報（非夜盤表）",
       "source_id": "calls",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1641,7 +1641,7 @@
       "session": "三大法人日報（非夜盤表）",
       "source_id": "calls",
       "source_url": "https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1714,7 +1714,7 @@
       "session": "盤後 · 歸屬交易日 2026-11-13",
       "source_id": "night",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyMarketReportFut",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -1747,7 +1747,7 @@
       "session": "期交所收盤洗價參考匯率",
       "source_id": "fx",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 2,
@@ -1891,7 +1891,7 @@
       "session": "期交所收盤洗價參考匯率",
       "source_id": "fx",
       "source_url": "https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "proxy",
       "age_days": 2,
@@ -2035,7 +2035,7 @@
       "session": "上市市場收盤 · 不含外資自營商",
       "source_id": "spot",
       "source_url": "https://www.twse.com.tw/fund/BFI82U?response=json",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -2179,7 +2179,7 @@
       "session": "上市證券借券賣出 · 股數合計",
       "source_id": "lending",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -2379,7 +2379,7 @@
       "session": "上市證券借券賣出 · 股數合計",
       "source_id": "lending",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT93U?response=json",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -2579,7 +2579,7 @@
       "session": "上市櫃借券日終餘額",
       "source_id": "borrowing",
       "source_url": "https://www.twse.com.tw/exchangeReport/TWT72U?response=json",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:03+08:00",
       "status": "ready",
       "quality": "direct",
       "age_days": 2,
@@ -2801,7 +2801,7 @@
       "session": "香港 HIBOR fixing 日資料",
       "source_id": "hibor",
       "source_url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "stale",
       "quality": "direct",
       "age_days": 16,
@@ -2945,7 +2945,7 @@
       "session": "香港 HIBOR fixing 日資料",
       "source_id": "hibor",
       "source_url": "https://api.hkma.gov.hk/public/market-data-and-statistics/monthly-statistical-bulletin/er-ir/hk-interbank-ir-daily?segment=hibor.fixing&pagesize=100",
-      "fetched_at": "2026-11-15T08:00:02+08:00",
+      "fetched_at": "2026-11-15T18:00:02+08:00",
       "status": "stale",
       "quality": "direct",
       "age_days": 16,
@@ -3089,7 +3089,7 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:01+08:00",
       "status": "stale",
       "quality": "proxy",
       "age_days": 9,
@@ -3232,7 +3232,7 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:01+08:00",
       "status": "stale",
       "quality": "proxy",
       "age_days": 9,
@@ -3375,7 +3375,7 @@
       "session": "Federal Reserve H.10 每日參考匯率",
       "source_id": "fedfx",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:01+08:00",
       "status": "stale",
       "quality": "proxy",
       "age_days": 9,
@@ -3515,7 +3515,7 @@
       "unit": "USD / tonne",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:01+08:00",
       "session": null,
       "source_id": "copper",
       "source_url": "https://www.lme.com/market-data/market-data-licensing",
@@ -3532,7 +3532,7 @@
       "unit": "指數",
       "value": null,
       "observed_at": null,
-      "fetched_at": "2026-11-15T08:00:01+08:00",
+      "fetched_at": "2026-11-15T18:00:01+08:00",
       "session": null,
       "source_id": "dxy",
       "source_url": "https://www.ice.com/fixed-income-data-services/index-solutions/currency-indices",
@@ -3552,8 +3552,8 @@
       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
       "status": "ready",
       "error": null,
-      "sha256": "452287ae39bd22707fec8aa73753e6154ad922b0bf1490be8f8d3a257640cde7",
-      "fetched_at": "2026-11-15T08:00:02+08:00"
+      "sha256": "dc2c387162af0013c4da3fc4c597524578be3d4d23f1e9c6ee6e0a49c1e9a8f6",
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "ecb",
@@ -3564,7 +3564,7 @@
       "status": "error",
       "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
       "sha256": null,
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:01+08:00"
     },
     {
       "id": "vix",
@@ -3575,7 +3575,7 @@
       "status": "ready",
       "error": null,
       "sha256": "d4e2b1199951501b7757814b6e1c2356394922a7ea8ef16d85c3a4596e6e2c2d",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:01+08:00"
     },
     {
       "id": "brent",
@@ -3586,7 +3586,7 @@
       "status": "ready",
       "error": null,
       "sha256": "24c21dcefd22454f23390f58e8472c6b8a3cdea283d6cc5b7cfade9fede1d985",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "goldapi",
@@ -3596,8 +3596,8 @@
       "url": "https://api.gold-api.com/price/XAU",
       "status": "ready",
       "error": null,
-      "sha256": "41283b68a22569054ea9032638f7006454b3a7993d1c7f288832ff406f34fdbd",
-      "fetched_at": "2026-11-15T08:00:08+08:00"
+      "sha256": "cf5f1b9779dc9d023ebb9377a4e58de8db1bbb3796e3894178ded323169eb02b",
+      "fetched_at": "2026-11-15T18:00:03+08:00"
     },
     {
       "id": "foreign",
@@ -3608,7 +3608,7 @@
       "status": "ready",
       "error": null,
       "sha256": "4d98aa73ec3792fe85107cf8c4c11fb5d41d4f204a8d0068ea79d8c8a5a33203",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "pcr",
@@ -3619,7 +3619,7 @@
       "status": "ready",
       "error": null,
       "sha256": "5e625c0b5a25d3f57b9affafbe0d40d9aac42d81b61ddeb58fdbaedc28e173b8",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "calls",
@@ -3630,7 +3630,7 @@
       "status": "ready",
       "error": null,
       "sha256": "90af6052bd20e28fcab07e6e9653bf0cfbafee3c83b4a88468e12ce8c861a332",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "night",
@@ -3641,7 +3641,7 @@
       "status": "ready",
       "error": null,
       "sha256": "56180e8f8261669aa09f2e68535e33bb9c0bafd4e3f419d114b419e7830144b2",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "fx",
@@ -3652,7 +3652,7 @@
       "status": "ready",
       "error": null,
       "sha256": "4e52cf4d9710291081a15fb2c7e7a939d780c00f780d10b7752b6ed03bd39441",
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "spot",
@@ -3663,7 +3663,7 @@
       "status": "ready",
       "error": null,
       "sha256": "c7b8cffdc4e2a48e232ccb65031416c266470726a3f8412a50ef29114820b9a9",
-      "fetched_at": "2026-11-15T08:00:02+08:00"
+      "fetched_at": "2026-11-15T18:00:03+08:00"
     },
     {
       "id": "lending",
@@ -3674,7 +3674,7 @@
       "status": "ready",
       "error": null,
       "sha256": "2352830fda832358cdc1d3715e96e5c3f4f837e8b469a2e329b20b46b062551e",
-      "fetched_at": "2026-11-15T08:00:02+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "borrowing",
@@ -3685,7 +3685,7 @@
       "status": "ready",
       "error": null,
       "sha256": "f989f695389faccd0a5251fafec817fc4619c714be269bbd7ae46876008b83e4",
-      "fetched_at": "2026-11-15T08:00:02+08:00"
+      "fetched_at": "2026-11-15T18:00:03+08:00"
     },
     {
       "id": "hibor",
@@ -3696,7 +3696,7 @@
       "status": "stale",
       "error": null,
       "sha256": "13e15697d880d8da9057f33953a54838a25d4cb23dc4c5ca8f43a74ecb70cab4",
-      "fetched_at": "2026-11-15T08:00:02+08:00"
+      "fetched_at": "2026-11-15T18:00:02+08:00"
     },
     {
       "id": "fedfx",
@@ -3706,7 +3706,7 @@
       "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU,DEXJPUS,DEXKOUS",
       "status": "stale",
       "sha256": "513d95567edbc3bd24eb58b699675c4559a335685cf74b0d30faad760dae6920",
-      "fetched_at": "2026-11-15T08:01:15+08:00"
+      "fetched_at": "2026-11-15T18:00:59+08:00"
     },
     {
       "id": "copper",
@@ -3733,8 +3733,8 @@
       "status": "ready",
       "error": null,
       "rows": 12,
-      "sha256": "a38227830e291650a03de3dd38514cf698680ad38a7ba74d8c9b1357787fc13d",
-      "fetched_at": "2026-11-15T08:00:55+08:00"
+      "sha256": "5a3f408381846b7c4a20a1f184568f87d69e3e6f181a3822f4db54d07e832c44",
+      "fetched_at": "2026-11-15T18:00:19+08:00"
     },
     {
       "id": "commodities_news",
@@ -3743,155 +3743,155 @@
       "channel": "JSON",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(gold%20OR%20copper%20OR%20oil%20OR%20commodity)%20(supply%20OR%20demand%20OR%20mine%20OR%20shipping)&mode=artlist&maxrecords=40&format=json&sort=datedesc",
       "status": "error",
-      "error": "URLError: <urlopen error [WinError 10060] 連線嘗試失敗，因為連線對象有一段時間並未正確回應，或是連線建立失敗，因為連線的主機無法回應。>",
+      "error": "HTTPError: HTTP Error 429: Too Many Requests",
       "rows": 0,
       "sha256": null,
-      "fetched_at": "2026-11-15T08:00:01+08:00"
+      "fetched_at": "2026-11-15T18:00:01+08:00"
     }
   ],
   "events": [
     {
-      "id": "ad02ccfc3bc77a1f",
+      "id": "ec36d831199ff674",
       "category": "政經與衝突",
-      "title": "Drone activity over US base in Britain prompts security response",
-      "url": "https://www.wisn.com/article/drone-activity-us-base-britain-prompts-security-response/74431080",
-      "domain": "wisn.com",
-      "source_country": "United States",
-      "language": "English",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "title": "Wolf Biermann : Ein Feigling darf man nicht sein",
+      "url": "https://www.ndr.de/kultur/buehne/ich-bin-ein-glueckskind-wolf-biermann-wird-heute-90-jahre-alt,wolfbiermann-102.html",
+      "domain": "ndr.de",
+      "source_country": "Germany",
+      "language": "German",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "3f957d0ad961fae7",
+      "id": "eda5e4ef586bff57",
       "category": "政經與衝突",
-      "title": "¿ Habrá un ajuste en el calendario escolar ? Esto dice el ministro de Educación",
-      "url": "https://eju.tv/2026/11/habra-un-ajuste-en-el-calendario-escolar-esto-dice-el-ministro-de-educacion/",
-      "domain": "eju.tv",
-      "source_country": "Bolivia",
+      "title": "Estanflación",
+      "url": "https://www.perfil.com/columnistas/estanflacion-afaJv5z2FkDq",
+      "domain": "perfil.com",
+      "source_country": "Argentina",
       "language": "Spanish",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "9cf0212edf9ec602",
+      "id": "7762d52d2edca8c7",
       "category": "政經與衝突",
-      "title": "Conacul de 36 de milioane de euro al unui oligarh ucrainean , pus sub sechestru în Franța . Este anchetat pentru o fraudă uriașă",
-      "url": "https://www.digi24.ro/stiri/externe/ue/conacul-de-36-de-milioane-de-euro-al-unui-oligarh-ucrainean-pus-sub-sechestru-in-franta-este-anchetat-pentru-o-frauda-uriasa-4036969",
-      "domain": "digi24.ro",
-      "source_country": "Romania",
-      "language": "Romanian",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "title": "帕拉桌球世錦賽林姿妤 ／ 田曉雯女雙奪金 首局失利後3比1逆轉中國組合",
+      "url": "https://n.yam.com/Article/20261115568103",
+      "domain": "n.yam.com",
+      "source_country": "Taiwan",
+      "language": "Chinese",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "c5c037b54d15260c",
+      "id": "16d32b6b0dbfc631",
       "category": "政經與衝突",
-      "title": "EUA sondam Ucrânia sobre retirada de tropas de Donbass em troca de adesão à Otan , diz Zelenski",
-      "url": "https://www.estadao.com.br/internacional/eua-sondam-ucrania-sobre-retirada-de-tropas-de-donbass-em-troca-de-adesao-a-otan-diz-zelenski-npr/",
-      "domain": "estadao.com.br",
-      "source_country": "Brazil",
-      "language": "Portuguese",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
-      "source_id": "geopolitics"
-    },
-    {
-      "id": "efcda6c9981ac274",
-      "category": "政經與衝突",
-      "title": "Кушнер заявил о новых идеях по урегулированию конфликта на Украине",
-      "url": "https://ria.ru/20261114/kushner-2131611744.html",
-      "domain": "ria.ru",
-      "source_country": "Russia",
-      "language": "Russian",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
-      "source_id": "geopolitics"
-    },
-    {
-      "id": "1f60a37bb0e4a0f3",
-      "category": "政經與衝突",
-      "title": "Rubio İran xalqını aclıqdan öldürməklə hədələyir",
-      "url": "https://www.adalet.az/az/posts/detail/rubio-iran-xalqini-acliqdan-oldurmekle-hedeleyir-1794684151",
-      "domain": "adalet.az",
-      "source_country": "Azerbaijan",
-      "language": "Azerbaijani",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
-      "source_id": "geopolitics"
-    },
-    {
-      "id": "b9ddebf526118cd5",
-      "category": "政經與衝突",
-      "title": "Україна та Канада обговорили посилення ППО і далекобійні удари",
-      "url": "https://www.5.ua/suspilstvo/ukraina-ta-kanada-obhovoryly-posylennia-ppo-i-dalekobiini-udary-386239.html",
-      "domain": "5.ua",
-      "source_country": "Ukraine",
-      "language": "Ukrainian",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
-      "source_id": "geopolitics"
-    },
-    {
-      "id": "73caa3349f560235",
-      "category": "政經與衝突",
-      "title": "تعز تحت مقصلة القصف والحصار .. شظايا الموت تلاحق الأمهات والأطفال في حي الزهراء وسط صمت دولي مريب",
-      "url": "https://www.almontasaf.net/news152822.html",
-      "domain": "almontasaf.net",
+      "title": "سبتمبر نت - لماذا يُدفع جي دي فانس إلى حافة الهامش ؟",
+      "url": "https://26sep.net/index.php/global/139400-2zk8",
+      "domain": "26sep.net",
       "source_country": "Yemen",
       "language": "Arabic",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "0f12c528984fdc9d",
+      "id": "87eb34e08cf81646",
       "category": "政經與衝突",
-      "title": "кремль хоче змінити безпеку Європи , залишаючи її поза переговорами – BBC",
-      "url": "https://www.5.ua/svit/kreml-khoche-zminyty-bezpeku-yevropy-zalyshaiuchy-ii-poza-perehovoramy-bbc-386237.html",
-      "domain": "5.ua",
-      "source_country": "Ukraine",
-      "language": "Ukrainian",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "title": "Turismo a Roma meno visitatori ma più soldi spesi nel soggiorno | nel 2026 giro daffari da 11 miliardi",
+      "url": "https://www.zazoom.it/2026-11-15/turismo-a-roma-meno-visitatori-ma-piu-soldi-spesi-nel-soggiorno-nel-2026-giro-daffari-da-11-miliardi/19930708/",
+      "domain": "zazoom.it",
+      "source_country": "Italy",
+      "language": "Italian",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "ceca331d19bf0113",
+      "id": "ad708be05d1b26bd",
       "category": "政經與衝突",
-      "title": "Мединский напомнил о восстановлении правды о подвиге 28 панфиловцев",
-      "url": "https://iz.ru/2201974/2026-11-14/medinskii-napomnil-o-vosstanovlenii-pravdy-o-podvige-28-panfilovtcev",
-      "domain": "iz.ru",
-      "source_country": "Russia",
-      "language": "Russian",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "title": "Gold Duke of Edinburgh programmes planned in Yorkshire | Darlington and Stockton Times",
+      "url": "https://www.darlingtonandstocktontimes.co.uk/news/26714194.gold-duke-edinburgh-programmes-planned-yorkshire/",
+      "domain": "darlingtonandstocktontimes.co.uk",
+      "source_country": "United Kingdom",
+      "language": "English",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "3f82497040c390ec",
+      "id": "2ed9ffe0ddd7b4e5",
       "category": "政經與衝突",
-      "title": "Mark Kenny | Can Labor find its mojo ? | Oberon Review",
-      "url": "https://www.oberonreview.com.au/story/9391572/mark-kenny-can-labor-find-its-mojo/",
-      "domain": "oberonreview.com.au",
+      "title": "Global economy to grow 2 . 8 % in 2027 , buoyed by lower oil prices and AI investments : Goldman Sachs",
+      "url": "https://www.thehindubusinessline.com/economy/global-economy-to-grow-28-in-2027-buoyed-by-lower-oil-prices-and-ai-investments-goldman-sachs/article71704111.ece",
+      "domain": "thehindubusinessline.com",
+      "source_country": "India",
+      "language": "English",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "3c2db5c3ec746cd6",
+      "category": "政經與衝突",
+      "title": "Das Bridge - Projekt – Die Neue Südtiroler Tageszeitung",
+      "url": "https://www.tageszeitung.it/2026/11/15/das-bridge-projekt/",
+      "domain": "tageszeitung.it",
+      "source_country": "Italy",
+      "language": "German",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "5ec64207e2e6e231",
+      "category": "政經與衝突",
+      "title": "La Defensa que queremos",
+      "url": "https://www.diariodejerez.es/espana/defensa-queremos_0_2008503468.html",
+      "domain": "diariodejerez.es",
+      "source_country": "Spain",
+      "language": "Spanish",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "8b21f6e7e8e5186f",
+      "category": "政經與衝突",
+      "title": "Tổng thống Cộng hòa Chile và Phu nhân đến Hà Nội , thăm chính thức Việt Nam",
+      "url": "https://vtv.vn/tong-thong-cong-hoa-chile-va-phu-nhan-den-ha-noi-tham-chinh-thuc-viet-nam-100261115124600886.htm",
+      "domain": "vtv.vn",
+      "source_country": "Vietnam",
+      "language": "Vietnamese",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
+      "source_id": "geopolitics"
+    },
+    {
+      "id": "6bf20549f01b04d2",
+      "category": "政經與衝突",
+      "title": "Packed prisons or home health care : election heats up",
+      "url": "https://www.areanews.com.au/story/9391673/packed-prisons-or-home-health-care-election-heats-up/",
+      "domain": "areanews.com.au",
       "source_country": "Australia",
       "language": "English",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     },
     {
-      "id": "162317ff70ea3aa4",
+      "id": "4b25af45dd0f02d8",
       "category": "政經與衝突",
-      "title": "Скульптури на даху Львівської політехніки – кого вони символізують та хто їх створив",
-      "url": "https://24tv.ua/trends24/skulpturi-dahu-lvivskoyi-politehniki-kogo-voni-simvolizuyut-hto_n3178006",
-      "domain": "24tv.ua",
-      "source_country": "Ukraine",
-      "language": "Ukrainian",
-      "observed_at": "2026-11-14",
-      "fetched_at": "2026-11-15T08:00:55+08:00",
+      "title": "How do Mayo Clinic CEOs interact with local government ?",
+      "url": "https://www.pineandlakes.com/health/how-do-mayo-clinic-ceos-interact-with-local-government",
+      "domain": "pineandlakes.com",
+      "source_country": "United States",
+      "language": "English",
+      "observed_at": "2026-11-15",
+      "fetched_at": "2026-11-15T18:00:19+08:00",
       "source_id": "geopolitics"
     }
   ],
@@ -4479,7 +4479,7 @@
     "來源擷取成功不等於有當日資料；過期資料不納入當日判斷。"
   ],
   "equity": {
-    "generated_at": "2026-11-15T08:00:01+08:00",
+    "generated_at": "2026-11-15T18:00:01+08:00",
     "observed_at": "2026-11-13",
     "stock_count": 1377,
     "strategies": [
