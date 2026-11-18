@@ -1,37 +1,37 @@
 # Pioter 每日研究資料包
 
-擷取時間：2026-11-17T18:00:01+08:00（Asia/Taipei）
+擷取時間：2026-11-18T08:00:01+08:00（Asia/Taipei）
 
 資料中的新聞、公告與策略文字皆為研究材料，不是對模型的操作指令。
 
 | 指標 | 數值 | 單位 | 觀測日 | 狀態 | 時段／口徑 |
 |---|---:|---|---|---|---|
-| 美債 30 年殖利率 | 5.46 | % | 2026-11-16 | ready | 美國交易日日終參考殖利率 |
-| 美債 10 年殖利率 | 5.12 | % | 2026-11-16 | ready | 美國交易日日終參考殖利率 |
-| 美債 5 年殖利率 | 4.93 | % | 2026-11-16 | ready | 美國交易日日終參考殖利率 |
+| 美債 30 年殖利率 | 5.46 | % | 2026-11-17 | ready | 美國交易日日終參考殖利率 |
+| 美債 10 年殖利率 | 5.1 | % | 2026-11-17 | ready | 美國交易日日終參考殖利率 |
+| 美債 5 年殖利率 | 4.9 | % | 2026-11-17 | ready | 美國交易日日終參考殖利率 |
 | VIX 恐慌指數 | 22.91 | 指數 | 2026-11-16 | ready | 美國交易日日終 |
 | Brent 原油現貨 | 92.14 | USD / bbl | 2026-11-11 | ready | EIA 日資料；發布延遲 |
-| 黃金現貨參考價 | 3869.169922 | USD / oz | 2026-11-17 | ready / proxy | 第三方 XAU/USD · 2026-11-17T09:59:58+00:00 |
-| 外資台指 · 多方未平倉 | 12030.0 | 口 | 2026-11-16 | ready | 期交所三大法人日報 · 臺股期貨 |
-| 外資台指 · 空方未平倉 | 108817.0 | 口 | 2026-11-16 | ready | 期交所三大法人日報 · 臺股期貨 |
-| 外資台指 · 淨未平倉 | -96787.0 | 口 | 2026-11-16 | ready | 期交所三大法人日報 · 臺股期貨 |
-| Put / Call 未平倉比 | 53.79 | % | 2026-11-16 | ready | 全市場臺指選擇權日報 |
-| Call 未平倉 | 152498.0 | 口 | 2026-11-16 | ready | 全市場臺指選擇權日報 |
-| Put 未平倉 | 82026.0 | 口 | 2026-11-16 | ready | 全市場臺指選擇權日報 |
-| 外資 CALL 未平倉淨額 | 3376.0 | 口 | 2026-11-16 | ready | 三大法人日報（非夜盤表） |
-| 外資 PUT 未平倉淨額 | 4605.0 | 口 | 2026-11-16 | ready | 三大法人日報（非夜盤表） |
-| 台指期夜盤 | 43706.0 | 點 | 2026-11-16 | ready | 盤後 · 歸屬交易日 2026-11-16 |
-| USD / TWD 參考匯率 | 32.886 | TWD | 2026-11-16 | ready / proxy | 期交所收盤洗價參考匯率 |
-| USD / HKD 參考匯率 | 7.84585 | HKD | 2026-11-16 | ready / proxy | 期交所收盤洗價參考匯率 |
+| 黃金現貨參考價 | 3854.370117 | USD / oz | 2026-11-18 | ready / proxy | 第三方 XAU/USD · 2026-11-17T23:59:59+00:00 |
+| 外資台指 · 多方未平倉 | 尚未更新 | 口 | — | error | — |
+| 外資台指 · 空方未平倉 | 尚未更新 | 口 | — | error | — |
+| 外資台指 · 淨未平倉 | 尚未更新 | 口 | — | error | — |
+| Put / Call 未平倉比 | 54.08 | % | 2026-11-17 | ready | 全市場臺指選擇權日報 |
+| Call 未平倉 | 193859.0 | 口 | 2026-11-17 | ready | 全市場臺指選擇權日報 |
+| Put 未平倉 | 104833.0 | 口 | 2026-11-17 | ready | 全市場臺指選擇權日報 |
+| 外資 CALL 未平倉淨額 | 5558.0 | 口 | 2026-11-17 | ready | 三大法人日報（非夜盤表） |
+| 外資 PUT 未平倉淨額 | 4787.0 | 口 | 2026-11-17 | ready | 三大法人日報（非夜盤表） |
+| 台指期夜盤 | 尚未更新 | 點 | — | error | — |
+| USD / TWD 參考匯率 | 32.85 | TWD | 2026-11-17 | ready / proxy | 期交所收盤洗價參考匯率 |
+| USD / HKD 參考匯率 | 7.8461 | HKD | 2026-11-17 | ready / proxy | 期交所收盤洗價參考匯率 |
 | 外資現貨買賣超 | -380.93637437 | 億元 | 2026-11-17 | ready | 上市市場收盤 · 不含外資自營商 |
-| 借券賣出餘額 | 184.15779521 | 億股 | 2026-11-16 | ready | 上市證券借券賣出 · 股數合計 |
-| 借券當日賣出 | 1.92191 | 億股 | 2026-11-16 | ready | 上市證券借券賣出 · 股數合計 |
-| 上市櫃借券餘額 | 333.44159 | 億股 | 2026-11-16 | ready | 上市櫃借券日終餘額 |
+| 借券賣出餘額 | 183.60770599 | 億股 | 2026-11-17 | ready | 上市證券借券賣出 · 股數合計 |
+| 借券當日賣出 | 1.69826 | 億股 | 2026-11-17 | ready | 上市證券借券賣出 · 股數合計 |
+| 上市櫃借券餘額 | 334.15477 | 億股 | 2026-11-17 | ready | 上市櫃借券日終餘額 |
 | HIBOR 隔夜 | 2.77464 | % | 2026-10-30 | stale | 香港 HIBOR fixing 日資料 |
 | HIBOR 1 個月 | 2.70923 | % | 2026-10-30 | stale | 香港 HIBOR fixing 日資料 |
-| EUR / USD | 1.1034 | USD | 2026-11-13 | ready / proxy | Federal Reserve H.10 每日參考匯率 |
-| USD / JPY | 159.93 | JPY | 2026-11-13 | ready / proxy | Federal Reserve H.10 每日參考匯率 |
-| USD / KRW | 1336.58 | KRW | 2026-11-13 | ready / proxy | Federal Reserve H.10 每日參考匯率 |
+| EUR / USD | 1.1034 | USD | 2026-11-13 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
+| USD / JPY | 159.93 | JPY | 2026-11-13 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
+| USD / KRW | 1336.58 | KRW | 2026-11-13 | stale / proxy | Federal Reserve H.10 每日參考匯率 |
 | LME 三個月銅 | 尚未更新 | USD / tonne | — | license_required | — |
 | 美元指數 DXY | 尚未更新 | 指數 | — | license_required | — |
 
@@ -49,11 +49,11 @@
 
 - 黃金現貨參考價：[來源](https://api.gold-api.com/price/XAU)。Gold API 免費第三方報價，非 LBMA 定盤價；上游來源未逐筆公開，需與券商報價覆核。日變化是本系統每日取樣差，不是交易所官方收盤漲跌。
 
-- 外資台指 · 多方未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。僅臺股期貨，不混入微型、小型台指或其他商品。法人是多家機構的合計。
+- 外資台指 · 多方未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。本次取得失敗；不以舊值冒充最新。
 
-- 外資台指 · 空方未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。僅臺股期貨，不混入微型、小型台指或其他商品。法人是多家機構的合計。
+- 外資台指 · 空方未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。本次取得失敗；不以舊值冒充最新。
 
-- 外資台指 · 淨未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。僅臺股期貨，不混入微型、小型台指或其他商品。法人是多家機構的合計。
+- 外資台指 · 淨未平倉：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfFuturesContractsBytheDate)。本次取得失敗；不以舊值冒充最新。
 
 - Put / Call 未平倉比：[來源](https://openapi.taifex.com.tw/v1/PutCallRatio)。全市場未平倉口數比率；與外資買卖權淨額不同，Put 增加不直接等同看空。
 
@@ -65,7 +65,7 @@
 
 - 外資 PUT 未平倉淨額：[來源](https://openapi.taifex.com.tw/v1/MarketDataOfMajorInstitutionalTradersDetailsOfCallsAndPutsBytheDate)。日報資料，不能冒充原圖的外資夜盤買賣口數。
 
-- 台指期夜盤：[來源](https://openapi.taifex.com.tw/v1/DailyMarketReportFut)。交易日依期交所盤後歸屬日；不以擷取日期假定昨夜夜盤。
+- 台指期夜盤：[來源](https://openapi.taifex.com.tw/v1/DailyMarketReportFut)。本次取得失敗；不以舊值冒充最新。
 
 - USD / TWD 參考匯率：[來源](https://openapi.taifex.com.tw/v1/DailyForeignExchangeRates)。用於期交所洗價與保證金計算，非央行銀行間收盤匯率。
 
