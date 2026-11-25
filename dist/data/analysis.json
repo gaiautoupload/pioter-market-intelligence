@@ -1,58 +1,79 @@
 {
   "summary": {
-    "international_capital": "Neutral",
+    "international_capital": "Bearish",
     "taiwan_capital": "Bearish",
-    "systemic_risk": "Medium",
-    "one_line": "美債殖利率回落但VIX仍高，外資期貨淨空倉增加且現貨持續賣超，台股資金面偏空。"
+    "systemic_risk": "High",
+    "one_line": "VIX 高檔回落但外資期貨淨空倉增加，現貨持續賣超，系統性風險偏高。"
   },
   "short_term": {
     "direction": "Bearish",
-    "base_scenario": "外資期貨淨空倉擴大至-103,432口，現貨單日賣超503.9億元，台指期夜盤收跌5.25%，短期承壓。",
-    "risk_scenario": "若VIX維持高檔且外資現貨賣超持續擴大，台股可能進一步回調。",
-    "bullish_trigger": "若外資期貨淨空倉減少且現貨轉為買超，則短期壓力緩解。",
-    "bearish_trigger": "若外資期貨淨空倉繼續擴大且現貨賣超超過600億元（示例門檻，尚未回測），則風險升級。"
+    "base_scenario": "若 VIX 維持在 25 以上且外資期貨淨空倉持續擴大，則台股短期承壓，波動率維持高檔。",
+    "risk_scenario": "若 VIX 再度突破 35 或外資現貨賣超金額單日超過 500 億元，則台股可能出現急跌，避險情緒升溫。",
+    "bullish_trigger": "若 VIX 回落至 20 以下且外資期貨淨空倉減少超過 5,000 口，則台股可能出現反彈。",
+    "bearish_trigger": "若 VIX 突破 35 或外資期貨淨空倉增加超過 10,000 口，則台股可能進一步下跌。"
   },
   "medium_term": {
-    "direction": "Neutral",
-    "base_scenario": "美債殖利率趨穩，但外資期貨淨空倉仍高，中期方向取決於資金面是否轉正。",
-    "risk_scenario": "若美債殖利率反彈或VIX再度上升，台股中期承壓。",
-    "bullish_trigger": "若外資期貨淨空倉連續減少且現貨轉為買超，則中期轉多。",
-    "bearish_trigger": "若外資期貨淨空倉持續擴大且現貨賣超連續多日超過500億元（示例門檻，尚未回測），則中期轉空。"
+    "direction": "Bearish",
+    "base_scenario": "若美債 10 年殖利率維持在 4.9% 以上且外資現貨持續賣超，則台股中期承壓，資金流向偏空。",
+    "risk_scenario": "若美債 10 年殖利率突破 5.0% 或外資現貨賣超金額連續 5 日超過 300 億元，則台股中期可能出現結構性下跌。",
+    "bullish_trigger": "若美債 10 年殖利率回落至 4.8% 以下且外資現貨轉為買超，則台股中期可能出現反彈。",
+    "bearish_trigger": "若美債 10 年殖利率突破 5.2% 或外資現貨賣超金額連續 10 日超過 500 億元，則台股中期可能進一步下跌。"
   },
   "evidence": [
+    {
+      "metric_id": "vix",
+      "observed_at": "2026-11-23",
+      "value": 26.62,
+      "interpretation": "VIX 從 11/20 的 35.89 回落至 26.62，顯示避險情緒有所緩解，但仍處於高檔。"
+    },
     {
       "metric_id": "foreign_net",
       "observed_at": "2026-11-23",
       "value": -103432.0,
-      "interpretation": "外資台指期貨淨未平倉為-103,432口，較前一日減少5,569口，顯示外資期貨空頭部位增加。"
+      "interpretation": "外資台指期貨淨未平倉為 -103,432 口，較 11/20 的 -97,863 口減少 5,569 口，顯示外資期貨空頭部位增加。"
     },
     {
       "metric_id": "spot",
       "observed_at": "2026-11-24",
       "value": -503.89912492,
-      "interpretation": "外資現貨單日賣超503.9億元，較前一日減少214.4億元，顯示外資現貨持續賣出。"
+      "interpretation": "外資現貨買賣超為 -503.9 億元，較 11/23 的 -289.5 億元減少 214.4 億元，顯示外資現貨賣超金額增加。"
     },
     {
-      "metric_id": "vix",
-      "observed_at": "2026-11-23",
-      "value": 26.62,
-      "interpretation": "VIX恐慌指數為26.62，較前一日下降25.83%，但仍處於高檔，顯示市場波動性仍高。"
+      "metric_id": "us10",
+      "observed_at": "2026-11-24",
+      "value": 4.91,
+      "interpretation": "美債 10 年殖利率為 4.91%，較 11/23 的 4.92% 下降 1bp，但仍處於高檔，對台股估值承壓。"
     }
   ],
-  "event_risks": [],
+  "event_risks": [
+    {
+      "event_id": "ac9d07180127d624",
+      "impact": "若該事件標題經確認，若霍爾木茲海峽緊張局勢升級，可能推高油價，增加通膨壓力，對台股構成壓力。",
+      "horizon": "短期",
+      "transmission": "霍爾木茲海峽緊張 → 油價上漲 → 通膨壓力 → 美債殖利率上升 → 台股估值承壓"
+    },
+    {
+      "event_id": "1ee9e17e6076aa1f",
+      "impact": "若該事件標題經確認，若美國擴大關稅，可能衝擊全球貿易，對台股出口導向產業構成壓力。",
+      "horizon": "中期",
+      "transmission": "美國擴大關稅 → 全球貿易減緩 → 台股出口導向產業獲利承壓 → 台股下跌"
+    }
+  ],
   "divergences": [
-    "美債殖利率數據觀測於2026-11-23，而外資現貨數據觀測於2026-11-24，兩者日期不同，無法嚴格作同日比較。",
-    "Brent原油數據觀測於2026-11-17，與台股數據日期不同，無法直接作為當日證據。"
+    "VIX 數據為 2026-11-23，而外資期貨與現貨數據為 2026-11-23 與 2026-11-24，存在一日差異，無法嚴格作同日比較。",
+    "美債 10 年殖利率數據為 2026-11-24，而 VIX 數據為 2026-11-23，存在一日差異，無法嚴格作同日比較。"
   ],
   "missing_data": [
-    "LME三個月銅與ICE DXY數據因授權問題缺失，無法提供相關證據。",
-    "HIBOR數據過期（2026-10-30），無法作為當日證據。"
+    "LME 三個月銅與 ICE DXY 數據缺失，無法評估大宗商品與美元指數對台股的影響。",
+    "個股策略數據僅提供 ETF 與少數個股，無法進行全面的個股分析。"
   ],
   "stocks": [],
   "model": "qwen3.8-27b",
-  "generated_at": "2026-11-24T18:02:11+08:00",
-  "snapshot_id": "20261124T180001",
+  "generated_at": "2026-11-25T08:02:23+08:00",
+  "snapshot_id": "20261125T080001",
   "validation": "Evidence values/dates/IDs matched; qualitative reasoning requires human review.",
-  "review_flags": [],
-  "review_status": "machine_validated_not_human_reviewed"
+  "review_flags": [
+    "模型提出數值觸發門檻，但未標示回測依據；僅作待驗證假設。"
+  ],
+  "review_status": "machine_validated_with_notes"
 }
